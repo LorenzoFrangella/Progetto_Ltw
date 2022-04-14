@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <title>Home</title>
 </head>
-    <body style="background-color:#343a40;">
+    <body style="background-color:#343a40">
+    <div class="container" style="padding:20px;border:double">
+        <h1 style="color:white;">Titolo</h1>
+    </div>
 </body>
 </html> 
