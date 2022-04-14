@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <title>Home</title>
 </head>
-<body>
-    <h1>Prova</h1>
+<body style="background-color:#343a40;">
+    <nav style="border:double; text-align:center"> 
+        <button>Prova1</button>
+        <button>Prova2</button>
+        <button>Prova3</button>
+        <button>Prova4</button>
+        <button>Prova5</button>
+    </nav>
     
 </body>
-</html>
+</html> 
