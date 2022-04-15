@@ -16,9 +16,10 @@
         <form name="HousEscape" action="" method="post" id="form_registrazione" onsubmit="return valida_registrazione()">
             <input type="text" id="nome" placeholder="inserire nome">
             <input type="text" id="cognome" placeholder="inserire cognome"><br>
-            <input type="email" id="email" placeholder="inserire email">
-            <input type="password" id="password" placeholder="inserire password"><br>
-            Data di nascita: <br><input type="date" id="birthday"><br>
+            <input type="text" id="nickname" placeholder="inserire nickname">
+            <input type="email" id="email" placeholder="inserire email"><br>
+            <input type="password" id="password" placeholder="inserire password">
+            <input type="password" id="conferma_password" placeholder="conferma password"><br>
             <button type="submit" id="reg" class="btn btn-warning"> Registrati</button>
         </form>
     </div>

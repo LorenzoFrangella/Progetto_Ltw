@@ -24,8 +24,9 @@
         </ul>
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Accedi</button>
+         <a href="./login.php"><button type="button" class="btn btn-outline-light me-2">Accedi</button></a>
           <a href="./registrazione.php"><button type="button" class="btn btn-warning">Registrati</button></a>
+          
         </div>
       </div>
     </div>

@@ -32,6 +32,12 @@ input{
     padding-bottom: 25px;
 }
 
+#titolo_accedi{
+    color:#343a40;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 #reg{
     position: relative;
     bottom: -30px;
