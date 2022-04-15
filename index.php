@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <title>Home</title>
+    <title>HomEscape</title>
+    <link rel="icon" href="./img/exit.png">
 </head>
     <body style="background-color:#343a40">
     <header class="p-3 bg-dark text-white" style="position:sticky;top:0;">
@@ -23,7 +24,7 @@
 
         <div class="text-end">
           <button type="button" class="btn btn-outline-light me-2">Accedi</button>
-          <button type="button" class="btn btn-warning">Registrati</button>
+          <a href="./registrazione.php"><button type="button" class="btn btn-warning">Registrati</button></a>
         </div>
       </div>
     </div>
