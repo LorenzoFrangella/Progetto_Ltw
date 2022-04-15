@@ -29,7 +29,7 @@
       </div>
     </div>
   </header>
-  <div class="container" style="height:600px;border:double;color:white;padding-top:10px"><h1>Povero Gabbiano</h1><img src="./img/gabbiano.jpg"></div>
+  <div class="container" style="height:600px;border:double;color:white;padding-top:10px"><h1>Descrizione</h1></div>
   <div class="container" style="height:600px;border:double;color:white"><h1>Hai perduto la compagna</h1><img src="./img/cuore.jpg" style="height:400px"></div>
   <div class="container" style="height:400px;border:double;color:white"><h1>Prova</h1></div>
   <div class="container" style="height:400px;border:double;color:white"><h1>Prova</h1></div>
