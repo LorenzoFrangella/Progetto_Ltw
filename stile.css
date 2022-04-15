@@ -1,0 +1,58 @@
+body{
+    background-color: #343a40;
+}
+
+.container{
+    border:double;
+    border-color: white;
+}
+
+.spaziatura{
+    padding-top: 50px;
+}
+
+#form{
+    border-radius: 10px;
+    height: 80vh;
+    width: 40vw;
+    background-color: white;
+    text-align: center;
+
+}
+
+input{
+    width: 49%;
+    padding-top: 8px;
+    margin-top: 10px;
+}
+
+#titolo_registrati{
+    color:#343a40;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+#form_registrazione{
+
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+h4{
+    color: white;
+}
+h5{
+    color: white;
+}
+h6{
+    color: white;
+}

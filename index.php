@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stile.css">
     <title>HomEscape</title>
     <link rel="icon" href="./img/exit.png">
 </head>
-    <body style="background-color:#343a40">
+    <body>
     <header class="p-3 bg-dark text-white" style="position:sticky;top:0;">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -29,10 +30,10 @@
       </div>
     </div>
   </header>
-  <div class="container" style="height:600px;border:double;color:white;padding-top:10px"><h1>Descrizione</h1></div>
-  <div class="container" style="height:600px;border:double;color:white"><h1>Hai perduto la compagna</h1><img src="./img/cuore.jpg" style="height:400px"></div>
-  <div class="container" style="height:400px;border:double;color:white"><h1>Prova</h1></div>
-  <div class="container" style="height:400px;border:double;color:white"><h1>Prova</h1></div>
-  <div class="container" style="height:400px;border:double;color:white"><h1>Prova</h1></div>
+  <div class="container" style="height:600px;padding-top:10px"><h1>Descrizione</h1></div>
+  <div class="container" style="height:600px"><h1>Chi siamo</h1></div>
+  <div class="container" style="height:400px"><h1>Prova</h1></div>
+  <div class="container" style="height:400px"><h1>Prova</h1></div>
+  <div class="container" style="height:400px"><h1>Prova</h1></div>
 </body>
 </html> 
