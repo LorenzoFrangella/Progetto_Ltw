@@ -1,14 +1,14 @@
-function validaRegistazione(){
+function valida_registrazione(){
+        if (document.HousEscape.nome.value=="") {
+        alert("Inserire nome");
+        return false;
+     }
     if (document.HousEscape.cognome.value=="") {
         alert("Inserire cognome");
         return false;
         }
-        if (document.HousEscape.nome.value=="") {
-        alert("Inserire nome");
-        return false;
-        }
         if (document.HousEscape.email.value=="") {
-        alert("Selezionare una regione");
+        alert("Inserire l'email");
         return false;
         }
         if (document.HousEscape.password.value=="") {
