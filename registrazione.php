@@ -19,7 +19,7 @@
             <input type="text" id="cognome" placeholder="inserire cognome"><br>
             <input type="email" id="email" placeholder="inserire email">
             <input type="password" id="password" placeholder="inserire password"><br>
-            data di nascita:<input type="date" id="birthday"><br>
+            Data di nascita: <br><input type="date" id="birthday"><br>
             <button type="submit" id="reg" class="btn btn-warning"> Registrati</button>
         </form>
     </div>
