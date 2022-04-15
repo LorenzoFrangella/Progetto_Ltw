@@ -11,6 +11,10 @@ function valida_registrazione(){
         alert("Inserire l'email");
         return false;
         }
+        if (document.HousEscape.nickname.value=="") {
+            alert("Inserire nickname");
+            return false;
+            }
         if (document.HousEscape.password.value=="") {
         alert("Inserire password");
         return false;
@@ -24,6 +28,16 @@ function valida_registrazione(){
             alert("le password non corrispondono");
             return false;
         }
+        /*var a,b,c,d,e,f;
+        a = document.HousEscape.cognome.value;
+        b = document.HousEscape.nome.value;
+        c = document.HousEscape.nickname.value;
+        d = document.HousEscape.email.value;
+        e = document.HousEscape.password.value;
+
+        function inserisci_utente(a,b,c,d,e){
+            
+        }*/
         alert("Dati inseriti correttamente");
         return true;
         }
