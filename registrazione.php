@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
     <title>HousEscape</title>
+    <script src="valida_registrazione.js" type="application/javascript"> </script>
+        
 </head>
 <body>
     <div class="spaziatura"></div>
     <div class = "container" id="form">
         <h1 id="titolo_registrati">Registrati</h1>
-        <form action="" id="form_registrazione">
+        <form action="" method="post" id="form_registrazione" onsubmit="validaRegistrazione()">
             <input type="text" id="nome" placeholder="inserire nome">
             <input type="text" id="cognome" placeholder="inserire cognome"><br>
             <input type="email" id="email" placeholder="inserire email">
             <input type="password" id="password" placeholder="inserire password"><br>
-            data di nascita:<input type="date" id="birthday">
+            data di nascita:<input type="date" id="birthday"><br>
             <button type="submit" id="reg" class="btn btn-warning"> Registrati</button>
         </form>
     </div>
