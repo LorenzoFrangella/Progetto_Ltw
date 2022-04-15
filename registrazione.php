@@ -13,11 +13,12 @@
     <div class = "container" id="form">
         <h1 id="titolo_registrati">Registrati</h1>
         <form action="" id="form_registrazione">
-            <input type="text" id="nome">
-            <input type="text" id="cognome"><br>
-            <input type="email" id="email">
-            <input type="password" id="password"><br>
-            <input type="date" id="birthday">
+            <input type="text" id="nome" placeholder="inserire nome">
+            <input type="text" id="cognome" placeholder="inserire cognome"><br>
+            <input type="email" id="email" placeholder="inserire email">
+            <input type="password" id="password" placeholder="inserire password"><br>
+            data di nascita:<input type="date" id="birthday">
+            <button type="submit" id="reg" class="btn btn-warning"> Registrati</button>
         </form>
     </div>
 </body>
