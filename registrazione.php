@@ -13,7 +13,8 @@
     <div class="spaziatura"></div>
     <div class = "container" id="form">
         <h1 id="titolo_registrati">Registrati</h1>
-        <form name="HousEscape" action="" method="post" id="form_registrazione" onsubmit="return valida_registrazione()">
+        <form name="HousEscape" action="ceck_registrazione.php" method="post" id="form_registrazione" 
+        action="./ceck_registrazione.php" onsubmit="return valida_registrazione()">
             <input type="text" id="nome" placeholder="inserire nome">
             <input type="text" id="cognome" placeholder="inserire cognome"><br>
             <input type="text" id="nickname" placeholder="inserire nickname">
