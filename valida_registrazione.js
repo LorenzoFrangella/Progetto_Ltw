@@ -38,6 +38,6 @@ function valida_registrazione(){
         function inserisci_utente(a,b,c,d,e){
             
         }*/
-        alert("Dati inseriti correttamente");
+        //alert("Dati inseriti correttamente");
         return true;
         }
