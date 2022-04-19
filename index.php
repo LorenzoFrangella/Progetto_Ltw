@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="padding-top:10px; padding-left:5px">
           <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Chi siamo</a></li>
-          <li><a href="#" class="nav-link px-2 text-warning">Classifica</a></li>
+          <li><a href="./classifica.php" class="nav-link px-2 text-warning">Classifica</a></li>
         </ul>
 
         <div class="text-end">

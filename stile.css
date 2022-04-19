@@ -2,9 +2,18 @@ body{
     background-color: #343a40;
 }
 
+.row{
+    border-color: green;
+    border:double;
+}
+.col{
+    border-color: green;
+    border:double;
+}
+
 .container{
     border:double;
-    border-color: white;
+    border-color: orange;
 }
 
 .spaziatura{
@@ -43,8 +52,16 @@ input{
     bottom: -30px;
 }
 
-#form_registrazione{
+#cont_class{
+    margin-top: 10vh;
+    height: 80vh;
+    border-radius: 10px;
+    background: white;
+}
 
+#class_title{
+    color:#343a40;
+    padding: 20px;
 }
 
 h1{
