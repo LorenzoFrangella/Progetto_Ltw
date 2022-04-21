@@ -16,17 +16,18 @@
         <form name="HousEscape" action="ceck_registrazione.php" method="POST" id="form_registrazione" 
         action="./ceck_registrazione.php" onsubmit="return valida_registrazione()">
             <input type="text" name="reg_name" id="nome" value="test"
-             placeholder="inserire nome">
+             placeholder="Nome">
             <input type="text" name="reg_surn" id="cognome" value="test"
-            placeholder="inserire cognome"><br>
+            placeholder="Cognome"><br>
             <input type="text" name="reg_nick" id="nickname" value="test"
-            placeholder="inserire nickname">
+            placeholder="Nickname">
             <input type="email" name="email" id="email" value="mail@test.com"
-            placeholder="inserire email"><br>
+            placeholder="Email"><br>
             <input type="password" name="reg_pass" id="password" value="12345678"
-            placeholder="inserire password">
+            placeholder="Password">
             <input type="password" id="conferma_password" value="12345678"
-            placeholder="conferma password"><br>
+            placeholder="Conferma password"><br>
+            <p1 class="error" id="errore"></p1> <br>
             <button type="submit" id="reg" 
             name="reg" class="btn btn-warning"> Registrati</button>
         </form>

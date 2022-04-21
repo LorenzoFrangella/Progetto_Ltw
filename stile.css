@@ -17,15 +17,26 @@ body{
 }
 
 .spaziatura{
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 #form{
     border-radius: 10px;
-    height: 80vh;
+    height: 50vh;
     width: 40vw;
     background-color: white;
     text-align: center;
+    min-width: 300px;
+    min-height: 370px;
+
+}
+#formlogin{
+    border-radius: 10px;
+    height: 40vh;
+    width: 40vw;
+    background-color: white;
+    text-align: center;
+    min-width: 400px;
 
 }
 
@@ -57,6 +68,12 @@ input{
     height: 80vh;
     border-radius: 10px;
     background: white;
+}
+
+.error{
+    position: relative;
+    bottom: -15px;
+    color: red;
 }
 
 #class_title{

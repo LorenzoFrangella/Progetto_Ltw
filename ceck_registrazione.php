@@ -21,7 +21,7 @@ else {
                 $result = pg_query_params($dbconn, $q1, array($email));
                 if ($line=pg_fetch_array($result, null, PGSQL_ASSOC)) {
                     echo "<h1> Sorry, you are already a registered user</h1>
-                        <a href=../login/index.html> Click here to login </a>";
+                        <a href=./login.php> Click here to login </a>";
                 }
                 else {
                     $nome = $_POST['reg_name'];
