@@ -68,6 +68,7 @@ input{
     height: 80vh;
     border-radius: 10px;
     background: white;
+    min-width: 350px;
 }
 
 .error{
