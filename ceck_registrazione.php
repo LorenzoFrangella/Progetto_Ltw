@@ -5,7 +5,7 @@ if (!(isset($_POST['reg']))) {
 }
 else {
     $dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape 
-                user=postgres password=lorenzo") 
+                user=postgres password=biar") 
                 or die('Could not connect: ' . pg_last_error());
 }
 ?>
