@@ -10,6 +10,10 @@
     <script src="valida_registrazione.js" type="application/javascript"></script>    
 </head>
 <body>
+    <div class = "overlay">
+        <div class = "modal">
+            <button id="close-modal-btn"> Close </button>
+    </div>
     <div class="spaziatura"></div>
     <div class = "container" id="form">
         <h1 id="titolo_registrati">Registrati</h1>
