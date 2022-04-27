@@ -1,5 +1,7 @@
 body{
     background-color: #343a40;
+    background-image: url(./img/)
+    background-attachment: fixed;
 }
 
 .row{
@@ -12,8 +14,7 @@ body{
 }
 
 .container{
-    border:double;
-    border-color: orange;
+    border-color: #343a40;
 }
 
 .spaziatura{
