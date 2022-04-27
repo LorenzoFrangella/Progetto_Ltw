@@ -84,9 +84,8 @@ input{
 }
 
 h1{
+    position:static;
     padding-top: 250px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     font-family: Impact, Charcoal, sans-serif;
     color: white;
