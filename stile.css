@@ -21,6 +21,11 @@ body{
     padding-top: 150px;
 }
 
+.coloreinverso{
+    background-color: #343a40;
+    color: white;
+}
+
 #form{
     border-radius: 10px;
     height: 50vh;

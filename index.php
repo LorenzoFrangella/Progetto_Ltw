@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>HouseEscape</title>
     <link rel="icon" href="./img/exit.png">
 </head>
@@ -20,9 +21,9 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="padding-top:10px; padding-left:5px">
-          <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-          <li><a href="#chi_siamo" class="nav-link px-2 text-white">Chi siamo</a></li>
-          <li><a href="./classifica.php" class="nav-link px-2 text-warning">Classifica</a></li>
+          <li><a href="#" id="home" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="#chi_siamo" id="chi_siamo" class="nav-link px-2 text-white">Chi siamo</a></li>
+          <li><a href="./classifica.php" id="classifica" class="nav-link px-2 text-white">Classifica</a></li>
         </ul>
 
         <div class="text-end">
@@ -33,17 +34,20 @@
       </div>
     </div>
   </header>
-  <div class="container" style="height:600px;padding-top:10px"><h1 class="animated bounceInDown">Sei pronto a metterti in gioco?</h1></div>
+  <div class="container" style="height:600px;"><h1 class="animated bounceInDown">Sei pronto a metterti in gioco?</h1></div>
   <div class="container" id="chi_siamo" style="height:600px"><h1>Chi siamo</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <script>
   $(document).ready(function(){
-       $("li").hover(function(){
+       $("ul.nav-link li").hover(function(){
         $(this).css("color", "yellow");
         });
   });
 </script>
 </body>
-</html> 
+</html>
+
+
+
