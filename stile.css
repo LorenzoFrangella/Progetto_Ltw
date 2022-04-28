@@ -89,7 +89,9 @@ h1{
     align-items: center;
     font-family: Impact, Charcoal, sans-serif;
     color: white;
+    text-shadow: 2px 2px 4px #000000
 }
+
 
 h2{
     color: white;
