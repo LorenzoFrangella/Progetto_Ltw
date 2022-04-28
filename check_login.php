@@ -29,8 +29,8 @@ if(!isset($_POST['log'])){
                     //$_SESSION['email'] = $nick_email;
                     $q3 = "select nickname from utente where email = $1 or nickname = $1";
                     $result = pg_query_params($dbconn,$q3,array($nick_email));
-                    $row = pg_fetch_row($result);
-                    echo $row;
+
+                    $_SESSION['nickname'] = pg_fetch_result($result,0,0);
                     //echo $_SESSION['nickname'];
                    // echo $_SESSION['nickname'];
 
