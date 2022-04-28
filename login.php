@@ -14,7 +14,7 @@
     <div class="spaziatura"></div>
     <div class = "container" id="formlogin">
         <h1 id="titolo_accedi">Accedi</h1>
-        <form name="HousEscape_1" action="" method="post" id="form_login" onsubmit="return valida_login()">
+        <form name="HousEscape_1" action="check_login.php" method="post" id="form_login" onsubmit="return valida_login()">
             <input type="text" id="nick_email" placeholder="Nickname o Email">
             <input type="password" id="password" placeholder="Password"><br>
             <button type="submit" id="log" class="btn btn-warning"> Accedi</button>
