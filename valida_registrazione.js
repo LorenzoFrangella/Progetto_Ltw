@@ -26,8 +26,8 @@ function valida_registrazione(){
         return false;
         }
     var n = document.HousEscape.nickname.value;
-    if(n.length < 8 || n.length > 20){
-            if(debug)alert("il nickname deve contenere da 8 a 20 caratteri");
+    if(n.length < 2 || n.length > 20){
+            if(debug)alert("il nickname deve contenere da 2 a 20 caratteri");
             return false;
         }
     if (document.HousEscape.password.value=="") {
