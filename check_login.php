@@ -29,10 +29,10 @@ if(!isset($_POST['log'])){
                     //$_SESSION['email'] = $nick_email;
                     $q3 = "select nickname from utente where email = $1 or nickname = $1";
                     $result = pg_query_params($dbconn,$q3,array($nick_email));
-                    $row = mysql_fetch_array($result);
-                    $_SESSION['nickname'] = $row["nickname"];
+                    $row = pg_fetch_row($result);
+                    echo $row;
                     //echo $_SESSION['nickname'];
-                    echo $_SESSION['nickname'];
+                   // echo $_SESSION['nickname'];
 
                     
                 }
