@@ -88,13 +88,28 @@ input{
     padding: 20px;
 }
 
+a nav-link{
+    color: white;
+    transition: width 1s;
+}
+
+.acti:hover {
+    border-radius: 5px;
+    background-color: #ffc107;
+    font-size: 20px;
+    color: #343a40;
+}
+
+
 h1{
     position:static;
     padding-top: 250px;
     align-items: center;
     font-family: Impact, Charcoal, sans-serif;
     color: white;
+    text-shadow: 2px 2px 4px #000000
 }
+
 
 h2{
     color: white;

@@ -29,7 +29,10 @@ if(!isset($_POST['log'])){
                     $result = pg_query_params($dbconn,$q3,array($nick_email));
 
                     $_SESSION['nickname'] = pg_fetch_result($result,0,0);
-                    echo $_SESSION['nickname'];
+                    //echo $_SESSION['nickname'];
+                     echo $_SESSION['nickname'];
+
+
 
                     
                 }
