@@ -1,7 +1,6 @@
 <?php
 if(!isset($_POST['log'])){
-    echo "sium";
-   //header("Location: /");
+    header("Location: /");
 }
 {
     $dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape 
