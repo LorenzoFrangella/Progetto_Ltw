@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -25,27 +26,24 @@
           <li><a href="#chi_siamo" id="chi_siamo" class="acti nav-link px-2 text-white">Chi siamo</a></li>
           <li><a href="./classifica.php" id="classifica" class="acti nav-link px-2 text-white">Classifica</a></li>
         </ul>
-
-        <div class="text-end">
-         <a href="./login.php"><button type="button" class="btn btn-outline-light me-2">Accedi</button></a>
-          <a href="./registrazione.php"><button type="button" class="btn btn-warning">Registrati</button></a>
-          
+        <div class='text-end'>
+              <a href='./login.php'><button type='button' class='btn btn-outline-light me-2'>Accedi</button></a>
+              <a href='./registrazione.php'><button type='button' class='btn btn-warning'>Registrati</button></a>
         </div>
       </div>
     </div>
   </header>
+  <?php if(isset($_SESSION['nickname'])){
+    echo 'sparagn e cumparisc';
+  }
+
+
+?>
   <div class="container" style="height:600px;"><h1 class="animated bounceInDown">Sei pronto a metterti in gioco?</h1></div>
   <div class="container" id="chi_siamo" style="height:600px"><h1>Chi siamo</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
-  <script>
-  $(document).ready(function(){
-       $("ul.nav-link li").hover(function(){
-        $(this).css("color", "yellow");
-        });
-  });
-</script>
 </body>
 </html>
 
