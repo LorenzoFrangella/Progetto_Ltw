@@ -1,8 +1,9 @@
 <?php
+session_start();
 if(!isset($_POST['log'])){
     header("Location: /");
 }
-{
+else{
     $dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape 
     user=postgres password=biar")
     or die ('Could not connect: '. pg_last_error());//questo va levato!!! 
@@ -32,7 +33,7 @@ if(!isset($_POST['log'])){
                     //echo $_SESSION['nickname'];
                      echo $_SESSION['nickname'];
                     $_SESSION['render'] = 1;
-                    //header("Location: /");
+                    header("Location: /");
                 }
             }
         }
