@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <title>HomEscape</title>
+    <title>HouseEscape</title>
     <link rel="icon" href="./img/exit.png">
 </head>
     <body>
