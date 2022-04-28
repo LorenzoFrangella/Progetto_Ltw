@@ -32,12 +32,13 @@
             <a href='./registrazione.php'><button type='button' class='btn btn-warning'>Registrati</button></a>
           </div>";
         }
-        else{
-          echo "<div class = 'text-end'><a href=''>Benvenut* ".$_SESSION["nickname"]."</a></div>";
+        else{ 
+          echo "<div class = 'text-end'><a class = 'nome'> ".$_SESSION["nickname"]."</a>
+              <img src='./img/logo_utente.jpg' style='width: 60px; border-radius:50%'>";
+        /*<a href=''><button type='button' class = 'btn btn-warning'>Esci</button></a></div>"*/
         }
 
       ?>
-        
       </div>
     </div>
   </header>

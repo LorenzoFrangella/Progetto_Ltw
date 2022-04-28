@@ -13,6 +13,7 @@ body{
     border:double;
 }
 
+
 .container{
     border-color: #343a40;
 }
@@ -123,4 +124,12 @@ h5{
 }
 h6{
     color: white;
+}
+.nome{
+    background-color: #ffc107;
+    width: 80px !important;
+    border-radius:5px;
+    font-size: 20px;
+    margin-right: 10px;
+    padding:10px;
 }
