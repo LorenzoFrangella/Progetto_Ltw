@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="script" href="https://code.jquery.com/jquery-3.6.0.min.js">
     <title>HouseEscape</title>
     <link rel="icon" href="./img/exit.png">
 </head>
@@ -38,12 +39,8 @@
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
-  <script>
-  $(document).ready(function(){
-       $("li").hover(function(){
-        $(this).css("color", "yellow");
-        });
-  });
+<script>
+  $(".nav-link").hover.css( "color", "red" );
 </script>
 </body>
 </html> 
