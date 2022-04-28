@@ -83,6 +83,18 @@ input{
     padding: 20px;
 }
 
+a nav-link{
+    color: white;
+    transition: width 1s;
+}
+
+a:hover {
+    width: 100px;
+    color: #343a40;
+    background-color:yellow;
+
+}
+
 h1{
     position:static;
     padding-top: 250px;
