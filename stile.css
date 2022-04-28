@@ -88,7 +88,7 @@ input{
     padding: 20px;
 }
 
-a nav-link{
+.acti{
     color: white;
     transition: width 1s;
 }
@@ -97,7 +97,7 @@ a nav-link{
     border-radius: 5px;
     background-color: #ffc107;
     font-size: 20px;
-    color: #343a40;
+    color: #343a40 !important;
 }
 
 
