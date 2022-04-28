@@ -31,10 +31,8 @@ if(!isset($_POST['log'])){
                     $_SESSION['nickname'] = pg_fetch_result($result,0,0);
                     //echo $_SESSION['nickname'];
                      echo $_SESSION['nickname'];
-
-
-
-                    
+                    $_SESSION['render'] = 1;
+                    //header("Location: /");
                 }
             }
         }
