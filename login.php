@@ -10,7 +10,7 @@
     <title>HousEscape</title>
     <script src="valida_login.js" type="application/javascript"></script>    
 </head>
-<body>
+<body></body>
     <div class="spaziatura"></div>
     <div class = "container" id="formlogin">
         <h1 id="titolo_accedi">Accedi</h1>

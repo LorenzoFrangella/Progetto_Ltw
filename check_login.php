@@ -1,8 +1,8 @@
 <?php
-if(!isset($_POST['log'])){
+/*if(!isset($_POST['log'])){
     header("Location: /");
 }
-else{
+*/{
     $dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape 
     user=postgres password=biar")
     or die ('Could not connect: '. pg_last_error());//questo va levato!!! 
@@ -24,7 +24,7 @@ else{
                 $q2 = "select * from utente where (email = $1 || nickname = $1) and pass = $2";
                 $result = pg_query_params($dbconn,$q2,array($email,$password));
                 if($line=pg_fetch_array($result,null,PGSQL_ASSOC)){
-                    echo $line;
+                    //echo $line;
                     echo "<h1> Login completed successfully</h1>";
                     $_SESSION['email'] = $email;
                     $q3 = "select nickname from utente where email = $1";
