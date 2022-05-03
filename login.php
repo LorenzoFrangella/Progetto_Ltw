@@ -1,3 +1,4 @@
+<?php $errore=1 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,9 @@
         <form name="HousEscape_1" action="./check_login.php" method="POST" id="form_login" onsubmit="return valida_login()">
             <input type="text" id="nick_email" name = "nick_email" placeholder="Nickname o Email">
             <input type="password" id="password" name="password" placeholder="Password"><br/>
-            <button type="submit" id="log" name ="log" class="btn btn-warning"> Accedi</button>
+
+            <button type="submit" id="log" name ="log" class="btn btn-warning"> Accedi</button><br>
+            <p1 class = "error-message"><?php if($errore==1){echo "user not found";}?></p1>
         </form>
     </div>
 </body>
