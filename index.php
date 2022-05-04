@@ -8,9 +8,6 @@ if (isset($_GET['logout'])) {
 }
 
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
