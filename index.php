@@ -1,4 +1,16 @@
-<?php session_start();?>
+<?php session_start();
+
+function pulisci_sessione(){
+  session_unset();
+}
+if (isset($_GET['logout'])) {
+  pulisci_sessione();
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -7,6 +19,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.esm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>HouseEscape</title>
@@ -32,10 +49,16 @@
             <a href='./registrazione.php'><button type='button' class='btn btn-warning'>Registrati</button></a>
           </div>";
         }
-        else{ 
-          echo "<div class = 'text-end'><a class = 'nome'> ".$_SESSION["nickname"]."</a>
-              <img src='./img/logo_utente.jpg' style='width: 60px; border-radius:50%'>";
-        /*<a href=''><button type='button' class = 'btn btn-warning'>Esci</button></a></div>"*/
+        else if(isset($_SESSION['nickname'])){ 
+          echo '<div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <p1 class="nomeutente">'.$_SESSION['nickname'].'</p1>
+              <img src="./img/logo_utente.jpg" style="width: 35px; border-radius:50%">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="./profilo.php">Profilo</a>
+              <a class="dropdown-item"  href="index.php?logout=true">Esci</a>
+            </div>';
         }
 
       ?>
@@ -47,6 +70,8 @@
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
+
+
 </body>
 </html>
 
