@@ -11,4 +11,4 @@ if (document.HousEscape.nick_email.value=="") {
     x = document.HousEscape.nick_email.value;
     y = document.HousEscape.password.value;
     function verifica_utente(x,y){}
-}
+} 
