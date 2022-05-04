@@ -1,4 +1,4 @@
-<?php $errore=1 ?>
+<?php $errore=  0 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
