@@ -80,7 +80,7 @@ if (isset($_GET['logout'])){
   Immergiti in un'avventura stile escape room e attraverso enigmi, giochi di ingegno, rompicapi e indovinelli dovrai trovare il percorso per uscire dalla casa.
   <br>
   <br>
-  <div align="center"><i>COME SI GIOCA?</i></div><br>
+  <div align="center"><i>COME SI GIOCA?</i></div>
   <br>1-Se hai già un account effettua il login, altrimenti effettua la registrazione. <br>
   <br>2-Scegli il grado di difficoltà e inizia a giocare (più aumenti la difficoltà meno indizi avrai a disposizione). <br>
   <br>3-Divertiti!</h2></div>
@@ -88,10 +88,10 @@ if (isset($_GET['logout'])){
   <br>
   <br>
   <div class="container" id="chi_siamo" style="height:600px"><h1>Contatti</h1>
-  <h3><br>frangella.1899674@studenti.uniroma1.it<br>
-  <br>mastrandrea.1892793@studenti.uniroma1.it<br>
-  <br>laudati.1894372</i></h3>
-  </h3></div>
+  <h3><br>frangella.1899674@studenti.uniroma1.it
+  <br> mastrandrea.1892793@studenti.uniroma1.it 
+  <br> laudati.1894372@studenti.uniroma1.it</h3>
+  </div>
 
 </body>
 </html>
