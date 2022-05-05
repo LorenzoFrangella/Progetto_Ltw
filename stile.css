@@ -172,4 +172,23 @@ h6{
     margin-left: auto;
     margin-right: auto;
 }
+
+#box_email {
+    background-color: #333;
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    display: block;
+    transition: bottom 0.3s;
+  }
+  
+  #box_email h3{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
     
