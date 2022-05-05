@@ -127,7 +127,7 @@ if (isset($_GET['logout'])){
   <br>3-Divertiti!</h2></div>
   
 
-  <div class="container" id="chi_siamo" style="height:600px"><h1>Chi siamo</h1></div>
+  <div class="container" id="chi_siamo" style="height:600px"><h1>Contatti</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
   <div class="container" style="height:400px"><h1>Prova</h1></div>
