@@ -121,7 +121,6 @@ if (isset($_GET['logout'])){
   Immergiti in un'avventura stile escape room e attraverso enigmi, giochi di ingegno, rompicapi e indovinelli dovrai trovare il percorso per uscire dalla casa.
   <br>
   <br>
-  COME SI GIOCA?<br>
   <div align="center"><i>COME SI GIOCA?</i></div><br>
   <br>1-Se hai già un account effettua il login, altrimenti effettua la registrazione. <br>
   <br>2-Scegli il grado di difficoltà e inizia a giocare (più aumenti la difficoltà meno indizi avrai a disposizione). <br>
