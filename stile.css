@@ -160,3 +160,8 @@ h6{
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
 }
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1;
+}
