@@ -165,3 +165,8 @@ h6{
     top:0;
     z-index:1;
 }
+
+.fondo_nav{
+    margin-left: auto;
+    margin-right: auto;
+}

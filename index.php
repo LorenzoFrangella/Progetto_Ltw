@@ -14,7 +14,6 @@ if (isset($_GET['logout'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
-    <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/bootstrap.esm.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -54,13 +53,13 @@ if (isset($_GET['logout'])){
       </ul>
       <form class="d-flex">
       <?php if(!isset($_SESSION['nickname'])){
-          echo "<div class='text-end'>
+          echo "<div class='text-end fondo_nav'>
             <a href='./login.php'><button type='button' class='btn btn-outline-light me-2'>Accedi</button></a>
             <a href='./registrazione.php'><button type='button' class='btn btn-warning'>Registrati</button></a>
           </div>";
         }
         else if(isset($_SESSION['nickname'])){ 
-          echo '<div class="dropdown">
+          echo '<div class="dropdown fondo_nav">
             <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <p1 class="nomeutente">'.$_SESSION['nickname'].'</p1>
               <img src="./img/logo_utente.jpg" style="width: 35px; border-radius:50%">
@@ -76,46 +75,6 @@ if (isset($_GET['logout'])){
     </div>
   </div>
 </nav>
-
-
-
-    <!-- 
-    <header class="p-3 bg-dark text-white" style="position:sticky;top:0;z-index:1;">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <img src="./img/exit.png" style="width:40px;">
-            <h3 style="padding-top: 8px; padding-left:5px">HousEscape</h3>
-        </a>
-        <h1>test</h1>
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="padding-top:10px; padding-left:5px">
-          <li><a href="#" id="home" class="acti nav-link px-2 text-white">Home</a></li>
-          <li><a href="#chi_siamo" class="acti nav-link px-2 text-white">Chi siamo</a></li>
-          <li><a href="./classifica.php" id="classifica" class="acti nav-link px-2 text-white">Classifica</a></li>
-        </ul>
-        <?php if(!isset($_SESSION['nickname'])){
-          echo "<div class='text-end'>
-            <a href='./login.php'><button type='button' class='btn btn-outline-light me-2'>Accedi</button></a>
-            <a href='./registrazione.php'><button type='button' class='btn btn-warning'>Registrati</button></a>
-          </div>";
-        }
-        else if(isset($_SESSION['nickname'])){ 
-          echo '<div class="dropdown">
-            <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <p1 class="nomeutente">'.$_SESSION['nickname'].'</p1>
-              <img src="./img/logo_utente.jpg" style="width: 35px; border-radius:50%">
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="./profilo.php">Profilo</a>
-              <a class="dropdown-item"  href="index.php?logout=true">Esci</a>
-            </div>';
-        }
-
-      ?>
-      </div>
-    </div>
-    -->
-  </header>
   <div class="container" style="height:600px;"><h1 class="titolo animated bounceInDown">Sei pronto a metterti in gioco?</h1> <br>
 <h2>Divertiti e mettiti alla prova con HousEscape!
   Immergiti in un'avventura stile escape room e attraverso enigmi, giochi di ingegno, rompicapi e indovinelli dovrai trovare il percorso per uscire dalla casa.
