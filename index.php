@@ -125,13 +125,13 @@ if (isset($_GET['logout'])){
   <br>1-Se hai già un account effettua il login, altrimenti effettua la registrazione. <br>
   <br>2-Scegli il grado di difficoltà e inizia a giocare (più aumenti la difficoltà meno indizi avrai a disposizione). <br>
   <br>3-Divertiti!</h2></div>
-  
-
-  <div class="container" id="chi_siamo" style="height:600px"><h1>Contatti</h1></div>
-  <div class="container" style="height:400px"><h1>Prova</h1></div>
-  <div class="container" style="height:400px"><h1>Prova</h1></div>
-  <div class="container" style="height:400px"><h1>Prova</h1></div>
-
+  <br>
+  <br>
+  <div class="container" id="chi_siamo" style="height:600px"><h1>Contatti</h1>
+  <h2><br><i>frangella.1899674@studenti.uniroma1.it</i><br>
+  <br><i>mastrandrea.1892793@studenti.uniroma1.it</i> <br>
+  <br><i>laudati.1894372</i></h2>
+  </h2></div>
 
 </body>
 </html>
