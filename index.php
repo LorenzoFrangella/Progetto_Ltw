@@ -123,7 +123,6 @@ if (isset($_GET['logout'])){
   <br>
   <div align="center"><i>COME SI GIOCA?</i>
   <br>
-  <br>
   <br>1-Se hai già un account effettua il login, altrimenti effettua la registrazione. <br>
   <br>2-Scegli il grado di difficoltà e inizia a giocare (più aumenti la difficoltà meno indizi avrai a disposizione). <br>
   <br>3-Divertiti!</h2></div>
@@ -133,15 +132,29 @@ if (isset($_GET['logout'])){
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <div class="container" style="height:600px;"><h1>Contatti</h1>
+  <br></div>
+  <div class="container" id="chi_siamo" style="height:600px"><h1>Contatti</h1>
   <h3><img src="./img/email.png" style="width:40px;">  frangella.1899674@studenti.uniroma1.it
   <br><img src="./img/email.png" style="width:40px;">  mastrandrea.1892793@studenti.uniroma1.it 
   <br><img src="./img/email.png" style="width:40px;">  laudati.1894372@studenti.uniroma1.it</h3>
-  </div>
+ 
+  <div id="box_email">
+    <<h3><img src="./img/email.png" style="width:40px;">  frangella.1899674@studenti.uniroma1.it
+  <br><img src="./img/email.png" style="width:40px;">  mastrandrea.1892793@studenti.uniroma1.it 
+  <br><img src="./img/email.png" style="width:40px;">  laudati.1894372@studenti.uniroma1.it</h3>
+      </div>   
+  <script>
+When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("box_email").style.bottom = "0";
+  } else {
+    document.getElementById("box_email").style.bottom = "-50px";
+  }
+}
+</script>
 </body>
 </html>
 
