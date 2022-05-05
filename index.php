@@ -84,10 +84,11 @@ if (isset($_GET['logout'])){
   <br>
   <br>1-Se hai già un account effettua il login, altrimenti effettua la registrazione. <br>
   <br>2-Scegli il grado di difficoltà e inizia a giocare (più aumenti la difficoltà meno indizi avrai a disposizione). <br>
-  <br>3-Divertiti!</h2></div>
+  <br>3-Divertiti!</h2><a href='./primo_livello.php'><button type='button' class='btn btn-warning'><b>Inizia a giocare!</b></button></div>
   <br>
   <br>
   <br>
+  </a>
   <br>
   <br></div>
   <div class="container" id="chi_siamo" style="height:600px"><h1>Contatti</h1>
