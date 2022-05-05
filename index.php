@@ -34,7 +34,7 @@ if (isset($_GET['logout'])){
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="padding-top:10px; padding-left:5px">
-          <li><a href="#home" id="home" class="acti nav-link px-2 text-white">Home</a></li>
+          <li><a href="#" id="home" class="acti nav-link px-2 text-white">Home</a></li>
           <li><a href="#chi_siamo" class="acti nav-link px-2 text-white">Chi siamo</a></li>
           <li><a href="./classifica.php" id="classifica" class="acti nav-link px-2 text-white">Classifica</a></li>
         </ul>
@@ -60,7 +60,7 @@ if (isset($_GET['logout'])){
       </div>
     </div>
   </header>
-  <div class="container" id="home" style="height:600px;"><h1 class="animated bounceInDown">Sei pronto a metterti in gioco?</h1> <br>
+  <div class="container" style="height:600px;"><h1 class="animated bounceInDown">Sei pronto a metterti in gioco?</h1> <br>
 <h2 class = "home_index">Divertiti e mettiti alla prova con HousEscape!
   Immergiti in un'avventura stile escape room e attraverso enigmi, giochi di ingegno, rompicapi e indovinelli dovrai trovare il percorso per uscire dalla casa.
   <br>
