@@ -86,11 +86,12 @@ if (isset($_GET['logout'])){
   <br>3-Divertiti!</h2></div>
   <br>
   <br>
+  <br>
   <div class="container" id="chi_siamo" style="height:600px"><h1>Contatti</h1>
-  <h2><br><i>frangella.1899674@studenti.uniroma1.it</i><br>
-  <br><i>mastrandrea.1892793@studenti.uniroma1.it</i> <br>
-  <br><i>laudati.1894372</i></h2>
-  </h2></div>
+  <h3><br>frangella.1899674@studenti.uniroma1.it<br>
+  <br>mastrandrea.1892793@studenti.uniroma1.it<br>
+  <br>laudati.1894372</i></h3>
+  </h3></div>
 
 </body>
 </html>
