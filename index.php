@@ -32,7 +32,7 @@ if (isset($_GET['logout'])){
             <img src="./img/exit.png" style="width:40px;">
             <h3 style="padding-top: 8px; padding-left:5px">HousEscape</h3>
         </a>
-
+        <h1>test</h1>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="padding-top:10px; padding-left:5px">
           <li><a href="#" id="home" class="acti nav-link px-2 text-white">Home</a></li>
           <li><a href="#chi_siamo" class="acti nav-link px-2 text-white">Chi siamo</a></li>
