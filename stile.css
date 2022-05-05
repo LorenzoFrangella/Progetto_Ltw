@@ -142,3 +142,8 @@ h6{
     position:relative;
     top: 2px;
 }
+
+.home_index{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
