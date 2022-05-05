@@ -25,6 +25,61 @@ if (isset($_GET['logout'])){
     <link rel="icon" href="./img/exit.png">
 </head>
     <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+      <img src="./img/exit.png" style="width:40px;">
+      <h3 style="padding-top: 8px; padding-left:5px">HousEscape</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="padding-top:10px; padding-left:5px">
+            <li><a href="#" id="home" class="acti nav-link px-2 text-white">Home</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="padding-top:10px; padding-left:5px">
+            <li><a href="#" id="home" class="acti nav-link px-2 text-white">Home</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="padding-top:10px; padding-left:5px">
+            <li><a href="#" id="home" class="acti nav-link px-2 text-white">Home</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+      <?php if(!isset($_SESSION['nickname'])){
+          echo "<div class='text-end'>
+            <a href='./login.php'><button type='button' class='btn btn-outline-light me-2'>Accedi</button></a>
+            <a href='./registrazione.php'><button type='button' class='btn btn-warning'>Registrati</button></a>
+          </div>";
+        }
+        else if(isset($_SESSION['nickname'])){ 
+          echo '<div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <p1 class="nomeutente">'.$_SESSION['nickname'].'</p1>
+              <img src="./img/logo_utente.jpg" style="width: 35px; border-radius:50%">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="./profilo.php">Profilo</a>
+              <a class="dropdown-item"  href="index.php?logout=true">Esci</a>
+            </div>';
+        }
+
+      ?>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+    <!-- 
     <header class="p-3 bg-dark text-white" style="position:sticky;top:0;z-index:1;">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -59,6 +114,7 @@ if (isset($_GET['logout'])){
       ?>
       </div>
     </div>
+    -->
   </header>
   <div class="container" style="height:600px;"><h1 class="titolo animated bounceInDown">Sei pronto a metterti in gioco?</h1> <br>
 <h2>Divertiti e mettiti alla prova con HousEscape!
