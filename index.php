@@ -34,7 +34,7 @@ if (isset($_GET['logout'])){
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="padding-top:10px; padding-left:5px">
-          <li><a href="#" id="home" class="acti nav-link px-2 text-white">Home</a></li>
+          <li><a href="#home" id="home" class="acti nav-link px-2 text-white">Home</a></li>
           <li><a href="#chi_siamo" class="acti nav-link px-2 text-white">Chi siamo</a></li>
           <li><a href="./classifica.php" id="classifica" class="acti nav-link px-2 text-white">Classifica</a></li>
         </ul>
