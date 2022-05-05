@@ -172,11 +172,11 @@ h6{
     margin-left: auto;
     margin-right: auto;
 }
-
+/*
 #box_email {
     background-color: #333;
     position: fixed;
-    bottom: -50px;
+    bottom: -160px;
     width: 100%;
     display: block;
     transition: bottom 0.3s;
@@ -191,4 +191,23 @@ h6{
     text-decoration: none;
     font-size: 17px;
   }
-    
+  <div id="box_email">
+  <h3><img src="./img/email.png" style="width:40px;">frangella.1899674@studenti.uniroma1.it
+  <br><img src="./img/email.png" style="width:40px;">mastrandrea.1892793@studenti.uniroma1.it 
+  <br><img src="./img/email.png" style="width:40px;">laudati.1894372@studenti.uniroma1.it</h3>
+      </div>   
+  <script>
+//When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementById("box_email").style.bottom = "0";
+  } else {
+    document.getElementById("box_email").style.bottom = "-160px";
+  }
+}
+</script>/*
+.contatti{
+    margin-top: 100px;
+}

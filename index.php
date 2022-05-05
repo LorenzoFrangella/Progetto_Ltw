@@ -14,7 +14,6 @@ if (isset($_GET['logout'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
-    <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/bootstrap.esm.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -137,24 +136,8 @@ if (isset($_GET['logout'])){
   <h3><img src="./img/email.png" style="width:40px;">  frangella.1899674@studenti.uniroma1.it
   <br><img src="./img/email.png" style="width:40px;">  mastrandrea.1892793@studenti.uniroma1.it 
   <br><img src="./img/email.png" style="width:40px;">  laudati.1894372@studenti.uniroma1.it</h3>
- 
-  <div id="box_email">
-    <<h3><img src="./img/email.png" style="width:40px;">  frangella.1899674@studenti.uniroma1.it
-  <br><img src="./img/email.png" style="width:40px;">  mastrandrea.1892793@studenti.uniroma1.it 
-  <br><img src="./img/email.png" style="width:40px;">  laudati.1894372@studenti.uniroma1.it</h3>
-      </div>   
-  <script>
-When the user scrolls down 20px from the top of the document, slide down the navbar
-window.onscroll = function() {scrollFunction()};
+      </div>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("box_email").style.bottom = "0";
-  } else {
-    document.getElementById("box_email").style.bottom = "-50px";
-  }
-}
-</script>
 </body>
 </html>
 
