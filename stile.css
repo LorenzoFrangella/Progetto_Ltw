@@ -189,7 +189,7 @@ a:hover{
 }
 
 .bottone_inizio{
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
     height: 100px;
     width: 300px;
@@ -198,6 +198,9 @@ a:hover{
 .regbtn{
     position:relative;
     top: 19px;
+}
+.contatti{
+    margin-top: 250px;
 }
 
 /*
@@ -235,8 +238,12 @@ function scrollFunction() {
     document.getElementById("box_email").style.bottom = "-160px";
   }
 }
-</script>/*
-.contatti{
-    margin-top: 100px;
+</script>*/
+#contacts{
+    font-size: 18px;
 }
-
+@media (min-width:600px){
+    #contacts{
+        font-size: 22px;
+    }
+}

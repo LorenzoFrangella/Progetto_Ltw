@@ -27,7 +27,7 @@ else{
                 $data = pg_query_params($dbconn,$q2,array($nick_email,$password));
                 $num_risultati = pg_num_rows($data);
                 if($num_risultati==1){
-                    $username = pg_fetch_result($data,0,0);
+                    $username = pg_fetch_result($data,0,2);
                     $_SESSION['nickname'] = $username;
                     //echo $_SESSION['nickname'];
                     echo $_SESSION['nickname'];

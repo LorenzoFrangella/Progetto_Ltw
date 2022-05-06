@@ -31,10 +31,11 @@ else {
                     $data = pg_query_params($dbconn, $q2,
                         array($nome,$cognome,$nickname,$email,$password));
                     if ($data) {
-                        echo "<h1> Registration is completed. 
+                        /*echo "<h1> Registration is completed. 
                             Start using the website <br/></h1>";
                         echo "<a href=../Welcome.php?name=$nome> Premi qui </a>
-                            per inziare ad utilizzare il sito web";
+                            per inziare ad utilizzare il sito web";*/
+                            header("Location: /");
                     }
                 }
             }
