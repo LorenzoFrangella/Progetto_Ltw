@@ -98,6 +98,8 @@ if (isset($_GET['logout'])){
   <br></div>
   <div class="container" style="margin-top:100px;" id="chi_siamo">
     <h1 class = "contatti" style="text-align:center">Contatti</h1>
+    <br/>
+    <br/>
     <div class= "container flex">
       <h3 id="contacts"><img src="./img/email.png" style="width:40px;">
       frangella.1899674@studenti.uniroma1.it</h3>

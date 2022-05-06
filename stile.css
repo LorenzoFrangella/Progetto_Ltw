@@ -200,7 +200,7 @@ a:hover{
     top: 19px;
 }
 .contatti{
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 /*
@@ -240,10 +240,18 @@ function scrollFunction() {
 }
 </script>*/
 #contacts{
+    margin-top: 20px;
     font-size: 18px;
 }
 @media (min-width:600px){
     #contacts{
         font-size: 22px;
     }
+    
+}
+@media (max-width:1000px){
+    .contatti{
+        margin-top: 300px;
+    }
+    
 }
