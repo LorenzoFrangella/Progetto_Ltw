@@ -1,4 +1,6 @@
-<?php $errore=  0 ?>
+<?php 
+session_start();
+$errore=  0 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,7 @@
     <link rel="stylesheet" href="./stile.css">
     <link rel="shortcut icon" href="./img/exit.png" type="image/x-icon">
     <title>HousEscape</title>
-    <script src="valida_login.js" type="application/javascript"></script>    
+    <script src="./valida_login.js" type="application/javascript"></script>    
 </head>
 <body></body>
     <div class="spaziatura"></div>
@@ -21,6 +23,14 @@
 
             <button type="submit" id="log" name ="log" class="btn btn-warning"> Accedi</button><br>
             <p1 class = "error-message"><?php if($errore==1){echo "user not found";}?></p1>
+            <div style="position:relative;bottom:-20px;color:red">
+            <?php 
+            if(isset($_GET['error']) && $_GET['error']=='error_username_or_pass' ) echo"<p1>Nome Utente o Password Errati!</p1>";
+            if(isset($_GET['error']) && $_GET['error']=='usr_not_found' ) echo" <p1>Utente non trovato!</p1>";
+            ?>
+
+            </div>
+            <div style="position:relative;bottom:-30px"><p1> Non hai un account? <span><a href="./registrazione.php">Registrati</a></span></p1></div>
         </form>
     </div>
 </body>

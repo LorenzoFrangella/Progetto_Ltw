@@ -16,6 +16,7 @@ body{
 
 .container{
     border-color: #343a40;
+    min-height: 300px;
 }
 
 .spaziatura{
@@ -67,7 +68,6 @@ input{
 
 #reg{
     position: relative;
-    bottom: -30px;
 }
 
 #cont_class{
@@ -97,8 +97,8 @@ input{
 .acti:hover {
     border-radius: 5px;
     background-color: #ffc107;
-    font-size: 20px;
     color: #343a40 !important;
+    text-decoration: underline;
 }
 
 h1{
@@ -167,11 +167,36 @@ h6{
     top:0;
     z-index:1;
 }
+a{
+    color: #ffc107;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: #ffc107;
+    text-decoration: underline;
+}
+
 
 .fondo_nav{
     margin-left: auto;
     margin-right: auto;
 }
+
+.logo{
+    padding-left:30px;
+}
+
+.bottone_inizio{
+    margin-top: 40px;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    font-size: 30px;
+}
+
+
 /*
 #box_email {
     background-color: #333;
@@ -211,3 +236,4 @@ function scrollFunction() {
 .contatti{
     margin-top: 100px;
 }
+

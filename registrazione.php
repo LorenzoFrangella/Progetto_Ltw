@@ -36,6 +36,7 @@
             <button type="submit" id="reg" 
             name="reg" class="btn btn-warning"> Registrati</button>
         </form>
+        <div style="position:relative;bottom:-20px"><p1>Hai già un account?  <span><a href="./registrazione.php">Accedi</a></span></p1></div>
     </div>
 </body>
 </html>

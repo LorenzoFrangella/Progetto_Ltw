@@ -22,19 +22,27 @@ else{
             $result = pg_query_params($dbconn,$q1,array($nick_email));
             if($line= pg_fetch_array($result,null,PGSQL_ASSOC)){
                 $password = md5($_POST['password']);
-                $q2 = "select * from utente where (email = $1 or nickname = $1) and pass = $2";
-                $data = pg_query_params($dbconn,$q2,array($nick_email,$password));
-                if($data){
-                    echo "<h1> Login completed successfully</h1>";
-                    $q3 = "select nickname from utente where email = $1 or nickname = $1";
-                    $result = pg_query_params($dbconn,$q3,array($nick_email));
 
-                    $_SESSION['nickname'] = pg_fetch_result($result,0,0);
+                $q2 = "select * from utente where (email = $1 or nickname=$1) and pass = $2";
+                $data = pg_query_params($dbconn,$q2,array($nick_email,$password));
+                $num_risultati = pg_num_rows($data);
+                if($num_risultati==1){
+                    $username = pg_fetch_result($data,0,0);
+                    $_SESSION['nickname'] = $username;
                     //echo $_SESSION['nickname'];
-                     echo $_SESSION['nickname'];
+                    echo $_SESSION['nickname'];
                     $_SESSION['render'] = 1;
-                    header("Location: /");
+
+                    if(!isset($_SESSION['begin_game']))header("Location: /");
+
+                    else header("Location: /primo_livello.php");
                 }
+                else{
+                    header("Location: /login.php?error=error_username_or_pass");
+                }
+            }
+            else{
+                header("Location: /login.php?error=usr_not_found");
             }
         }
     ?>

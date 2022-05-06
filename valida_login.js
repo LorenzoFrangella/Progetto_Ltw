@@ -1,14 +1,13 @@
-function valida_registrazione(){
-if (document.HousEscape.nick_email.value=="") {
-    alert("Inserire l'email");
-    return false;
+function valida_login(){    
+    var email = document.getElementById("nick_email").value;
+    if(email == ""){
+        alert("Inserire Email o Nickname");
+        return false;
     }
-    if (document.HousEscape.password.value=="") {
-    alert("Inserire password");
-    return false;
+    var password = document.getElementById("password").value;
+    if(password == ""){
+        alert("Inserire la password");
+        return false;
     }
-    var x,y;
-    x = document.HousEscape.nick_email.value;
-    y = document.HousEscape.password.value;
-    function verifica_utente(x,y){}
-} 
+    return true;
+}
