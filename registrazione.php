@@ -20,21 +20,25 @@
         <h1 id="titolo_registrati">Registrati</h1>
         <form name="HousEscape" action="ceck_registrazione.php" method="POST" id="form_registrazione" 
         action="./ceck_registrazione.php" onsubmit="return valida_registrazione()">
-            <input type="text" name="reg_name" id="nome" value="test"
+            <input type="text" name="reg_name" id="nome" 
              placeholder="Nome">
-            <input type="text" name="reg_surn" id="cognome" value="test"
+            <input type="text" name="reg_surn" id="cognome"
             placeholder="Cognome"><br>
-            <input type="text" name="reg_nick" id="nickname" value="test"
+            <input type="text" name="reg_nick" id="nickname" 
             placeholder="Nickname">
-            <input type="email" name="email" id="email" value="mail@test.com"
+            <input type="email" name="email" id="email"
             placeholder="Email"><br>
-            <input type="password" name="reg_pass" id="password" value="12345678"
+            <input type="password" name="reg_pass" id="password" 
             placeholder="Password">
-            <input type="password" id="conferma_password" value="12345678"
+            <input type="password" id="conferma_password"
             placeholder="Conferma password"><br>
-            <p1 class="error" id="errore"></p1> <br>
+            <p1 class="error" id="errore">
+                <?php
+                if(isset($_GET["error"]) && $_GET["error"]=="alr_reg") echo "Nome utente già utilizzato"
+                ?>
+            </p1> <br>
             <button type="submit" id="reg" 
-            name="reg" class="btn btn-warning"> Registrati</button>
+            name="reg" class="btn btn-warning regbtn"> Registrati</button>
         </form>
         <div style="position:relative;bottom:-20px"><p1>Hai già un account?  <span><a href="./registrazione.php">Accedi</a></span></p1></div>
     </div>

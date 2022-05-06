@@ -20,8 +20,7 @@ else {
                 $q1="select * from utente where email= $1";
                 $result = pg_query_params($dbconn, $q1, array($email));
                 if ($line=pg_fetch_array($result, null, PGSQL_ASSOC)) {
-                    echo "<h1> Sorry, you are already a registered user</h1>
-                        <a href=./login.php> Click here to login </a>";
+                    header("location: /registrazione.php?error=alr_reg");
                 }
                 else {
                     $nome = $_POST['reg_name'];

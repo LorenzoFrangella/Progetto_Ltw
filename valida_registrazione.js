@@ -1,4 +1,5 @@
 function valida_registrazione(){
+    document.getElementById("errore").innerHTML="";
     var debug = true;
         if (document.HousEscape.nome.value=="") {
         //if(debug)alert("Inserire nome");

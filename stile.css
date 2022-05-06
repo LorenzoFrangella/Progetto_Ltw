@@ -195,7 +195,10 @@ a:hover{
     width: 300px;
     font-size: 30px;
 }
-
+.regbtn{
+    position:relative;
+    top: 19px;
+}
 
 /*
 #box_email {
