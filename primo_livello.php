@@ -15,5 +15,16 @@ $_SESSION['begin_game'] = true;
     <title>HousEscape</title>
 </head>
 <body>
+<div class="image" onmousemove="moveTorch(event)">
+    <img src="./img/casa_quattro.jpg">
+  <div class="torch"></div>
+</div>
+<script>
+    function moveTorch(event){
+  var torch = document.getElementsByClassName("torch")[0];
+  torch.style.clipPath = `circle(80px at ${event.offsetX}px ${event.offsetY}px)`;
+}
+</script>
+
 </body>
 </html>
