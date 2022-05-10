@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="primolivello.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="./js/jquery.rwdImageMaps.min.js"></script>
+    <script src="./js/jquery.rwdImageMaps.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -21,6 +21,7 @@
     <script>
         function moveTorch(event){
             var torch = document.getElementsByClassName("torch")[0];
+            var rad = $(window).height()*0.1;
             torch.style.clipPath = `circle(100px at ${event.offsetX}px ${event.offsetY}px)`;
         }
         </script>
