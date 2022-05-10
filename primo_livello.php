@@ -22,11 +22,13 @@ $_SESSION['begin_game'] = true;
     </nav>
     <div class="bg" onmousemove="moveTorch(event)"></div>
     <div class="torch" ></div>
+    <div class= "cursor"> </div>
     <script>
         function moveTorch(event){
             var torch = document.getElementsByClassName("torch")[0];
             torch.style.clipPath = `circle(100px at ${event.offsetX}px ${event.offsetY}px)`;
         }
         </script>
+    
 </body>
 </html>
