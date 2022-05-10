@@ -3,17 +3,10 @@ body {
     cursor: url("./img/torcia.png"),auto;
     background-color: black;
   }
-.bg, .torch{
+.bg{
   position: absolute;
-<<<<<<< Updated upstream
-  width: 100%;
-  height: 100%;
-=======
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
->>>>>>> Stashed changes
+  width: 1360px;
+  height: 765px;
   border-color: aquamarine;
   border: double;  
   /*background-image: url("./img/casa_quattro.png");
@@ -21,7 +14,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;*/
 }
-
+.torch > img{
+  width:100%;
+  height:auto;
+}
 .bg{
   filter: brightness(5%)
 }
