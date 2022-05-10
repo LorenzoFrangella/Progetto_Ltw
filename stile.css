@@ -261,6 +261,7 @@ function scrollFunction() {
     height: auto;
     width: 80vw;
     background-color: white;
+    text-align: center;
     margin-top: 50px;
     aspect-ratio: 1.77;
 }
