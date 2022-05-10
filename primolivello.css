@@ -1,23 +1,22 @@
 body {
-    margin:0px;
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#000;
+    overflow: hidden;
   }
-  .image {
-    width:600px;
-    height:400px;
-    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), center no-repeat;
-    background-size:cover;
-    border:10px solid #888;
-    cursor:none;
-  }
-  .image .torch {
-    width:600px;
-    height:400px;
-    background:url("https://bit.ly/2ynOIQV") center no-repeat;
-    background-size:cover;  
-    clip-path:circle(80px at 0px 0px);
-  }
+.bg, .torch{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/casa_quattro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg{
+  filter: brightness(5%)
+}
+
+.torch{
+  clip-path: circle(64px at 0 0);
+}

@@ -1,27 +1,22 @@
 <?php
 session_start();
 $_SESSION['begin_game'] = true;
-//if(!isset($_SESSION['nickname']))header("Location: ./login.php");
+if(!isset($_SESSION['nickname']))header("Location: ./login.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./primolivello.css">
-    <title>Document</title>
+        <title>Document</title>
 </head>
 <body>
-<div class="image" onmousemove="moveTorch(event)">
-    <img src="./img/casa_quattro.jpg">
-  <div class="torch"></div>
-</div>
-<script>
-    function moveTorch(event){
-  var torch = document.getElementsByClassName("torch")[0];
-  torch.style.clipPath = `circle(80px at ${event.offsetX}px ${event.offsetY}px)`;
-}
-</script>
+    <div class="bg" onmousemove="moveTorch(event)"></div>
+    <div class="torch" ></div>
+    <script>
+        function moveTorch(event){
+            var torch = document.getElementsByClassName("torch")[0];
+            torch.style.clipPath = `circle(100px at ${event.offsetX}px ${event.offsetY}px)`;
+        }
+        </script>
 </body>
 </html>
