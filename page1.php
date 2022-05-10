@@ -21,8 +21,14 @@
     <script>
         function moveTorch(event){
             var torch = document.getElementsByClassName("torch")[0];
+<<<<<<< Updated upstream
             var rad = $(window).height()*0.1;
             torch.style.clipPath = `circle(100px at ${event.offsetX}px ${event.offsetY}px)`;
+=======
+            //alert($(window).height());
+            var r = $(window).width()*0.07;
+            torch.style.clipPath = `circle(${r}px at ${event.offsetX}px ${event.offsetY}px)`;
+>>>>>>> Stashed changes
         }
         </script>
         <script>

@@ -2,6 +2,9 @@ body{
     background-color: #343a40;
     background-image: url(./img/sfondoprova.jpg);
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .row{
@@ -259,7 +262,7 @@ function scrollFunction() {
 .format{
     border-radius: 10px;
     height: auto;
-    width: 80vw;
+    width: 100%;
     background-color: white;
     text-align: center;
     margin-top: 50px;
@@ -269,7 +272,7 @@ function scrollFunction() {
     
 .inpage{
     aspect-ratio: 1.77;
-    width: 75vw;
+    width: 100%;
     height: auto;
     margin-top: 2.5vh;
 }
