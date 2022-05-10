@@ -27,7 +27,7 @@ $_SESSION['begin_game'] = true;
     </div>
     </nav>
     <div class="container format" >
-        <iframe class="inpage" src="page1.php" frameborder="0"></iframe>
+        <iframe class="inpage" src="page1.php" frameborder="0" scrolling="no"></iframe>
     </div>
     
 </body>

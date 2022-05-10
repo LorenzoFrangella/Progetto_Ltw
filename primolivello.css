@@ -5,12 +5,10 @@ body {
   }
 .bg, .torch{
   position: absolute;
-  top: 20;
-  left: 20;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   border-color: aquamarine;
-  border: double;
+  border: double;  
   /*background-image: url("./img/casa_quattro.png");
   background-size: cover;
   background-repeat: no-repeat;
