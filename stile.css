@@ -255,3 +255,20 @@ function scrollFunction() {
     }
     
 }
+
+.format{
+    border-radius: 10px;
+    height: 80vh;
+    width: 80vw;
+    background-color: white;
+    text-align: center;
+    min-width: 400px;
+    margin-top: 50px;
+}
+
+.inpage{
+    margin-top: 5vh;
+    height: 70vh;
+    width: 75vw;
+
+}
