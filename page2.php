@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/exit.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
+    <link rel="stylesheet" href="./primolivello.css">
     <title>HousEscape</title>
 </head>
 <body>
