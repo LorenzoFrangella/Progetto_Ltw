@@ -8,16 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container">
-    <div class="bg" onmousemove="moveTorch(event)"></div>
-    <div class="torch" ></div>
-    <div class= "cursor"> </div>
+<div class="bg" onmousemove="moveTorch(event)"></div>
+    <div class="torch" >
+      <img src="./img/casa_quattro.png" usemap="#interruttore">
+      <map name="interruttore">
+        <area shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="./login.php" title="interruttore">
+</map>
+    </div>
+</div>
     <script>
         function moveTorch(event){
             var torch = document.getElementsByClassName("torch")[0];
             torch.style.clipPath = `circle(100px at ${event.offsetX}px ${event.offsetY}px)`;
         }
-    </script>
+        </script>
     </div>    
     </div>
     

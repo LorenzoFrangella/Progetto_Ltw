@@ -17,7 +17,6 @@ $_SESSION['begin_game'] = true;
     <title>HousEscape</title>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a href="./index.php" class="logo d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
