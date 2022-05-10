@@ -4,7 +4,7 @@ $_SESSION['begin_game'] = true;
 if(!isset($_SESSION['nickname']))header("Location: ./login.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <link rel="stylesheet" href="./primolivello.css">
         <title>Document</title>
