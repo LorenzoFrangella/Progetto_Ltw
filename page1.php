@@ -18,7 +18,6 @@
         <area shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="#" onclick="illuminastanza();" title="interruttore">
 </map>
     </div>
-</div>
     <script>
         var scala = 0.07;
         var acceso = "off";

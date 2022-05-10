@@ -31,7 +31,7 @@ $_SESSION['begin_game'] = true;
       }
       window.onmessage = function(e) {
       if (e.data == 'abilita_movimenti') {
-        alert('Finalmente un pò di luce!!! Ora ci possiamo muovere senza problemi!');
+        alert("Finalmente un po' di luce! Ora ci possiamo muovere senza problemi!");
         enabled = true;
         document.getElementById('avanti').style.display = 'inline';
         document.getElementById('indietro').style.display = 'inline';
