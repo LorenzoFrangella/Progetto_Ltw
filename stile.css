@@ -261,17 +261,27 @@ function scrollFunction() {
 
 .format{
     border-radius: 10px;
-    height: 100%;
+    height: 70%;
     width: auto;
     background-color: white;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
+    max-height: 90vh;
 }
 
     
 .inpage{
     aspect-ratio: 1.77;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-top: 2.5vh;
+}
+
+#avanti{    
+    display: none;
+
+}
+
+#indietro{
+    display: none;
 }

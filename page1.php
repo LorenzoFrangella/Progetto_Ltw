@@ -26,6 +26,9 @@
             acceso = "on";
             scala = 2;
             document.body.style.cursor = "default";
+            moveTorch(event);
+            //la riga successiva serve per permettere alla pagina principale di far muovere tra le varie stanze
+            window.top.postMessage('abilita_movimenti', '*')
             //document.getElementById("torch")[0].style.removeProperty("clipPath");
     };
         function moveTorch(event){

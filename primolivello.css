@@ -1,7 +1,7 @@
 body {
     overflow: hidden;
     cursor: url("./img/torcia.png"),auto;
-    background-color: black;
+    background:black;
   }
 .bg{
   position: absolute;
@@ -17,7 +17,6 @@ body {
 .torch > img{
   width: 100%;
   height: auto;
-
 }
 .bg{
   filter: brightness(100%)
