@@ -14,7 +14,6 @@ $_SESSION['begin_game'] = true;
     <link rel="shortcut icon" href="./img/exit.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/bootstrap.esm.js"></script>
-    <script src="./js/bootstrap.bundle.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -50,7 +49,7 @@ $_SESSION['begin_game'] = true;
     </div>
     </nav>
     <div class="container format" >
-      <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
+      <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-interval=false data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <iframe class="inpage" src="page1.php"></iframe>
