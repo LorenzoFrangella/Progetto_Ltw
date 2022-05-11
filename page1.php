@@ -50,22 +50,35 @@
             torch.style.clipPath = `circle(${r}px at ${event.offsetX}px ${event.offsetY}px)`;
     }
     function popup(){
-	    var html = "<div class='sfondo'></div>"
-		  +"	<div class='corpo'>"
-		  +"		<p class='chiudi'>CHIUDI</p>"
-		  +"	</div>";
+        
+        var html = "<div class='sfondo'></div>"
+        +"	<div class='corpo'>"
+        +"		<p class='chiudi'>CHIUDI</p>"
+        +"	</div>";
 	    $("body").prepend(html);
+        $(document).ready(function(){
+            $("#luce").css("-webkit-filter", "blur(10px)");
+        });
         $(".sfondo, .chiudi").click(function() {popup_close();});
     }
     function popup_close(){
 	$(".sfondo, .corpo").remove();
+    $(document).ready(function(){
+            $("#luce").css("-webkit-filter", "blur(0px)");
+        });
     }
-    
         </script>
         <script>
             $(document).ready(function(e) {
                 $("#luce").rwdImageMaps();
             });
+        </script>
+        <script>
+            window.onmessage = function(e) {
+                if (e.data == 'rimuovifiltro') {
+                    popup_close();
+      }
+      };
         </script>
     </div>    
     </div>
