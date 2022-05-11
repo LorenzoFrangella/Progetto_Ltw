@@ -16,6 +16,8 @@
       <img src="./img/casa_quattro.png" usemap="#interruttore" id="luce" width="1360" height="765">
       <map name="interruttore">
         <area shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="#" onclick="illuminastanza();" title="interruttore">
+        <area shape="rect" alt="parte 2 immagine" coords="42,643,125,680" href="#" onclick="javascript:popup();" title="interruttore">
+
 </map>
     </div>
     <script>
@@ -35,6 +37,18 @@
             //alert($(window).height());
             var r = $(window).width()*scala;
             torch.style.clipPath = `circle(${r}px at ${event.offsetX}px ${event.offsetY}px)`;
+    }
+    function popup(){
+	    var html = "<div class='sfondo'></div>"
+		  +"	<div class='corpo'>"
+		  +" 		<div class='contenuto'></div>"
+		  +"		<p class='chiudi'>CHIUDI</p>"
+		  +"	</div>";
+	    $("body").prepend(html);
+        $(".sfondo, .chiudi").click(function() {popup_close();});
+    }
+    function popup_close(){
+	$(".sfondo, .corpo").remove();
     }
         </script>
         <script>
