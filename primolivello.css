@@ -45,6 +45,8 @@ body {
 	height: 50%;
 	background-color: #f7f7f7;
   background-image:url(/img/pergamena1.png);
+  background-image:url(/img/pergamena2.png);
+  background-repeat: no-repeat;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
