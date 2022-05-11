@@ -21,16 +21,27 @@
 </map>
     </div>
     <script>
+        var interruttore = false;
         var scala = 0.07;
         var acceso = "off";
+        const suono_interruttore = new Audio("./audio/interruttore.mp3");
         function illuminastanza(){
             acceso = "on";
             scala = 5;
             document.body.style.cursor = "default";
             moveTorch(event);
-            //la riga successiva serve per permettere alla pagina principale di far muovere tra le varie stanze
-            window.top.postMessage('abilita_movimenti', '*')
-            //document.getElementById("torch")[0].style.removeProperty("clipPath");
+            if(interruttore == false){
+                interruttore = true;
+                acceso = "on";
+                scala = 2;
+                suono_interruttore.play();
+                document.body.style.cursor = "default";
+                moveTorch(event);
+
+                //la riga successiva serve per permettere alla pagina principale di far muovere tra le varie stanze
+                window.top.postMessage('abilita_movimenti', '*')
+                //document.getElementById("torch")[0].style.removeProperty("clipPath");
+            }
     };
         function moveTorch(event){
             var torch = document.getElementsByClassName("torch")[0];
@@ -49,14 +60,14 @@
     function popup_close(){
 	$(".sfondo, .corpo").remove();
     }
+    
         </script>
         <script>
             $(document).ready(function(e) {
                 $("#luce").rwdImageMaps();
             });
-</script>
+        </script>
     </div>    
     </div>
-    
 </body>
 </html>

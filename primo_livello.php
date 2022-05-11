@@ -64,8 +64,8 @@ $_SESSION['begin_game'] = true;
       </div>
     </div>
     <div class="container">
-      <button class="btn btn-warning"  id="indietro" onclick="indietro()"><- Prec </button>
-      <button class="btn btn-warning" id="avanti" onclick="avanti()"> Succ-> </button>
+      <button class="btn btn-warning"  id="indietro" onclick="indietro()">← Indietro </button>
+      <button class="btn btn-warning" id="avanti" onclick="avanti()"> Avanti → </button>
     </div>
     
 </body>
