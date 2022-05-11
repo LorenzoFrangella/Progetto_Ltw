@@ -56,7 +56,7 @@ $_SESSION['begin_game'] = true;
       <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <iframe id="stanza1" class="inpage" src="page1.php"></iframe>
+            <iframe id="stanza1" class="inpage" src="introduzione.php"></iframe>
           </div>
           <div class="carousel-item ">
             <iframe class="inpage" src="page2.php"></iframe>

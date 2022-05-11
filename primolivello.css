@@ -25,7 +25,6 @@ body {
 .torch{
   clip-path: circle(64px at 0 0);
 }
-
 .sfondo {
 	position: fixed;
 	z-index: 9998;

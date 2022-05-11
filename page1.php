@@ -11,13 +11,13 @@
     <title>Document</title>
 </head>
 <body>
+   
 <div class="bg" onmousemove="moveTorch(event)"></div>
     <div class="torch" >
       <img src="./img/casa_quattro.png" usemap="#interruttore" id="luce" width="1360" height="765">
       <map name="interruttore">
         <area shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="#" onclick="illuminastanza();" title="interruttore">
         <area shape="rect" alt="parte 2 immagine" coords="42,643,125,680" href="#" onclick="javascript:popup();" title="interruttore">
-
 </map>
     </div>
     <script>

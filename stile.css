@@ -285,3 +285,53 @@ function scrollFunction() {
 #indietro{
     display: none;
 }
+/*.box_intro{
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: #343a4088;
+}*/
+.intro{
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 5vw;
+    font-family: sans-serif;
+    scrollbar-width: auto;
+}
+
+.box_intro {
+   
+    transform: translateY(100%);
+    
+    animation: my-animation 25s linear ;
+  }
+  
+
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  }
+  
+
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: Y(-100%);
+    }
+}
+
+.entra{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
