@@ -22,11 +22,15 @@ $_SESSION['begin_game'] = true;
       var enabled = false;
       function avanti(){
         if(enabled){
-        $('.carousel').carousel('next');}
+        $('.carousel').carousel('next');
+        document.getElementById("stanza1").contentWindow.popup_close();
+      }
       }
       function indietro(){
         if(enabled){
-        $('.carousel').carousel('prev');}
+        $('.carousel').carousel('prev');
+        document.getElementById("stanza1").contentWindow.popup_close();
+      }
       }
       window.onmessage = function(e) {
       if (e.data == 'abilita_movimenti') {
@@ -52,7 +56,7 @@ $_SESSION['begin_game'] = true;
       <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <iframe class="inpage" src="page1.php"></iframe>
+            <iframe id="stanza1" class="inpage" src="page1.php"></iframe>
           </div>
           <div class="carousel-item ">
             <iframe class="inpage" src="page2.php"></iframe>
