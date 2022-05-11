@@ -25,7 +25,7 @@
         var acceso = "off";
         function illuminastanza(){
             acceso = "on";
-            scala = 2;
+            scala = 5;
             document.body.style.cursor = "default";
             moveTorch(event);
             //la riga successiva serve per permettere alla pagina principale di far muovere tra le varie stanze
@@ -41,7 +41,6 @@
     function popup(){
 	    var html = "<div class='sfondo'></div>"
 		  +"	<div class='corpo'>"
-		  +" 		<div class='contenuto'></div>"
 		  +"		<p class='chiudi'>CHIUDI</p>"
 		  +"	</div>";
 	    $("body").prepend(html);

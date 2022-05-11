@@ -43,26 +43,29 @@ body {
 	left: 50%;
 	width: 50%;
 	height: 60%;
-  background-image:url(/img/pergamena3.png);
-  background-repeat: no-repeat;
-	-webkit-transform: translate(-50%, -50%);
+    background-image:url(/img/pergamena3.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	/*-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);*/
 	transform: translate(-50%, -50%);
-
+	cursor: url("./img/lente.png"),auto;
 }
 
 .chiudi {
 	position: absolute;
 	z-index: 9999;
-	top: 60%;
-	right: 45%;
-	padding: 20px 15px;
+	top: 62%;
+	right: 42%;
+	width: auto;
+	height: auto;
+	padding: 3vh 3vw;
 	font-family: Impact, Charcoal, sans-serif;
-	font-size: 20px;
+	font-size: 2vw;
 	font-weight: 100;
-	line-height: 25px;
+	line-height: 15px;
 	color: #f7f7f7;
 	background: red;
 	cursor: pointer;
