@@ -50,7 +50,7 @@ $_SESSION['begin_game'] = true;
     </div>
     </nav>
     <div class="container format" >
-      <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-interval="false" data-ride="carousel">
+      <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <iframe class="inpage" src="page1.php"></iframe>
