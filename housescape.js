@@ -103,3 +103,7 @@ $(document).ready(function(){
         $("#luce").css("-webkit-filter", "blur(0px)");
     });
 }
+
+function popup_piano(){
+    
+}
