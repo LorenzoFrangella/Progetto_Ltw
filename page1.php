@@ -16,14 +16,19 @@
 <div class="torch" >
     <img src="./img/casa_quattro.png" usemap="#interruttore" id="luce" width="1360" height="765">
     <map name="interruttore">
-        <area shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="#" onclick="illuminastanza();" title="interruttore">
-        <area shape="rect" alt="parte 2 immagine" coords="42,643,125,680" href="#" onclick="javascript:popup();" title="interruttore">
+        <area id="lumus" shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="#" onclick="illuminastanza();" title="interruttore">
+        <area id="pergamena" shape="rect" alt="parte 2 immagine" coords="42,643,125,680" href="#" onclick="javascript:popup();" title="pergamena" style="cursor:url('./img/torcia.png'),auto">
     </map>
 </div>
     <script>
         $(document).ready(function(e) {
             $("#luce").rwdImageMaps();
         });
+        $("#lumus").click(function(){
+            $("#pergamena").css("cursor","pointer");
+            $("#lumus").unbind('click').removeAttr("onclick")[0].onclick = null;
+            $("#lumus").css("cursor","default");
+        })
         window.onmessage = function(e) {
             if (e.data == 'rimuovifiltro') {
                 popup_close();

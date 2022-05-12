@@ -49,6 +49,8 @@
     $("#melodia").removeClass("blur");
     console.log(array_utente);
     if (JSON.stringify(array_utente) === JSON.stringify(mio_array)) {
+        $("#area").unbind('click').removeAttr("onclick")[0].onclick = null;
+        $("#area").css("cursor","default");
         alert('Bravo! La sequenza è corretta');
         return true;
     }
