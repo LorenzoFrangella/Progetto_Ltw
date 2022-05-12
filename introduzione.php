@@ -24,7 +24,7 @@ function stop_scroll()
     <link rel="icon" href="./img/exit.png">
     <title>Introduzione</title>
 </head>
-<body>
+<body id="sfondo_intro">
     <div class = "container" >
         <div class="box_intro" onmouseenter="stop_scroll()" onmouseleave="page_scroll()">
         <h2 class = "intro">

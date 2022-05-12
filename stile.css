@@ -295,43 +295,19 @@ function scrollFunction() {
 .intro{
     text-align: center;
     margin-top: 10vh;
-    font-size: 5vw;
-    font-family: sans-serif;
+    font-size: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-/*
-.box_intro {
-   
-    transform: translateY(100%);
-    
-    animation: my-animation 25s linear ;
-  }
-  
-
-  @-moz-keyframes my-animation {
-    from { -moz-transform: translateY(100%); }
-    to { -moz-transform: translateY(-100%); }
-  }
-  
-
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateY(100%); }
-    to { -webkit-transform: translateY(-100%); }
-  }
-  
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateY(100%);
-      -webkit-transform: translateY(100%);
-      transform: translateY(100%);
-    }
-    to {
-      -moz-transform: translateY(-100%);
-      -webkit-transform: translateY(-100%);
-      transform: Y(-100%);
-    }
-}*/
 
 .entra{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+#sfondo_intro{
+    background-image: url("./img/Casa-Abbandonata_intro.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
