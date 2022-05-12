@@ -36,5 +36,10 @@
                 }, 18000);
             });
     </script>
+    <script>
+        $(document).ready(function(){
+            $(".box_intro").hover
+        })
+        </script>
 </body>
 </html>
