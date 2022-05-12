@@ -101,7 +101,7 @@
 	-o-transition: 0.5s -o-filter linear;
   }
 
-  #close{
+#close{
 	  display: none;
 	position: absolute;
 	z-index: 9999;
@@ -119,3 +119,44 @@
 	background: red;
 	cursor: pointer;
   }
+
+#exit{
+display: none;
+position: absolute;
+z-index: 9999;
+border-radius: 5px;
+top: 15%;
+right: 10%;
+width: auto;
+height: auto;
+padding: 1vh 1vw;
+font-family: Impact, Charcoal, sans-serif;
+font-size: 2vw;
+font-weight: 100;
+line-height: 15px;
+color: #f7f7f7;
+background: red;
+cursor: pointer;
+}
+
+#progress{
+display: none;
+position: absolute;
+z-index: 9999;
+border-radius: 5px;
+top: 25%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+left:0;
+right: 0;
+width: 5%;
+height: auto;
+padding: 1vh 1vw;
+font-family: Impact, Charcoal, sans-serif;
+font-size: 2vw;
+font-weight: 100;
+line-height: 15px;
+color: #f7f7f7;
+background: red;
+}
