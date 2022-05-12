@@ -10,6 +10,6 @@
     <link rel="stylesheet" href="./primolivello.css">
     <title>HousEscape</title>
 </head>
-<body>
+<body id="sfondo_page2">
 </body>
 </html>

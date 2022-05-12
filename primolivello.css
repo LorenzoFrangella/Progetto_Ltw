@@ -70,3 +70,10 @@ body {
 	cursor: pointer;
 
 }
+#sfondo_page2{
+    background-image: url("./img/img2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
