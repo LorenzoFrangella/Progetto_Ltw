@@ -104,6 +104,8 @@ $(document).ready(function(){
     });
 }
 
+var array_utente = Array();
+var mio_array=new Array("Fa","Mi","Re", "Sol", "Si");
 function popup_piano(){
     $(document).getElementById("pianoforte").style.display = "inline";
-    }
+}

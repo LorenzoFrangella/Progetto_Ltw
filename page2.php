@@ -20,21 +20,21 @@
             <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
         </map>
         <div class="pianoforte" style="position:absolute;z-index:9999;top:30%;left:30%;display: none;">
-        <button class="white-key C4-key">Do</button>
+        <button class="white-key C4-key" onclick="array_utente.push('Do')">Do</button>
         <button class="black-key Db4-key"></button>
-        <button class="white-key D4-key">Re</button>
+        <button class="white-key D4-key" onclick="array_utente.push('Re')">Re</button>
         <button class="black-key Eb4-key"></button>
-        <button class="white-key E4-key">Mi</button>
-        <button class="white-key F4-key">Fa</button>
+        <button class="white-key E4-key" onclick="array_utente.push('Mi')">Mi</button>
+        <button class="white-key F4-key" onclick="array_utente.push('Fa')">Fa</button>
       <button class="black-key Gb4-key"></button>
-      <button class="white-key G4-key">Sol</button>
+      <button class="white-key G4-key" onclick="array_utente.push('Sol')">Sol</button>
       <button class="black-key Ab4-key"></button>
-      <button class="white-key A4-key">La</button>
+      <button class="white-key A4-key" onclick="array_utente.push('La')">La</button>
       <button class="black-key Bb4-key"></button>
-      <button class="white-key B4-key">Si</button>
+      <button class="white-key B4-key" onclick="array_utente.push('Si')">Si</button>
 </br>
 </div>
-<p id="close">X</p>
+<p id="close">Invia la tua soluzione!</p>
 </div>
 <script>
     $("#area").click(function () { 
@@ -46,7 +46,17 @@
     $(".pianoforte").fadeOut(500);
     $("#close").fadeOut(500);
     $("#melodia").removeClass("blur");
-  });
+    console.log(array_utente);
+    if (JSON.stringify(array_utente) === JSON.stringify(mio_array)) {
+        alert('Bravo! La sequenza è corretta');
+        return true;
+    }
+    else{
+        array_utente=[];
+        alert('Ritenta');
+        return false;
+    }
+});
   
     $(document).ready(function(e) {
         $("#melodia").rwdImageMaps();
