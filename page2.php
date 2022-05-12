@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,27 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="./js/jquery.rwdImageMaps.js"></script>
     <script src="./housescape.js"></script>
-    <title>Page2</title>
+    <title>Document</title>
 </head>
 <body id="secondo">
-    <div class="box_piano"></div>
-    <div class="piano">
+   
+<div class="box_piano" ></div>
+<div class="torch" >
     <img src="./img/img2.png" usemap="#piano" id="melodia" width="1500" height="966">
     <map name="piano">
-        <area shape="rect" alt="parte 3 immagine" coords="260,546,554,558" href="./login.php" title="piano">
+        <area shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="illuminastanza();" title="interruttore">
     </map>
-    </div>
+</div>
+    <script>
+        $(document).ready(function(e) {
+            $("#melodia").rwdImageMaps();
+        });
+        window.onmessage = function(e) {
+            if (e.data == 'rimuovifiltro') {
+                popup_close();
+            }
+        };
+    </script>
+
 </body>
 </html>
