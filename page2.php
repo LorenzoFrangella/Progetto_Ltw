@@ -34,7 +34,7 @@
       <button class="white-key B4-key">Si</button>
 </br>
 </div>
-<button id="close">X</button>
+<p id="close">X</p>
 </div>
 <script>
     $("#area").click(function () { 
