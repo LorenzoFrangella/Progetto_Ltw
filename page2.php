@@ -20,7 +20,7 @@
             <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
         </map>
 
-        <div class="pianoforte" style="position:absolute;z-index:9999;top:30%;left:30%;display: none;">
+        <div class="pianoforte" style="position:absolute;z-index:9999;top:37%;left:40%;display: none;">
         <button class="white-key C4-key" onclick="array_utente.push('Do')">Do</button>
         <button class="black-key Db4-key"></button>
         <button class="white-key D4-key" onclick="array_utente.push('Re')">Re</button>
@@ -39,6 +39,7 @@
 </div>
 <script>
     $("#area").click(function () { 
+        $("#area").css("cursor","default");
         $(".pianoforte").fadeIn(500);
         $("#close").fadeIn(500);
         $("#melodia").addClass("blur");
