@@ -19,19 +19,19 @@
         <map name="piano">
             <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
         </map>
-        <div class="pianoforte" style="position:absolute;z-index:9999;top:30%;left:30%;display: none;">
+        <div class="pianoforte" style="position:absolute;z-index:9999;top:37%;left:40%;display: none;">
         <button class="white-key C4-key">Do</button>
         <button class="black-key Db4-key"></button>
         <button class="white-key D4-key">Re</button>
         <button class="black-key Eb4-key"></button>
         <button class="white-key E4-key">Mi</button>
         <button class="white-key F4-key">Fa</button>
-      <button class="black-key Gb4-key"></button>
-      <button class="white-key G4-key">Sol</button>
-      <button class="black-key Ab4-key"></button>
-      <button class="white-key A4-key">La</button>
-      <button class="black-key Bb4-key"></button>
-      <button class="white-key B4-key">Si</button>
+        <button class="black-key Gb4-key"></button>
+        <button class="white-key G4-key">Sol</button>
+        <button class="black-key Ab4-key"></button>
+        <button class="white-key A4-key">La</button>
+        <button class="black-key Bb4-key"></button>
+        <button class="white-key B4-key">Si</button>
 </br>
 </div>
 <p id="close">X</p>

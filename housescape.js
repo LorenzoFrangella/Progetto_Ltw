@@ -106,4 +106,4 @@ $(document).ready(function(){
 
 function popup_piano(){
     $(document).getElementById("pianoforte").style.display = "inline";
-    }
+}
