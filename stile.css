@@ -295,8 +295,8 @@ function scrollFunction() {
 .intro{
     text-align: center;
     margin-top: 10vh;
-    font-size: 35px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 4.5vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .entra{
