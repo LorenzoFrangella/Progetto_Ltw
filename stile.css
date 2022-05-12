@@ -297,9 +297,9 @@ function scrollFunction() {
     margin-top: 10vh;
     font-size: 5vw;
     font-family: sans-serif;
-    scrollbar-width: auto;
+    
 }
-
+/*
 .box_intro {
    
     transform: translateY(100%);
@@ -330,7 +330,7 @@ function scrollFunction() {
       -webkit-transform: translateY(-100%);
       transform: Y(-100%);
     }
-}
+}*/
 
 .entra{
     margin-top: 50px;

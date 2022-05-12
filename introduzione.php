@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./stile.css">
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/bootstrap.esm.js"></script>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
     <link rel="icon" href="./img/exit.png">
     <title>Introduzione</title>
 </head>
@@ -25,5 +28,13 @@
     </h2>
     <div class="entra" style="text-align:center"><a href='./page1.php'><button type='button' class='btn btn-warning bottone_inizio'><b>Entra nella casa!</b>
 </div></div>
+<script>
+        $(document).ready(function() {
+                $("html, body").animate({
+                    scrollTop: $(
+                      'html, body').get(0).scrollHeight
+                }, 18000);
+            });
+    </script>
 </body>
 </html>
