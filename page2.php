@@ -12,23 +12,16 @@
     <title>Document</title>
 </head>
 <body id="secondo">
-   
-<div class="box_piano" ></div>
-<div class="torch" >
+<div class="piano" >
     <img src="./img/img2.png" usemap="#piano" id="melodia" width="1500" height="966">
     <map name="piano">
-        <area shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="illuminastanza();" title="interruttore">
+        <area shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
     </map>
 </div>
     <script>
         $(document).ready(function(e) {
             $("#melodia").rwdImageMaps();
         });
-        window.onmessage = function(e) {
-            if (e.data == 'rimuovifiltro') {
-                popup_close();
-            }
-        };
     </script>
 
 </body>
