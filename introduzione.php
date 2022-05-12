@@ -11,12 +11,22 @@
     <script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
+    <script type="text/javascript">
+function page_scroll()
+{
+ $("html, body").animate({ scrollTop: $(document).height() }, 18000);
+}
+function stop_scroll()
+{
+ $("html, body").stop();
+}
+</script>
     <link rel="icon" href="./img/exit.png">
     <title>Introduzione</title>
 </head>
 <body>
-    <div class = "container">
-        <div class="box_intro">
+    <div class = "container" >
+        <div class="box_intro" onmouseenter="stop_scroll()" onmouseleave="page_scroll()">
         <h2 class = "intro">
         Sei intrappolato all'interno di una casa abbandonata.
     </br>
@@ -36,10 +46,5 @@
                 }, 18000);
             });
     </script>
-    <script>
-        $(document).ready(function(){
-            $(".box_intro").hover
-        })
-        </script>
 </body>
 </html>
