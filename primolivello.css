@@ -92,3 +92,30 @@
 		width: 100%;
 		height: auto;
 }
+.blur{
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	-webkit-transition: 0.5s -webkit-filter linear;
+	-o-transition: 0.5s -o-filter linear;
+  }
+
+  #close{
+	  display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 10%;
+	right: 10%;
+	width: auto;
+	height: auto;
+	padding: 3vh 3vw;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 2vw;
+	font-weight: 100;
+	line-height: 15px;
+	color: #f7f7f7;
+	background: red;
+	cursor: pointer;
+  }

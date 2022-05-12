@@ -17,9 +17,9 @@
     <div class="piano" >
         <img src="./img/img2.png" usemap="#piano" id="melodia" width="1500" height="966">
         <map name="piano">
-            <area shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
+            <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
         </map>
-        <div class="pianoforte" style="position:absolute;z-index:9999;top:30%;left:30%;">
+        <div class="pianoforte" style="position:absolute;z-index:9999;top:30%;left:30%;display: none;">
         <button class="white-key C4-key">Do</button>
         <button class="black-key Db4-key"></button>
         <button class="white-key D4-key">Re</button>
@@ -32,9 +32,22 @@
       <button class="white-key A4-key">La</button>
       <button class="black-key Bb4-key"></button>
       <button class="white-key B4-key">Si</button>
-    </div>
+</br>
+</div>
+<button id="close">X</button>
 </div>
 <script>
+    $("#area").click(function () { 
+        $(".pianoforte").fadeIn(500);
+        $("#close").fadeIn(500);
+        $("#melodia").addClass("blur");
+  });
+  $("#close").click(function () { 
+    $(".pianoforte").fadeOut(500);
+    $("#close").fadeOut(500);
+    $("#melodia").removeClass("blur");
+  });
+  
     $(document).ready(function(e) {
         $("#melodia").rwdImageMaps();
     });
