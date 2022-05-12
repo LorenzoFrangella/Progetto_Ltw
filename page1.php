@@ -10,7 +10,7 @@
     <script src="./housescape.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body id="primo">
    
 <div class="bg" onmousemove="moveTorch(event)"></div>
 <div class="torch" >
