@@ -19,6 +19,7 @@
         <map name="piano">
             <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
         </map>
+
         <div class="pianoforte" style="position:absolute;z-index:9999;top:30%;left:30%;display: none;">
         <button class="white-key C4-key" onclick="array_utente.push('Do')">Do</button>
         <button class="black-key Db4-key"></button>
