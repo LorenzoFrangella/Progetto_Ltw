@@ -105,5 +105,20 @@ $(document).ready(function(){
 }
 
 function popup_piano(){
-    
+    var html = "<div class='pianoforte'>"
+   + "<button class='white-key C4-key'>Do</button>"
+   + "<button class='black-key Db4-key'></button>"   
+   + "<button class='white-key D4-key'>Re</button>"
+   + "<button class='black-key Eb4-key'></button>"
+      + "<button class='white-key E4-key'>Mi</button>"
+   + "<button class='white-key F4-key'>Fa</button>"
+   + "<button class='black-key Gb4-key'></button>"
+   + "<button class='white-key G4-key'>Sol</button>"
+   + "<button class='black-key Ab4-key'></button>"
+    + "<button class='white-key A4-key'>La</button>"
+    + "<button class='black-key Bb4-key'></button>"
+    + "<button class='white-key B4-key'>Si</button>"
+    +  "</div>";
+        $("#secondo").prepend(html);
+        $(".sfondo, .chiudi").click(function() {popup_close();});
 }
