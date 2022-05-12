@@ -3,6 +3,11 @@
     cursor: url("./img/torcia.png"),auto;
     background:black;
   }
+#secondo{
+    overflow: hidden;
+    cursor: default;
+    background:black;
+  }
 
 
 
@@ -79,7 +84,6 @@
   width: 100%;
   height: 100%;
   border-color: aquamarine;
-  border: double;
 }
 .piano > img{
 		width: 100%;
