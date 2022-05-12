@@ -8,16 +8,13 @@
     <link rel="stylesheet" href="./stile.css">
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/bootstrap.esm.js"></script>
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script type="text/javascript">
 function page_scroll()
 {
  $("html, body").animate({ scrollTop: $(document).height() }, 18000);
 }
-function stop_scroll()
-{
+function stop_scroll(){
  $("html, body").stop();
 }
 </script>

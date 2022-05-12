@@ -7,80 +7,30 @@
     <link rel="stylesheet" href="primolivello.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="./js/jquery.rwdImageMaps.js"></script>
-    
+    <script src="./housescape.js"></script>
     <title>Document</title>
 </head>
 <body>
    
 <div class="bg" onmousemove="moveTorch(event)"></div>
-    <div class="torch" >
-      <img src="./img/casa_quattro.png" usemap="#interruttore" id="luce" width="1360" height="765">
-      <map name="interruttore">
+<div class="torch" >
+    <img src="./img/casa_quattro.png" usemap="#interruttore" id="luce" width="1360" height="765">
+    <map name="interruttore">
         <area shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="#" onclick="illuminastanza();" title="interruttore">
         <area shape="rect" alt="parte 2 immagine" coords="42,643,125,680" href="#" onclick="javascript:popup();" title="interruttore">
-</map>
-    </div>
+    </map>
+</div>
     <script>
-        var interruttore = false;
-        var scala = 0.07;
-        var acceso = "off";
-        const suono_interruttore = new Audio("./audio/interruttore.mp3");
-        function illuminastanza(){
-            acceso = "on";
-            scala = 5;
-            document.body.style.cursor = "default";
-            moveTorch(event);
-            if(interruttore == false){
-                interruttore = true;
-                acceso = "on";
-                scala = 2;
-                suono_interruttore.play();
-                document.body.style.cursor = "default";
-                moveTorch(event);
-
-                //la riga successiva serve per permettere alla pagina principale di far muovere tra le varie stanze
-                window.top.postMessage('abilita_movimenti', '*')
-                //document.getElementById("torch")[0].style.removeProperty("clipPath");
+        $(document).ready(function(e) {
+            $("#luce").rwdImageMaps();
+        });
+        window.onmessage = function(e) {
+            if (e.data == 'rimuovifiltro') {
+                popup_close();
             }
-    };
-        function moveTorch(event){
-            var torch = document.getElementsByClassName("torch")[0];
-            //alert($(window).height());
-            var r = $(window).width()*scala;
-            torch.style.clipPath = `circle(${r}px at ${event.offsetX}px ${event.offsetY}px)`;
-    }
-    function popup(){
-        
-        var html = "<div class='sfondo'></div>"
-        +"	<div class='corpo'>"
-        +"		<p class='chiudi'>CHIUDI</p>"
-        +"	</div>";
-	    $("body").prepend(html);
-        $(document).ready(function(){
-            $("#luce").css("-webkit-filter", "blur(10px)");
-        });
-        $(".sfondo, .chiudi").click(function() {popup_close();});
-    }
-    function popup_close(){
-	$(".sfondo, .corpo").remove();
-    $(document).ready(function(){
-            $("#luce").css("-webkit-filter", "blur(0px)");
-        });
-    }
-        </script>
-        <script>
-            $(document).ready(function(e) {
-                $("#luce").rwdImageMaps();
-            });
-        </script>
-        <script>
-            window.onmessage = function(e) {
-                if (e.data == 'rimuovifiltro') {
-                    popup_close();
-      }
-      };
-        </script>
-    </div>    
-    </div>
+        };
+    </script>
+</div>    
+</div>
 </body>
 </html>
