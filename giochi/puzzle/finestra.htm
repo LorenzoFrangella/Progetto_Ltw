@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+
+	<title>Puzzle - Esempio JavaScript scaricato da HTML.it</title>
+	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Language" content="it" />
+	<meta name="Robots" content="All" />
+	<meta name="Description" content="HTML.it - il sito italiano sul Web publishing" />
+	<meta name="Owner" content="HTML.it srl" /> 
+	<meta name="Author" content="HTML.it srl" />  
+	<meta name="Copyright" content="HTML.it srl" />
+
+</head>
+<STYLE type="text/css">
+ .nombre {width:60px;height:60px;cursor: pointer;text-align:center;background-color:#aecdf0;font-size:23px;font-family:times new roman;border:3px solid #0693c8;color:black;filter:progid:DXImageTransform.microsoft.Gradient(gradientType=1,StartColorStr='#0693c8',EndColorStr='white')} 
+ .titre {height:40px;text-align:center;background-color:#aecdf0;font-size:20px;font-family:times new roman;border:3px solid #0693c8;color:black;filter:progid:DXImageTransform.microsoft.Gradient(gradientType=1,StartColorStr='#0693c8',EndColorStr='white')} 
+ .vide {width:60px;height:60px;cursor: default;text-align:center;background-color:#5b9be1;font-size:23px;font-family:times new roman;border:3px solid #0693c8;color:black;filter:progid:DXImageTransform.microsoft.Gradient(gradientType=1,StartColorStr='#03597a',EndColorStr='#d3f2fe')}
+ .jeux {background-color:black;}
+ .fermer {width:90%;height:25px;font-weight:bold;cursor: pointer;text-align:center;background-color:#aecdf0;font-size:14px;font-family:times new roman;color:black;filter:progid:DXImageTransform.microsoft.Gradient(gradientType=1,StartColorStr='#0693c8',EndColorStr='white')}
+ .commencer {width:100%;height:40px;cursor: pointer;text-align:center;background-color:#aecdf0;font-size:20px;font-family:times new roman;color:black;filter:progid:DXImageTransform.microsoft.Gradient(gradientType=1,StartColorStr='#0693c8',EndColorStr='white')} 
+ .help {width:10%;height:25px;font-weight:bold;cursor: pointer;text-align:center;background-color:#aecdf0;font-size:14px;font-family:times new roman;color:black;filter:progid:DXImageTransform.microsoft.Gradient(gradientType=1,StartColorStr='#0693c8',EndColorStr='white')}
+</style>
+<script type="text/javascript">
+deplacementPossible = new Array("13","024","15","046","1357","248","37","468","57");
+gagnant = true;
+function depart() { 
+  casejeu = document.getElementById("taquin").getElementsByTagName("td");
+   for (i=0;i<casejeu.length;i++) {
+    casejeu[i].onclick=new Function("permutation(this.emplacement)");
+    casejeu[i].emplacement = i;
+    casejeu[i].onmouseover= new Function("if (chercheVide(this.emplacement)!=-1) this.style.border='3px outset white';");
+    casejeu[i].onmousedown=new Function("if (chercheVide(this.emplacement)!=-1) this.style.border='3px inset white';");
+    casejeu[i].onmouseout= new Function("this.style.border='3px solid #0693c8';");
+    casejeu[i].onmouseup= new Function("if (chercheVide(this.emplacement)!=-1) this.style.border='3px outset white';");
+    casejeu[i].className= (i==8)?"vide":"nombre";
+  }
+}
+
+function initTableau()  {
+	test = new Array();gagnant = false;
+	for (var i=0;i<9;i++)	{
+	   do nb = Math.floor(Math.random() * 9 )+1; while (test[nb])
+	   test[nb]=true;
+	   casejeu[i].innerHTML = (nb==9)?'':nb;
+	   casejeu[i].className = (nb==9)?"vide":"nombre";
+	}
+}
+function permutation(cellAdeplacer) {
+     if (gagnant) {
+		 alert("Clicca su Comincia");
+         return;	   
+	  }
+	 var cellVide = chercheVide(cellAdeplacer);
+	 if (cellVide == -1) return;
+	 casejeu[pos[cellVide]].innerHTML = casejeu[cellAdeplacer].innerHTML;
+     casejeu[pos[cellVide]].className = "nombre";
+     casejeu[cellAdeplacer].className = "vide";
+	 casejeu[cellAdeplacer].innerHTML = '';
+	 var testGagnant= '';
+	 for (var i=0;i<8;i++)
+	   testGagnant += casejeu[i].innerHTML;
+	 if (testGagnant == '12345678') {
+	 gagnant=true;
+	 alert("Bravo!!!")
+	 }
+}
+function chercheVide(cell)  { 
+    if (gagnant) return -1;
+    pos = deplacementPossible[cell].split("");
+	 for (var i=0;i<pos.length;i++) { 
+	   if (casejeu[pos[i]].innerHTML == '') return i;
+	 }
+	 return -1;
+}
+function aide()
+{
+  alert("JEUX DU TAQUIN\n\nLes règles sont simple.  Il faut remettre les nombre en ordre croisant de 1 à 8 de gauche à droite et de haut en bas.  En cliquant sur le nombre a faire glisser, il sera déplacé dans l'espace libre.  Amuser vous bien!!!");
+}
+</script>
+<body onload="depart()" style="background:transparent;" LEFTMARGIN=0 MARGINWIDTH=0 TOPMARGIN=0 MARGINHEIGHT=0>
+<table  class=jeux  align=center border=2 cellpadding=0>
+<tr><td><button class="fermer" onclick="this.blur();window.parent.document.getElementById('taquin').style.visibility='hidden';"">Esci</button></td></tr>
+<tr><td class=titre>Gioca</td></tr>
+<tr><td>
+		<table id=taquin border=1 bordercolor=#0693c8 cellspacing=2 cellpadding=2 bgcolor=#0f7099 unselectable="on">
+			   <tr><td>1</td><td>2</td><td>3</td></tr>
+			   	<tr><td>4</td><td>5</td><td>6</td></tr>
+				<tr><td>7</td><td>8</td><td></td></tr>
+		</table></td>
+<tr><td><button class="commencer" onclick="this.blur();initTableau()">Comincia</button></td></tr></table>
+</body>
+</html>

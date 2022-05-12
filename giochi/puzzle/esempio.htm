@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+
+	<title>Puzzle - Esempio JavaScript</title>
+	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Language" content="it" />
+	<meta name="Robots" content="All" />
+	<meta name="Description" content="il sito italiano sul Web publishing" />
+	<meta name="Keywords" content="Un vecchio gioco realizzato in javascript." />
+	<meta name="Owner" content="miosito" /> 
+	<meta name="Author" content="miosito" />  
+	<meta name="Copyright" content="miosito" />
+
+<SCRIPT type="text/javascript">
+document.write('<iframe id="taquin" allowTransparency="true" style="visibility:hidden;position:absolute;top:0;left:0;z-index:100;" src="finestra.htm" width=463 height=349 scrolling=no FRAMEBORDER=0></iframe>');
+function Taquin()
+{ 
+  if (!document.getElementById) return;
+  var largeur = document.all?document.body.offsetWidth:window.innerWidth;
+  var hauteur = document.all?document.body.offsetHeight:window.innerHeight;
+  document.getElementById("taquin").style.left = (largeur-363)/2;
+  document.getElementById("taquin").style.top = (hauteur-332)/2;
+  document.getElementById("taquin").style.visibility = 'visible'; 
+}
+</script>
+
+</head>
+<body >
+<br /><br />
+<div align="center">
+
+
+<a href='#' onclick='Taquin();return false;'>Gioca</a>
+
+
+</div>
+<br /><br />
+	
+
+</body>
+</html>
