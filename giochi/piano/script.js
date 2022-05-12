@@ -1,20 +1,20 @@
-const C4 = new Audio("sounds/C4.mp3");
-const Db4 = new Audio("sounds/Db4.mp3");
-const D4 = new Audio("sounds/D4.mp3");
-const Eb4 = new Audio("sounds/Eb4.mp3");
-const E4 = new Audio("sounds/E4.mp3");
-const F4 = new Audio("sounds/F4.mp3");
-const Gb4 = new Audio("sounds/Gb4.mp3");
-const G4 = new Audio("sounds/G4.mp3");
-const Ab4 = new Audio("sounds/Ab4.mp3");
-const A4 = new Audio("sounds/A4.mp3");
-const Bb4 = new Audio("sounds/Bb4.mp3");
-const B4 = new Audio("sounds/B4.mp3");
-const C5 = new Audio("sounds/C5.mp3");
-const Db5 = new Audio("sounds/Db5.mp3");
-const D5 = new Audio("sounds/D5.mp3");
-const Eb5 = new Audio("sounds/Eb5.mp3");
-const E5 = new Audio("sounds/E5.mp3");
+const C4 = new Audio("./giochi/piano/sounds/C4.mp3");
+const Db4 = new Audio("./giochi/piano/sounds/Db4.mp3");
+const D4 = new Audio("./giochi/piano/sounds/D4.mp3");
+const Eb4 = new Audio("./giochi/piano/sounds/Eb4.mp3");
+const E4 = new Audio("./giochi/piano/sounds/E4.mp3");
+const F4 = new Audio("./giochi/piano/sounds/F4.mp3");
+const Gb4 = new Audio("./giochi/piano/sounds/Gb4.mp3");
+const G4 = new Audio("./giochi/piano/sounds/G4.mp3");
+const Ab4 = new Audio("./giochi/piano/sounds/Ab4.mp3");
+const A4 = new Audio("./giochi/piano/sounds/A4.mp3");
+const Bb4 = new Audio("./giochi/piano/sounds/Bb4.mp3");
+const B4 = new Audio("./giochi/piano/sounds/B4.mp3");
+const C5 = new Audio("./giochi/piano/sounds/C5.mp3");
+const Db5 = new Audio("./giochi/piano/sounds/Db5.mp3");
+const D5 = new Audio("./giochi/piano/sounds/D5.mp3");
+const Eb5 = new Audio("./giochi/piano/sounds/Eb5.mp3");
+const E5 = new Audio("./giochi/piano/sounds/E5.mp3");
 
 const playSound = audio => {
   const clone = audio.cloneNode();
