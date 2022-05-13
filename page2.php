@@ -21,24 +21,24 @@
         </map>
         <div class="test">
         <div class="pianoforte" style="position:absolute;z-index:9999;top:37%;left:40%;display: none;">
-        <button class="white-key C4-key" onclick="array_utente.push('Do')">Do</button>
+        <button class="white-key C4-key" onclick="array_utente.push('Do');incrementa()">Do</button>
         <button class="black-key Db4-key"></button>
-        <button class="white-key D4-key" onclick="array_utente.push('Re')">Re</button>
+        <button class="white-key D4-key" onclick="array_utente.push('Re');incrementa()">Re</button>
         <button class="black-key Eb4-key"></button>
-        <button class="white-key E4-key" onclick="array_utente.push('Mi')">Mi</button>
-        <button class="white-key F4-key" onclick="array_utente.push('Fa')">Fa</button>
+        <button class="white-key E4-key" onclick="array_utente.push('Mi');incrementa()">Mi</button>
+        <button class="white-key F4-key" onclick="array_utente.push('Fa');incrementa()">Fa</button>
         <button class="black-key Gb4-key"></button>
-        <button class="white-key G4-key" onclick="array_utente.push('Sol')">Sol</button>
+        <button class="white-key G4-key" onclick="array_utente.push('Sol');incrementa()">Sol</button>
         <button class="black-key Ab4-key"></button>
-        <button class="white-key A4-key" onclick="array_utente.push('La')">La</button>
+        <button class="white-key A4-key" onclick="array_utente.push('La');incrementa()">La</button>
         <button class="black-key Bb4-key"></button>
-        <button class="white-key B4-key" onclick="array_utente.push('Si')">Si</button>
+        <button class="white-key B4-key" onclick="array_utente.push('Si');incrementa()">Si</button>
 </br>
-</div>
-</div>
+        </div>
+    </div>
 <p id="close">Invia la tua soluzione!</p>
 <p id="exit">Esci</p>
-<p id="progress">0/5</p>
+<input type="text" id="progress" value="0"/>
 </div>
 <script>
     $("#area").click(function () { 
@@ -57,6 +57,8 @@
     $("#melodia").removeClass("blur");
     $("#exit").fadeOut(500);
     $("#progress").fadeOut(500);
+    array_utente=[];
+    document.getElementById("progress").value = 0;
   })
 
 
@@ -76,6 +78,7 @@
     }
     else{
         array_utente=[];
+        document.getElementById("progress").value = 0;
         alert('Ritenta');
         solved_piano= false;
     }
