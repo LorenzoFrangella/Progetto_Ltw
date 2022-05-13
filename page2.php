@@ -18,6 +18,7 @@
         <img src="./img/img2.png" usemap="#piano" id="melodia" width="1500" height="966">
         <map name="piano">
             <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
+            <area id = "cartello" shape="rect" coords="0,0,100,100" href="#">
         </map>
         <div class="test">
         <div class="pianoforte" style="position:absolute;z-index:9999;top:37%;left:40%;display: none;">
@@ -37,12 +38,16 @@
         </div>
     </div>
 <p id="close">Invia la tua soluzione!</p>
-<p id="exit">Esci</p>
+<p class="exit" id="exit">Esci</p>
 <input type="text" id="progress" value="0"/>
+<p class="exit" id="esci"> Esci</p>
+<img src="./img/melodia.png" class = "popup_img">
 </div>
 <script>
+    var menu_piano = false;
     $("#area").click(function () { 
         if(!solved_piano){
+        menu_piano= true;
         $("#area").css("cursor","default");
         $(".pianoforte").fadeIn(500);
         $("#close").fadeIn(500);
@@ -51,7 +56,10 @@
         $("#progress").fadeIn(500);
         }
   });
+
+
   $("#exit").click(function(){
+      menu_piano = false;
     $(".pianoforte").fadeOut(500);
     $("#close").fadeOut(500);
     $("#melodia").removeClass("blur");
@@ -59,11 +67,30 @@
     $("#progress").fadeOut(500);
     array_utente=[];
     document.getElementById("progress").value = 0;
-  })
+  });
 
 
+  $("#cartello").click(function(){
+      if(!menu_piano){
+        if(solved_piano) return;
+        else if(!solved_piano){
+            solved_piano=true; ///ricorda di rimettere a false successivamente questa variabile
+            $("#melodia").addClass("blur");
+            $(".popup_img").fadeIn(500);
+            $("#esci").fadeIn(500);
+        }
+    }
+  });
+
+  $("#esci").click(function(){
+    solved_piano=false;
+    $("#melodia").removeClass("blur");
+    $(".popup_img").fadeOut(500);
+    $("#esci").fadeOut(500);
+  });
 
   $("#close").click(function () { 
+      menu_piano= false;
     console.log(array_utente);
     if (JSON.stringify(array_utente) === JSON.stringify(mio_array)) {
         $("#area").unbind('click').removeAttr("onclick")[0].onclick = null;
