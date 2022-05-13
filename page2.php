@@ -52,6 +52,7 @@
         $(".pianoforte").fadeIn(500);
         $("#close").fadeIn(500);
         $("#melodia").addClass("blur");
+<<<<<<< Updated upstream
         $("#exit").fadeIn(500);
         $("#progress").fadeIn(500);
         }
@@ -60,6 +61,11 @@
 
   $("#exit").click(function(){
       menu_piano = false;
+=======
+    });
+    $("#close").click(function () { 
+      $("#area").css("cursor","pointer");
+>>>>>>> Stashed changes
     $(".pianoforte").fadeOut(500);
     $("#close").fadeOut(500);
     $("#melodia").removeClass("blur");
