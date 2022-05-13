@@ -18,8 +18,11 @@
     <map name="interruttore">
         <area id="lumus" shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="#" onclick="illuminastanza();" title="interruttore">
         <area id="pergamena" shape="rect" alt="parte 2 immagine" coords="42,643,125,680" href="#" onclick="javascript:popup();" title="pergamena" style="cursor:url('./img/torcia.png'),auto">
+        <area shape="rect" coords="0,0,100,100" href="#" id="tastiera_colorata">
     </map>
 </div>
+<img src="./img/tastiera_colorata.png" id="foto_tastiera" class="popup_tastiera">
+<p class="exit" id="esci"> Esci</p>
     <script>
         $(document).ready(function(e) {
             $("#luce").rwdImageMaps();
@@ -34,6 +37,18 @@
                 popup_close();
             }
         };
+        $("#tastiera_colorata").click(function(){
+            if(interruttore){
+                $("#luce").addClass("blur");
+                $("#foto_tastiera").fadeIn(500);
+                $("#esci").fadeIn(500);
+            }
+        })
+        $("#esci").click(function(){
+            $("#luce").removeClass("blur");
+            $("#foto_tastiera").fadeOut(500);
+            $("#esci").fadeOut(500);
+        });
     </script>
 
 </body>
