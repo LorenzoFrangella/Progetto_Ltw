@@ -113,4 +113,9 @@ var x=0;
 function incrementa() {
     var i = document.getElementById("progress").value;
     document.getElementById("progress").value = parseInt(i) + 1;
+    if(document.getElementById("progress").value >5){
+        array_utente=[];
+        document.getElementById("progress").value = 0;
+        alert('Ritenta!');
+    }
 }
