@@ -56,10 +56,11 @@
         $("#progress").fadeIn(500);
         }
   });
-
-
   $("#exit").click(function(){
       menu_piano = false;
+    });
+    $("#close").click(function () { 
+    $("#area").css("cursor","pointer");
     $(".pianoforte").fadeOut(500);
     $("#close").fadeOut(500);
     $("#melodia").removeClass("blur");

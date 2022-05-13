@@ -42,13 +42,17 @@
         };
         $("#tastiera_colorata").click(function(){
             if(interruttore){
-                $("#luce").addClass("blur");
+                $(document).ready(function(){
+                $("#luce").css("-webkit-filter", "blur(10px)");
+                });
                 $("#foto_tastiera").fadeIn(500);
                 $("#esci").fadeIn(500);
             }
         })
         $("#esci").click(function(){
-            $("#luce").removeClass("blur");
+            $(document).ready(function(){
+            $("#luce").css("-webkit-filter", "blur(0px)");
+            });
             $("#foto_tastiera").fadeOut(500);
             $("#esci").fadeOut(500);
         });
