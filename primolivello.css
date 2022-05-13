@@ -185,3 +185,24 @@ background: red;
 	right: 0;
 	scale: 200%;
 }
+
+.clock{
+	position: absolute;
+	z-index: 9999;
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right: 0;
+	top: 10%;
+	text-align: center;
+	scale: 50%;
+	display: none;
+}
+
+.tasto{
+	margin-top: 50px;
+	scale: 200%;
+	size:10%;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}

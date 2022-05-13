@@ -8,6 +8,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="./js/jquery.rwdImageMaps.js"></script>
     <script src="./housescape.js"></script>
+    <script src="./orologio/script.js"></script>
+    <link rel="stylesheet" href="./orologio/style.css">
     <title>Document</title>
 </head>
 <body id="primo">
@@ -26,6 +28,16 @@
 </div>
 <img src="./img/tastiera_colorata.png" id="foto_tastiera" class="popup_tastiera">
 <p class="exit" id="esci"> Esci</p>
+<p class="exit" id="esci_due"> Esci</p>
+    <div class="clock">
+        <div id="clockContainer">
+            <div id="hour"></div>
+            <div id="minute"></div>
+        </div>
+        <input class="tasto" type="time" id="time">
+        <button  class="tasto" id="orario" onclick="inserisci_orario()">inserisci orario </button> 
+    </div>
+
     <script>
         $(document).ready(function(e) {
             $("#luce").rwdImageMaps();
@@ -48,7 +60,7 @@
                 $("#foto_tastiera").fadeIn(500);
                 $("#esci").fadeIn(500);
             }
-        })
+        });
         $("#esci").click(function(){
             $(document).ready(function(){
             $("#luce").css("-webkit-filter", "blur(0px)");
@@ -56,6 +68,23 @@
             $("#foto_tastiera").fadeOut(500);
             $("#esci").fadeOut(500);
         });
+
+        $("#orologio").click(function(){
+            if(interruttore){
+                $(document).ready(function(){
+                $("#luce").css("-webkit-filter", "blur(10px)");});
+                $(".clock").fadeIn(500);
+                $("#esci_due").fadeIn(500);
+            }
+        });
+
+        $("#esci_due").click(function(){
+            $(document).ready(function(){
+            $("#luce").css("-webkit-filter", "blur(0px)");});
+            $(".clock").fadeOut(500);
+            $("#esci_due").fadeOut(500);
+        });
+
     </script>
 
 </body>

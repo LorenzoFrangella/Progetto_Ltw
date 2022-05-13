@@ -60,11 +60,7 @@
       menu_piano = false;
     });
     $("#close").click(function () { 
-<<<<<<< Updated upstream
     $("#area").css("cursor","pointer");
-=======
-      $("#area").css("cursor","pointer");
->>>>>>> Stashed changes
     $(".pianoforte").fadeOut(500);
     $("#close").fadeOut(500);
     $("#melodia").removeClass("blur");
