@@ -18,7 +18,7 @@
         <img src="./img/img2.png" usemap="#piano" id="melodia" width="1500" height="966">
         <map name="piano">
             <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
-            <area id = "cartello" shape="rect" coords="0,0,100,100" href="#">
+            <area id = "cartello" shape="rect" coords="554,622,683,673" href="#">
         </map>
         <div class="test">
         <div class="pianoforte" style="position:absolute;z-index:9999;top:37%;left:40%;display: none;">
