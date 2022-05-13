@@ -25,6 +25,8 @@
         <area shape="rect" coords="178,300,207,353" href="#" id="orologio">
     </map>
 </div>
+<!--
+<img src="./img/orologio.png" id="foto_orologio" class="popup_orologio">-->
 <img src="./img/tastiera_colorata.png" id="foto_tastiera" class="popup_tastiera">
 <p class="exit" id="esci"> Esci</p>
 <p class="exit" id="esci_due"> Esci</p>
@@ -43,6 +45,9 @@
         });
         $("#lumus").click(function(){
             $("#pergamena").css("cursor","pointer");
+            $("#tastiera_colorata").css("cursor","pointer");
+            $("#orologio").css("cursor","pointer");
+            $("#orologio_fisso").css("cursor","pointer");
             $("#lumus").unbind('click').removeAttr("onclick")[0].onclick = null;
             $("#lumus").css("cursor","default");
         })
@@ -54,36 +59,66 @@
         $("#tastiera_colorata").click(function(){
             if(interruttore){
                 $(document).ready(function(){
-                $("#luce").css("-webkit-filter", "blur(10px)");
+                    $("#luce").css("-webkit-filter", "blur(10px)");
                 });
+                $("#pergamena").css("cursor","default");
+                $("#orologio").css("cursor","deafult");
+                $("#orologio_fisso").css("cursor","default");
+                $("#tastiera_colorata").css("cursor","default");
                 $("#foto_tastiera").fadeIn(500);
                 $("#esci").fadeIn(500);
             }
         });
         $("#esci").click(function(){
             $(document).ready(function(){
-            $("#luce").css("-webkit-filter", "blur(0px)");
+                $("#luce").css("-webkit-filter", "blur(0px)");
             });
+            $("#tastiera_colorata").css("cursor","pointer");
+            $("#pergamena").css("cursor","pointer");
+            $("#orologio").css("cursor","pointer");
+            $("#orologio_fisso").css("cursor","pointer");
             $("#foto_tastiera").fadeOut(500);
             $("#esci").fadeOut(500);
         });
-
+        
         $("#orologio").click(function(){
             if(interruttore){
                 $(document).ready(function(){
-                $("#luce").css("-webkit-filter", "blur(10px)");});
-                $(".clock").fadeIn(500);
-                $("#esci_due").fadeIn(500);
-            }
-        });
-
-        $("#esci_due").click(function(){
-            $(document).ready(function(){
-            $("#luce").css("-webkit-filter", "blur(0px)");});
+                    $("#luce").css("-webkit-filter", "blur(10px)");});
+                    $("#pergamena").css("cursor","default");
+                    $("#orologio").css("cursor","deafult");
+                    $("#orologio_fisso").css("cursor","default");
+                    $("#tastiera_colorata").css("cursor","default");
+                    $(".clock").fadeIn(500);
+                    $("#esci_due").fadeIn(500);
+                }
+            });
+            
+            $("#esci_due").click(function(){
+                $(document).ready(function(){
+                    $("#luce").css("-webkit-filter", "blur(0px)");});
+                    $("#pergamena").css("cursor","pointer");
+                    $("#tastiera_colorata").css("cursor","pointer");
+            $("#orologio").css("cursor","pointer");
+            $("#orologio_fisso").css("cursor","pointer");
             $(".clock").fadeOut(500);
             $("#esci_due").fadeOut(500);
         });
-
+        /*
+        $("#orologio_fisso").click(function(){
+            $(document).ready(function(){
+                $("#luce").css("-webkit-felter","blur(10px)");
+            });
+            $("#foto_orologio").fadeIn(500);
+            $("#esci").fadeIn(500);
+        });
+        $("#esci").click(function(){
+            $(document).ready(function(){
+            $("#luce").css("-webkit-filter", "blur(0px)");
+            });
+            $("#foto_orologio").fadeOut(500);
+            $("#esci").fadeOut(500);
+        });*/
     </script>
 
 </body>

@@ -185,6 +185,17 @@ background: red;
 	right: 0;
 	scale: 200%;
 }
+.popup_orologio{
+	position: absolute;
+	display: none;
+	z-index: 9999;
+	top: 40%;	
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right: 0;
+	scale: 200%;
+}
 
 .clock{
 	position: absolute;
@@ -202,7 +213,26 @@ background: red;
 .tasto{
 	margin-top: 50px;
 	scale: 200%;
-	size:10%;
+	size: 10%;
 	margin-left: 10vw;
 	margin-right: 10vw;
+	padding: 5px;
+	font-family: Impact, Charcoal, sans-serif;
+	border-radius: 5px;
+	color:black;
+	
+	border-color: white;
+	font-size:20px;
 }
+#orologio{
+	cursor: url("./img/torcia.png"),auto;
+}
+#orologio_fisso{
+	cursor: url("./img/torcia.png"),auto;
+	
+}
+#orario{
+	border-color: yellow;
+	background-color: yellow;
+
+} 
