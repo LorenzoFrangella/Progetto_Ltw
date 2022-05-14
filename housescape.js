@@ -121,3 +121,7 @@ function incrementa() {
         alert('Ritenta!');
     }
 }
+
+function primo_enigma_risolto(){
+    document.getElementById("primo_enigma").style.display = "inline";
+}

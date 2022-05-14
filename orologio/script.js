@@ -12,5 +12,6 @@ function inserisci_orario(){
         alert("orario inserito corretto");
         var hangoutBotton = document.getElementById("esci_due");
         hangoutBotton.click();
+        parent.postMessage("primo_enigma","*")
 }
 }

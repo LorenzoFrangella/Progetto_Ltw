@@ -47,6 +47,30 @@ $_SESSION['begin_game'] = true;
     <div class="container">
       <button class="btn btn-warning"  id="indietro" onclick="indietro()">← Indietro </button>
       <button class="btn btn-warning" id="avanti" onclick="avanti()"> Avanti → </button>
+      <br/>
+      <br/>
+      <br/>
+      <div class="enigmi">
+        <img src="./img/primo_enigma.jpg" id = "primo_enigma">
+  </div>
     </div>
+    <script>
+      var eventMethod = window.addEventListener
+			? "addEventListener"
+			: "attachEvent";
+	var eventer = window[eventMethod];
+	var messageEvent = eventMethod === "attachEvent"
+		? "onmessage"
+		: "message";
+
+	eventer(messageEvent, function (e) {
+		
+		// if (e.origin !== 'http://the-trusted-iframe-origin.com') return;
+		
+		if (e.data === "primo_enigma" || e.message === "primo_enigma") 
+      primo_enigma_risolto();
+		console.log(e);
+	});
+      </script>
 </body>
 </html>
