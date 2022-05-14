@@ -236,3 +236,11 @@ background: red;
 	background-color: yellow;
 
 } 
+
+#foto_tastiera{
+	scale:70%;
+	top: 40%;
+	left: 3%;
+	width: 60%;
+	height: 50%;
+}

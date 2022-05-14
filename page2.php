@@ -58,6 +58,13 @@
   });
   $("#exit").click(function(){
       menu_piano = false;
+      $("#area").css("cursor","pointer");
+    $(".pianoforte").fadeOut(500);
+    $("#close").fadeOut(500);
+    $("#melodia").removeClass("blur");
+    $("#exit").fadeOut(500);
+    $("#progress").fadeOut(500);
+    document.getElementById("progress").value = 0;
     });
     $("#close").click(function () { 
     $("#area").css("cursor","pointer");
@@ -66,37 +73,37 @@
     $("#melodia").removeClass("blur");
     $("#exit").fadeOut(500);
     $("#progress").fadeOut(500);
-    array_utente=[];
     document.getElementById("progress").value = 0;
-  });
+});
 
 
-  $("#cartello").click(function(){
+$("#cartello").click(function(){
       if(!menu_piano){
-        if(solved_piano) return;
-        else if(!solved_piano){
-            solved_piano=true; ///ricorda di rimettere a false successivamente questa variabile
-            $("#melodia").addClass("blur");
-            $(".popup_img").fadeIn(500);
-            $("#esci").fadeIn(500);
+          if(solved_piano) return;
+          else if(!solved_piano){
+              solved_piano=true; ///ricorda di rimettere a false successivamente questa variabile
+              $("#melodia").addClass("blur");
+              $(".popup_img").fadeIn(500);
+              $("#esci").fadeIn(500);
+            }
         }
-    }
   });
 
   $("#esci").click(function(){
-    solved_piano=false;
-    $("#melodia").removeClass("blur");
-    $(".popup_img").fadeOut(500);
-    $("#esci").fadeOut(500);
-  });
-
-  $("#close").click(function () { 
+      solved_piano=false;
+      $("#melodia").removeClass("blur");
+      $(".popup_img").fadeOut(500);
+      $("#esci").fadeOut(500);
+    });
+    
+    $("#close").click(function () { 
       menu_piano= false;
-    console.log(array_utente);
-    if (JSON.stringify(array_utente) === JSON.stringify(mio_array)) {
+      console.log(array_utente);
+      if (JSON.stringify(array_utente) === JSON.stringify(mio_array)) {
+        array_utente=[];
+        alert('Bravo! La sequenza è corretta');
         $("#area").unbind('click').removeAttr("onclick")[0].onclick = null;
         $("#area").css("cursor","default");
-        alert('Bravo! La sequenza è corretta');
         $(".pianoforte").fadeOut(500);
         $("#close").fadeOut(500);
         $("#melodia").removeClass("blur");
