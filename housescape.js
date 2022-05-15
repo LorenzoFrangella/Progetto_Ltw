@@ -125,3 +125,6 @@ function incrementa() {
 function primo_enigma_risolto(){
     document.getElementById("primo_enigma").style.display = "inline";
 }
+function secondo_enigma_risolto(){
+    document.getElementById("secondo_enigma").style.display = "inline";
+}

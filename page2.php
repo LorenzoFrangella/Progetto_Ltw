@@ -100,6 +100,7 @@ $("#cartello").click(function(){
       menu_piano= false;
       console.log(array_utente);
       if (JSON.stringify(array_utente) === JSON.stringify(mio_array)) {
+        parent.postMessage("secondo_enigma","*");
         array_utente=[];
         alert('Bravo! La sequenza è corretta');
         $("#area").unbind('click').removeAttr("onclick")[0].onclick = null;

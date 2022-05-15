@@ -316,5 +316,10 @@ function scrollFunction() {
     margin-top: 15px !important;
     width:8vw;
     height:auto;
-    margin-right: 50% !important;
+}
+#secondo_enigma{
+    display:none;
+    margin-top: 15px !important;
+    width:8vw;
+    height:auto;
 }

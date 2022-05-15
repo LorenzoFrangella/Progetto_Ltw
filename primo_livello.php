@@ -34,6 +34,7 @@ $_SESSION['begin_game'] = true;
       <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
       <div class="enigmi">
         <img src="./img/primo_enigma.jpg" id = "primo_enigma">
+        <img src="./img/secondo_enigma.jpg" id = "secondo_enigma">
   </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -70,6 +71,8 @@ $_SESSION['begin_game'] = true;
 		
 		if (e.data === "primo_enigma" || e.message === "primo_enigma") 
       primo_enigma_risolto();
+		if (e.data === "secondo_enigma" || e.message === "secondo_enigma") 
+      secondo_enigma_risolto();
 		console.log(e);
 	});
       </script>
