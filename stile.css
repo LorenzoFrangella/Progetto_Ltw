@@ -267,7 +267,7 @@ function scrollFunction() {
     text-align: center;
     margin-top: 20px;
     max-height: 90vh;
-    min-height: 650px;
+    min-height: 750px;
 }
 
     
@@ -313,4 +313,8 @@ function scrollFunction() {
 }
 #primo_enigma{
     display:none;
+    margin-top: 15px !important;
+    width:8vw;
+    height:auto;
+    margin-right: 50% !important;
 }

@@ -204,7 +204,7 @@ background: red;
 	margin-right: auto;
 	left:0;
 	right: 0;
-	top: 10%;
+	top: -10%;
 	text-align: center;
 	scale: 50%;
 	display: none;
@@ -212,10 +212,10 @@ background: red;
 
 .tasto{
 	margin-top: 50px;
-	scale: 200%;
+	scale: 150%;
 	size: 10%;
-	margin-left: 10vw;
-	margin-right: 10vw;
+	margin-left: 8vw;
+	margin-right: 8vw;
 	padding: 5px;
 	font-family: Impact, Charcoal, sans-serif;
 	border-radius: 5px;
@@ -223,6 +223,12 @@ background: red;
 	
 	border-color: white;
 	font-size:20px;
+}
+@media(min-width:768px){
+	.tasto{
+		margin-top: 20%;
+		scale:200%;
+	}
 }
 #orologio{
 	cursor: url("./img/torcia.png"),auto;

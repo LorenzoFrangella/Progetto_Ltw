@@ -32,6 +32,9 @@ $_SESSION['begin_game'] = true;
     </nav>
     <div class="container format" >
       <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
+      <div class="enigmi">
+        <img src="./img/primo_enigma.jpg" id = "primo_enigma">
+  </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <iframe id="stanza1" class="inpage" src="introduzione.php"></iframe>
@@ -50,9 +53,7 @@ $_SESSION['begin_game'] = true;
       <br/>
       <br/>
       <br/>
-      <div class="enigmi">
-        <img src="./img/primo_enigma.jpg" id = "primo_enigma">
-  </div>
+      
     </div>
     <script>
       var eventMethod = window.addEventListener
