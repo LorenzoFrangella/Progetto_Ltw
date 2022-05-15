@@ -2,8 +2,24 @@
 
 .pianoforte {
   display: flex;
-  position: relative;
+  position: absolute;
   margin-left: 4px;
+  top:35%;left:13%;
+}
+@media (min-width:400px){
+  .pianoforte{
+    top:37%;left:22%;
+  }
+}
+@media (min-width:460px){
+  .pianoforte{
+    top:37%;left:29%;
+  }
+}
+@media (min-width:900px){
+  .pianoforte{
+    top:37%;left:40%;
+  }
 }
 
 .white-key {

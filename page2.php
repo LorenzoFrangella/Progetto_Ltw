@@ -21,7 +21,7 @@
             <area id = "cartello" shape="rect" coords="554,622,683,673" href="#">
         </map>
         <div class="test">
-        <div class="pianoforte" style="position:absolute;z-index:9999;top:37%;left:40%;display: none;">
+        <div class="pianoforte" style="position:absolute;z-index:9999;display: none;">
         <button class="white-key C4-key" onclick="array_utente.push('Do');incrementa()">Do</button>
         <button class="black-key Db4-key"></button>
         <button class="white-key D4-key" onclick="array_utente.push('Re');incrementa()">Re</button>
