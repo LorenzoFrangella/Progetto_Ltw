@@ -214,11 +214,10 @@ a:hover{
 }
 
 .bottone_inizio{
-    margin-top: 50px;
     text-align: center;
-    height: 100px;
-    width: 300px;
-    font-size: 30px;
+    height: 13vw;
+    width: 40vw;
+    font-size: 3.5vw;
 }
 .regbtn{
     position:relative;
