@@ -29,18 +29,22 @@
         <h1 id="titolo_registrati">Registrati</h1>
         <form name="HousEscape" action="ceck_registrazione.php" method="POST" id="form_registrazione" 
         action="./ceck_registrazione.php" onsubmit="return valida_registrazione()">
-            <input type="text" name="reg_name" id="nome" 
-             placeholder="Nome">
-            <input type="text" name="reg_surn" id="cognome"
-            placeholder="Cognome"><br>
-            <input type="text" name="reg_nick" id="nickname" 
-            placeholder="Nickname">
-            <input type="email" name="email" id="email"
-            placeholder="Email"><br>
-            <input type="password" name="reg_pass" id="password" 
-            placeholder="Password">
-            <input type="password" id="conferma_password"
-            placeholder="Conferma password"><br>
+           
+            <ul class="lista_attr">
+                <li><span><input type="text" name="reg_name" id="nome" placeholder="Nome"></span></li>
+
+                <li><span><input type="text" name="reg_surn" id="cognome" placeholder="Cognome"><br></span></li>
+
+                <li><span><input type="text" name="reg_nick" id="nickname" placeholder="Nickname"></span></li>
+
+                <li><span><input type="email" name="email" id="email" placeholder="Email"><br></span></li>
+
+                <li><span><input type="password" name="reg_pass" id="password" placeholder="Password"></span></li>
+
+                <li><span><input type="password" id="conferma_password" placeholder="Conferma password"><br></span></li>
+
+
+            </ul>
             <p1 class="error" id="errore">
                 <?php
                 if(isset($_GET["error"]) && $_GET["error"]=="alr_reg") echo "Nome utente già utilizzato"
