@@ -33,7 +33,7 @@ function stop_scroll(){
     </br>
         Trova la chiave e accedi all'ultima stanza, qui troverai l'uscita celata dietro un ultimo indovinello nascosto all'interno della casa.</br>
     </h2>
-    <div class="entra" style="text-align:center"><a href='./page1.php'><button type='button' class='btn btn-warning bottone_inizio'><b>Entra nella casa!</b>
+    <div class="entra" style="text-align:center"><a href='./page1.php'><button type='button' onclick="avviatimer();"class='btn btn-warning bottone_inizio'><b>Entra nella casa!</b>
 </div></div>
 <script>
         $(document).ready(function() {
@@ -42,6 +42,9 @@ function stop_scroll(){
                       'html, body').get(0).scrollHeight
                 }, 18000);
             });
+        function avviatimer(){
+            window.parent.postMessage('avvia_timer', '*');
+        }
     </script>
 </body>
 </html>

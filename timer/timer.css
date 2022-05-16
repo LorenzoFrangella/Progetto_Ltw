@@ -1,22 +1,6 @@
-/* general styling */
-:root {
-    --smaller: .75;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body_timer{
+.body_timer{
     align-items: center;
-    background-color: gray;
+    background-color: var(--bs-body-color);
     display: flex;
     font-family: -apple-system, 
       BlinkMacSystemFont, 
@@ -27,26 +11,34 @@
       Cantarell, 
       "Helvetica Neue", 
       sans-serif;
-  }
-  
-li {
+      position: absolute;
+      right: 20px;
+      height: 40px;
+}
+
+.countdown{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+
+}
+
+.classe_ul{
+    margin-right: 31px;
+    margin-top: 10px;
+}
+
+.elemento {
     display: inline-block;
     font-size: 1.5em;
     list-style-type: none;
-    padding: 1em;
     text-transform: uppercase;
+    color: aliceblue;
   }
   
-  @media all and (max-width: 768px) {
-    h1 {
-      font-size: calc(1.5rem * var(--smaller));
-    }
-    
-    li {
-      font-size: calc(1.125rem * var(--smaller));
-    }
-    
-    li span {
-      font-size: calc(3.375rem * var(--smaller));
-    }
-  }
+.duepunti{
+    position: relative;
+    top: -2px;
+}

@@ -28,6 +28,9 @@ window.onmessage = function(e) {
             document.getElementById('indietro').style.display = 'inline';
             document.getElementById('avanti').style.display = 'inline';
         break;
+        case 'avvia_timer':
+            avvia_timer();
+        break;
         ///// Aggiungere altri 'case statements' per gestire le chiamate dai figli al padre
         /////
         default:

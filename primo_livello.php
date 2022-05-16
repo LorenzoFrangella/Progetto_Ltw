@@ -19,10 +19,7 @@ $_SESSION['begin_game'] = true;
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./housescape.js"></script>
     <script src="./timer/timer.js"></script>
-    <link rel="stylesheet" href="">
-
-
-
+    <link rel="stylesheet" href="./timer/timer.css">
     <link rel="stylesheet" href="./stile.css">
     <title>HousEscape</title>
 </head>
@@ -34,6 +31,15 @@ $_SESSION['begin_game'] = true;
           <h3 style="padding-top: 8px; padding-left:5px">HousEscape</h3>
         </a>
     </div>
+        <div class="body_timer">
+            <div id="countdown">
+              <ul class="classe_ul">
+                <li class="elemento"><span id="minutes">30</span></li>
+                <li class="elemento duepunti"><span>:</span></li>
+                <li class="elemento"><span id="seconds">00</span></li>
+              </ul>
+            </div>
+          </div>
     </nav>
     <div class="container format" >
       <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
