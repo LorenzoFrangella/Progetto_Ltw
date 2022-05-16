@@ -7,8 +7,12 @@
     <link rel="shortcut icon" href="./img/exit.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
+    <link rel="stylesheet" href="./stile_pg3.css">
     <title>HousEscape</title>
 </head>
 <body>
+    <div class="container">
+        <img  class="lucchetto" src="./img/lucchetto.png">
+    </div>
 </body>
 </html>
