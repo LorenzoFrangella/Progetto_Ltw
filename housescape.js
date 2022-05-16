@@ -53,6 +53,7 @@ function messageToChild(functionToCall,id_child){
 }
 
 var interruttore = false;
+var tocco = false;
 var scala = 0.07;
 var acceso = "off";
 const suono_interruttore = new Audio("./audio/interruttore.mp3");

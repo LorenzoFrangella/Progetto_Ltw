@@ -257,3 +257,36 @@ background: red;
 	height: 50%;
 }
 
+@media (max-width:400px){
+	.pianoforte{
+		top: 3px; left: 8px;
+	  margin-top: 14%;
+	  scale: 70%;
+	  }
+	  #foto_orologio{
+		  margin-top:-20px;
+		  scale: 50%;
+	  }
+
+	}
+	@media (min-width:401px){
+		.pianoforte{
+		  top:37%;left:22%;
+		}
+	  }
+	  @media (min-width:460px){
+		.pianoforte{
+		  top:37%;left:29%;
+		}
+	  }
+	  @media (min-width:900px){
+		.pianoforte{
+		  top:37%;left:40%;
+		}
+	  }
+@media (max-width:310px){
+	  .inserisci_orario{
+		margin-top: -28px;
+		scale: 40%;
+	}
+}
