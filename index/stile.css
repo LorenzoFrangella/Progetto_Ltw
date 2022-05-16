@@ -1,6 +1,6 @@
 body{
     background-color: #343a40;
-    background-image: url(../img/sfondoprova.jpg);
+    background-image: url(./img/sfondoprova.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,43 +33,22 @@ body{
 
 #form{
     border-radius: 10px;
-    height: 64vh;
+    height: 50vh;
     width: 40vw;
     background-color: white;
     text-align: center;
     min-width: 300px;
     min-height: 370px;
-    text-align: center;
 
 }
-
-.lista_attr{
-    padding-left: 0px!important; 
-}
-
-.lista_attr li{
-    list-style-type: none;
-
-}
-
-@media (min-width: 400px) {
-    .lista_attr li{
-        display: inline;
-    }
-
-    #form{
-        height: 50vh;
-    }
-}
-
-
 #formlogin{
+    display: inline-block !important;
     border-radius: 10px;
     height: 40vh;
     width: 40vw;
     background-color: white;
     text-align: center;
-    min-width: 300px;
+    min-width: 400px;
 
 }
 
@@ -317,8 +296,8 @@ function scrollFunction() {
 .intro{
     text-align: center;
     margin-top: 10vh;
-    font-size: 4.0vw;
-    font-family:Trebuchet MS, Geneva, Tahoma, sans-serif;
+    font-size: 4.5vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .entra{
@@ -327,7 +306,7 @@ function scrollFunction() {
 }
 
 #sfondo_intro{
-    background-image: url("../img/Casa-Abbandonata_intro.jpg");
+    background-image: url("./img/Casa-Abbandonata_intro.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

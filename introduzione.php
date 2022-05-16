@@ -10,6 +10,7 @@
     <script src="./js/bootstrap.esm.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script type="text/javascript">
+        var scrolling = 0;
 function page_scroll()
 {
  $("html, body").animate({ scrollTop: $(document).height() }, 18000);
@@ -23,7 +24,7 @@ function stop_scroll(){
 </head>
 <body id="sfondo_intro">
     <div class = "container" >
-        <div class="box_intro" onmouseenter="stop_scroll()" onmouseleave="page_scroll()">
+        <div class="box_intro" onwheel="stop_scroll()" onmouseleave="page_scroll()">
         <h2 class = "intro">
         Sei intrappolato all'interno di una casa abbandonata.
     </br>
@@ -33,7 +34,7 @@ function stop_scroll(){
     </br>
         Trova la chiave e accedi all'ultima stanza, qui troverai l'uscita celata dietro un ultimo indovinello nascosto all'interno della casa.</br>
     </h2>
-    <div class="entra" style="text-align:center"><a href='./page1.php'><button type='button' onclick="avviatimer();"class='btn btn-warning bottone_inizio'><b>Entra nella casa!</b>
+    <div class="entra" style="text-align:center"><a href='./page1.php'><button type='button' onclick="avviatimer();"class='btn btn-warning bottone_inizio' id="entra_nella_casa"><b>Entra nella casa!</b>
 </div></div>
 <script>
         $(document).ready(function() {

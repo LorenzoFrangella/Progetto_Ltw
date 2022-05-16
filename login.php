@@ -27,8 +27,11 @@ $errore=  0 ?>
     <div class = "container" id="formlogin">
         <h1 id="titolo_accedi">Accedi</h1>
         <form name="HousEscape_1" action="./check_login.php" method="POST" id="form_login" onsubmit="return valida_login()">
-            <input type="text" id="nick_email" name = "nick_email" placeholder="Nickname o Email">
-            <input type="password" id="password" name="password" placeholder="Password"><br/>
+            <ul class="lista_attr">
+                <li><span><input type="text" id="nick_email" name = "nick_email" placeholder="Nickname o Email"></span></li>
+                <li><span><input type="password" id="password" name="password" placeholder="Password"><br/></span></li>
+
+            </ul>
 
             <button type="submit" id="log" name ="log" class="btn btn-warning"> Accedi</button><br>
             <p1 class = "error-message"><?php if($errore==1){echo "user not found";}?></p1>
