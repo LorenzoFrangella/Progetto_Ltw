@@ -1,6 +1,6 @@
 body{
     background-color: #343a40;
-    background-image: url(../img/sfondoprova.jpg);
+    background-image: url(./img/sfondoprova.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,6 +42,7 @@ body{
 
 }
 #formlogin{
+    display: inline-block !important;
     border-radius: 10px;
     height: 40vh;
     width: 40vw;
@@ -305,7 +306,7 @@ function scrollFunction() {
 }
 
 #sfondo_intro{
-    background-image: url("../img/Casa-Abbandonata_intro.jpg");
+    background-image: url("./img/Casa-Abbandonata_intro.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
