@@ -33,21 +33,43 @@ body{
 
 #form{
     border-radius: 10px;
-    height: 50vh;
+    height: 64vh;
     width: 40vw;
     background-color: white;
     text-align: center;
     min-width: 300px;
     min-height: 370px;
+    text-align: center;
 
 }
+
+.lista_attr{
+    padding-left: 0px!important; 
+}
+
+.lista_attr li{
+    list-style-type: none;
+
+}
+
+@media (min-width: 400px) {
+    .lista_attr li{
+        display: inline;
+    }
+
+    #form{
+        height: 50vh;
+    }
+}
+
+
 #formlogin{
     border-radius: 10px;
     height: 40vh;
     width: 40vw;
     background-color: white;
     text-align: center;
-    min-width: 400px;
+    min-width: 300px;
 
 }
 
