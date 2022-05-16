@@ -344,3 +344,10 @@ function scrollFunction() {
     width:8vw;
     height:auto;
 }
+.bottone_home{
+    margin-top: 50px;
+    text-align: center;
+    height: 110px;
+    width: 300px;
+    font-size: 30px;
+}
