@@ -194,7 +194,13 @@ background: red;
 	margin-right: auto;
 	left:0;
 	right: 0;
-	scale: 200%;
+	scale: 150%;
+}
+@media (max-width:500px){
+	.popup_orologio{
+		top: 15%;
+		scale:90%;
+	}
 }
 
 .clock{
