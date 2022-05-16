@@ -85,7 +85,7 @@ if (isset($_GET['logout'])){
   <div style="text-align:center"><i>COME SI GIOCA?</i>
   <br>
   <br>1-Se hai già un account effettua il login, altrimenti effettua la registrazione. <br>
-  <br>2-Scegli il grado di difficoltà e inizia a giocare (più aumenti la difficoltà meno indizi avrai a disposizione). <br>
+  <br>2-Trova all'interno della casa indizi,risolvi enigmi e indovinelli che ti permetteranno di trovare l'uscita. <br>
   <br>3-Divertiti!</h2></div>
   <div style="text-align:center"><a href='./primo_livello.php'><button type='button' class='btn btn-warning bottone_inizio'><b>Inizia a giocare!</b></button></div></div>
   <br>

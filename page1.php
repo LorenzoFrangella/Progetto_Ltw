@@ -34,11 +34,14 @@
             <div id="hour"></div>
             <div id="minute"></div>
         </div>
+        <div class="inserisci_orario">
         <input class="tasto" type="time" id="time">
         <button  class="tasto" id="orario" onclick="inserisci_orario()">inserisci orario </button> 
+</div>
     </div>
 
     <script>
+
         $(document).ready(function(e) {
             $("#luce").rwdImageMaps();
         });
@@ -56,7 +59,8 @@
             }
         };
         $("#tastiera_colorata").click(function(){
-            if(interruttore){
+            if(interruttore && tocco == false){
+                tocco = true;
                 $(document).ready(function(){
                     $("#luce").css("-webkit-filter", "blur(10px)");
                 });
@@ -69,6 +73,7 @@
             }
         });
         $("#esci").click(function(){
+            tocco = false;
             $(document).ready(function(){
                 $("#luce").css("-webkit-filter", "blur(0px)");
             });
@@ -81,7 +86,8 @@
         });
         
         $("#orologio").click(function(){
-            if(interruttore){
+            if(interruttore && tocco == false){
+                tocco = true;
                 $(document).ready(function(){
                     $("#luce").css("-webkit-filter", "blur(10px)");});
                     $("#pergamena").css("cursor","default");
@@ -94,6 +100,7 @@
             });
             
             $("#esci_due").click(function(){
+                tocco = false;
                 $(document).ready(function(){
                     $("#luce").css("-webkit-filter", "blur(0px)");});
                     $("#pergamena").css("cursor","pointer");
@@ -104,7 +111,8 @@
             $("#esci_due").fadeOut(500);
         });
         $("#orologio_fisso").click(function(){
-            if(interruttore){
+            if(interruttore && tocco == false){
+                tocco = true;
                 $(document).ready(function(){
                     $("#luce").css("-webkit-filter", "blur(10px)");});
                     $("#pergamena").css("cursor","default");
@@ -117,6 +125,7 @@
             });
             
             $("#esci_due").click(function(){
+                tocco = false;
                 $(document).ready(function(){
                     $("#luce").css("-webkit-filter", "blur(0px)");});
                     $("#pergamena").css("cursor","pointer");
