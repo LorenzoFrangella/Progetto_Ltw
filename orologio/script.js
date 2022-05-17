@@ -9,7 +9,6 @@ function inserisci_orario(){
     hour.style.transform = `rotate(${hr_rotation}deg)`;
     minute.style.transform = `rotate(${min_rotation}deg)`;
     if(hr=="10" && min=="10"){
-        
         var hangoutBotton = document.getElementById("esci_due");
         hangoutBotton.click();
         alert("orario inserito corretto");
