@@ -76,18 +76,15 @@
     document.getElementById("progress").value = 0;
 });
 
-
 $("#cartello").click(function(){
-      if(!menu_piano){
-          if(solved_piano) return;
-          else if(!solved_piano){
-              solved_piano=true; ///ricorda di rimettere a false successivamente questa variabile
-              $("#melodia").addClass("blur");
-              $(".popup_img").fadeIn(500);
-              $("#esci").fadeIn(500);
-            }
-        }
-  });
+    if(menu_piano) return;
+    if(solved_piano) return;
+    solved_piano=true; ///ricorda di rimettere a false successivamente questa variabile
+    $("#melodia").addClass("blur");
+    $(".popup_img").fadeIn(500);
+    $("#esci").fadeIn(500);
+});
+
 
   $("#esci").click(function(){
       solved_piano=false;
