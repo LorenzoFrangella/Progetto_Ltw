@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="aumenta()">+</button>
+</br>
+<input id="primo_numero" type="text" min="0" max="9" value = 0 size="1">
+</br>
+    <button onclick="diminuisci()">-</button> 
+</body>
+<script type="text/javascript">
+    
+    function aumenta(){
+        var primo_numero = document.getElementById("primo_numero").value;
+        var n = parseInt(primo_numero);
+        if(n == 9){
+            n = 0;
+        }
+        else{
+            n = n + 1;
+        }
+        var new_number = String(n);
+        document.getElementById("primo_numero").value = new_number;
+    }
+    function diminuisci(){
+        var primo_numero = document.getElementById("primo_numero").value;
+        var n = parseInt(primo_numero);
+        if(n == 0){
+            n = 9;
+        }
+        else{
+            n = n - 1;
+        }
+        var new_number = String(n);
+        document.getElementById("primo_numero").value = new_number;
+    }
+</script>
+</html>

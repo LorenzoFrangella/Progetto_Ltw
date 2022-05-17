@@ -28,9 +28,100 @@
             <img src="./img/macchina_da_scrivere.png" class="foto_mds">
             <p id="esci_mds" class="exit">Esci</p>
         </div>
-        
+        <div class="lucchetto">
+        <table>
+        <tr class="prima_riga"><td class="aumenta" onclick="aumenta_primo_numero()"> + </td><td class="aumenta" onclick="aumenta_secondo_numero()"> + </td> <td class="aumenta" onclick="aumenta_terzo_numero()"> + </td></tr>
+        <tr class = "seconda_riga"><td id="primo_numero"> 0 </td><td id="secondo_numero"> 0 </td> <td id="terzo_numero"> 0 </td></tr>
+        <tr class = "terza_riga"><td class="diminuisci" onclick="diminuisci_primo_numero()"> - </td><td class="diminuisci" onclick="diminuisci_secondo_numero()"> - </td> <td class="diminuisci" onclick="diminuisci_terzo_numero()"> - </td></tr>
+        </table>
+</div>
+  <!--  <button>+   </button> 
+    <button>+   </button> 
+    <button>+   </button>
+</br>
+    <input readonly="text" size="1" id="primo_numero" style="z-index=9999"> 
+    <input readonly="text" size="1" id="secondo_numero" style="z-index=9999"> 
+    <input readonly="text" size="1" id="terzo_numero" style="z-index=9999"> 
+</br>
+    <button>-   </button> 
+    <button>-   </button> 
+    <button>-   </button>-->
     </div> 
-
+    <script type="text/javascript">
+    
+    function aumenta_primo_numero(){
+        var primo_numero = document.getElementById("primo_numero").innerText;
+        var n = parseInt(primo_numero);
+        if(n == 9){
+            n = 0;
+        }
+        else{
+            n = n + 1;
+        }
+        var new_number = String(n);
+        document.getElementById("primo_numero").innerHTML = new_number;
+    }
+    function aumenta_secondo_numero(){
+        var primo_numero = document.getElementById("secondo_numero").innerText;
+        var n = parseInt(primo_numero);
+        if(n == 9){
+            n = 0;
+        }
+        else{
+            n = n + 1;
+        }
+        var new_number = String(n);
+        document.getElementById("secondo_numero").innerHTML = new_number;
+    }
+    function aumenta_terzo_numero(){
+        var primo_numero = document.getElementById("terzo_numero").innerText;
+        var n = parseInt(primo_numero);
+        if(n == 9){
+            n = 0;
+        }
+        else{
+            n = n + 1;
+        }
+        var new_number = String(n);
+        document.getElementById("terzo_numero").innerHTML = new_number;
+    }
+    function diminuisci_primo_numero(){
+        var primo_numero = document.getElementById("primo_numero").innerText;
+        var n = parseInt(primo_numero);
+        if(n == 0){
+            n = 9;
+        }
+        else{
+            n = n - 1;
+        }
+        var new_number = String(n);
+        document.getElementById("primo_numero").innerHTML = new_number;
+    }
+    function diminuisci_secondo_numero(){
+        var primo_numero = document.getElementById("secondo_numero").innerText;
+        var n = parseInt(primo_numero);
+        if(n == 0){
+            n = 9;
+        }
+        else{
+            n = n - 1;
+        }
+        var new_number = String(n);
+        document.getElementById("secondo_numero").innerHTML = new_number;
+    }
+    function diminuisci_terzo_numero(){
+        var primo_numero = document.getElementById("terzo_numero").innerText;
+        var n = parseInt(primo_numero);
+        if(n == 0){
+            n = 9;
+        }
+        else{
+            n = n - 1;
+        }
+        var new_number = String(n);
+        document.getElementById("terzo_numero").innerHTML = new_number;
+    }
+</script>
     <script src="page3.js"></script>
 </body>
 </html>
