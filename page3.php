@@ -26,7 +26,10 @@
                 <form><input type="text" id="terzo_enigma" name="indovinello" minlenght="1" size="10" class="campo_scrivibile"></form>
             </div>
             <img src="./img/macchina_da_scrivere.png" class="foto_mds">
+
+            <p class="exit">Esci</p>
         </div>
+
         
     </div> 
 
