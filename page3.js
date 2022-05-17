@@ -1,3 +1,4 @@
+const suono_tastiera = new Audio("./audio/typewriter.mp3");
 $("#type").click(function(){
     $("#type").css("cursor","default");
     $("#type_writer").addClass("blur");
@@ -7,6 +8,7 @@ $(document).ready(function(e) {
 $("#type_writer").rwdImageMaps();
 });
 $("#tre").on('input', function() {
+    suono_tastiera.play();
     terzo_enigma();
 });
 function chiudi_mds(){$("#type").css("cursor","pointer");
