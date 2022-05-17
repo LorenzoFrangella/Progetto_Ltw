@@ -116,9 +116,7 @@ $(document).ready(function(){
 
 var array_utente =new Array();
 var mio_array=new Array("Fa","Mi","Re", "Sol", "Si");
-function popup_piano(){
-    $(document).getElementById("pianoforte").style.display = "inline";
-}
+
 var x=0;
 function incrementa() {
     var i = document.getElementById("progress").value;

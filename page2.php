@@ -10,14 +10,14 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="./js/jquery.rwdImageMaps.js"></script>
     <script src="./housescape.js"></script>
-    <script> var solved_piano = false</script>
+    <script> var solved_piano = false;</script>
     <title>Document</title>
 </head>
 <body id="secondo">
     <div class="piano" >
         <img src="./img/img2.png" usemap="#piano" id="melodia" width="1500" height="966">
         <map name="piano">
-            <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="popup_piano();" title="piano">
+            <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="" title="piano">
             <area id = "cartello" shape="rect" coords="554,622,683,673" href="#">
         </map>
         <div class="test">

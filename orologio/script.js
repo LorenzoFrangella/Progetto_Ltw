@@ -9,9 +9,12 @@ function inserisci_orario(){
     hour.style.transform = `rotate(${hr_rotation}deg)`;
     minute.style.transform = `rotate(${min_rotation}deg)`;
     if(hr=="10" && min=="10"){
-        alert("orario inserito corretto");
+        
         var hangoutBotton = document.getElementById("esci_due");
         hangoutBotton.click();
+        alert("orario inserito corretto");
+        $("#orologio").css("cursor","default");
+        $("#orologio").unbind('click').removeAttr("onclick")[0].onclick = null;
         parent.postMessage("primo_enigma","*")
 }
 }
