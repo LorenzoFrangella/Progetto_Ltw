@@ -76,3 +76,25 @@
     background: red;
     cursor: pointer;
 }
+.aumenta{
+    cursor:pointer;
+}
+#primo_numero{
+    cursor: default;
+}
+#secondo_numero{
+    cursor: default;
+}
+#terzo_numero{
+    cursor: default;
+}
+.diminuisci{
+    cursor:pointer;
+}
+.lucchetto{
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: blueviolet;
+}
