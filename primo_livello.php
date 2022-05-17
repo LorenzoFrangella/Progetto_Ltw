@@ -67,25 +67,5 @@ $_SESSION['begin_game'] = true;
       <br/>
       
     </div>
-    <script>
-      var eventMethod = window.addEventListener
-			? "addEventListener"
-			: "attachEvent";
-	var eventer = window[eventMethod];
-	var messageEvent = eventMethod === "attachEvent"
-		? "onmessage"
-		: "message";
-
-	eventer(messageEvent, function (e) {
-		
-		// if (e.origin !== 'http://the-trusted-iframe-origin.com') return;
-		
-		if (e.data === "primo_enigma" || e.message === "primo_enigma") 
-      primo_enigma_risolto();
-		if (e.data === "secondo_enigma" || e.message === "secondo_enigma") 
-      secondo_enigma_risolto();
-		console.log(e);
-	});
-      </script>
 </body>
 </html>

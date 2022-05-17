@@ -31,6 +31,12 @@ window.onmessage = function(e) {
         case 'avvia_timer':
             avvia_timer();
         break;
+        case 'primo_enigma':
+            primo_enigma_risolto();
+            break;
+        case 'secondo_enigma':
+            secondo_enigma_risolto();
+            break;
         ///// Aggiungere altri 'case statements' per gestire le chiamate dai figli al padre
         /////
         default:
