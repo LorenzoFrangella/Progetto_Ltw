@@ -20,6 +20,7 @@
         <img src="./img/stanza3.png" usemap="#typewriter" id="type_writer" width="1276" height="718">
         <map name="typewriter">
            <area id="type" shape="rect" coords="420,338,568,416" href="#" onclick="" title="macchina_da_scrivere"> 
+           <area id="door" shape="rect" coords="913,177,1161,519" href="#" onclick="" title="lucchetto"> 
         </map>
         <div id="macchina_da_scrivere" class="popup_macchina_da_scrivere">
             <div class="foglio">
@@ -28,13 +29,18 @@
             <img src="./img/macchina_da_scrivere.png" class="foto_mds">
             <p id="esci_mds" class="exit">Esci</p>
         </div>
-        <div class="lucchetto">
-        <table>
-        <tr class="prima_riga"><td class="aumenta" onclick="aumenta_primo_numero()"> + </td><td class="aumenta" onclick="aumenta_secondo_numero()"> + </td> <td class="aumenta" onclick="aumenta_terzo_numero()"> + </td></tr>
-        <tr class = "seconda_riga"><td id="primo_numero"> 0 </td><td id="secondo_numero"> 0 </td> <td id="terzo_numero"> 0 </td></tr>
-        <tr class = "terza_riga"><td class="diminuisci" onclick="diminuisci_primo_numero()"> - </td><td class="diminuisci" onclick="diminuisci_secondo_numero()"> - </td> <td class="diminuisci" onclick="diminuisci_terzo_numero()"> - </td></tr>
-        </table>
-</div>
+        <div id="porta" class="popup_lucchetto">
+            <div class="lucchetto">
+                <table>
+                <tr class="prima_riga"><td class="aumenta" onclick="aumenta_primo_numero()"> + </td><td class="aumenta" onclick="aumenta_secondo_numero()"> + </td> <td class="aumenta" onclick="aumenta_terzo_numero()"> + </td></tr>
+                <tr class = "seconda_riga"><td id="primo_numero"> 0 </td><td id="secondo_numero"> 0 </td> <td id="terzo_numero"> 0 </td></tr>
+                <tr class = "terza_riga"><td class="diminuisci" onclick="diminuisci_primo_numero()"> - </td><td class="diminuisci" onclick="diminuisci_secondo_numero()"> - </td> <td class="diminuisci" onclick="diminuisci_terzo_numero()"> - </td></tr>
+                </table>
+            </div>
+            <p id="solution" class="exit" onclick="verificaSoluzione()">Invia la tua soluzione</p>
+            <br>
+            <p id="uscita" class="exit" onclick="uscita()">Esci</p>
+        </div>
   <!--  <button>+   </button> 
     <button>+   </button> 
     <button>+   </button>
@@ -46,7 +52,7 @@
     <button>-   </button> 
     <button>-   </button> 
     <button>-   </button>-->
-    </div> 
+</div> 
     <script type="text/javascript">
     
     function aumenta_primo_numero(){
@@ -62,8 +68,8 @@
         document.getElementById("primo_numero").innerHTML = new_number;
     }
     function aumenta_secondo_numero(){
-        var primo_numero = document.getElementById("secondo_numero").innerText;
-        var n = parseInt(primo_numero);
+        var secondo_numero = document.getElementById("secondo_numero").innerText;
+        var n = parseInt(secondo_numero);
         if(n == 9){
             n = 0;
         }
@@ -74,8 +80,8 @@
         document.getElementById("secondo_numero").innerHTML = new_number;
     }
     function aumenta_terzo_numero(){
-        var primo_numero = document.getElementById("terzo_numero").innerText;
-        var n = parseInt(primo_numero);
+        var terzo_numero = document.getElementById("terzo_numero").innerText;
+        var n = parseInt(terzo_numero);
         if(n == 9){
             n = 0;
         }
@@ -98,8 +104,8 @@
         document.getElementById("primo_numero").innerHTML = new_number;
     }
     function diminuisci_secondo_numero(){
-        var primo_numero = document.getElementById("secondo_numero").innerText;
-        var n = parseInt(primo_numero);
+        var secondo_numero = document.getElementById("secondo_numero").innerText;
+        var n = parseInt(secondo_numero);
         if(n == 0){
             n = 9;
         }
@@ -110,8 +116,8 @@
         document.getElementById("secondo_numero").innerHTML = new_number;
     }
     function diminuisci_terzo_numero(){
-        var primo_numero = document.getElementById("terzo_numero").innerText;
-        var n = parseInt(primo_numero);
+        var terzo_numero = document.getElementById("terzo_numero").innerText;
+        var n = parseInt(terzo_numero);
         if(n == 0){
             n = 9;
         }

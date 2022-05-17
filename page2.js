@@ -54,6 +54,7 @@ $("#cartello").click(function(){
         parent.postMessage("secondo_enigma","*");
         array_utente=[];
         alert('Bravo! La sequenza è corretta');
+        suono_passed.play();
         $("#area").unbind('click').removeAttr("onclick")[0].onclick = null;
         $("#area").css("cursor","default");
         $(".pianoforte").fadeOut(500);
