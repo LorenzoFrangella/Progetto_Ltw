@@ -14,6 +14,10 @@ $("#tre").on('input', function() {
 >>>>>>> b6a92f6 (push)
     terzo_enigma();
 });
+function chiudi_mds(){$("#type").css("cursor","pointer");
+    $("#type_writer").removeClass("blur");
+    $("#macchina_da_scrivere").fadeOut(500);
+    }
 function terzo_enigma(){
     var mirror = document.getElementById("tre").value;
     if(mirror=="specchio"){
@@ -21,6 +25,7 @@ function terzo_enigma(){
         $("#type").css("cursor","default");
         $("#type").unbind('click').removeAttr("onclick")[0].onclick = null;
         parent.postMessage("terzo_enigma","*");
+        chiudi_mds();
     }
 <<<<<<< HEAD
 }
@@ -29,8 +34,6 @@ function terzo_enigma(){
 };
 >>>>>>> a392674 (okoko)
 $("#esci_mds").click(function(){
-    $("#type").css("cursor","pointer");
-    $("#type_writer").removeClass("blur");
-    $("#macchina_da_scrivere").fadeOut(500);
+    chiudi_mds();
 });
 >>>>>>> c674fdc (.)

@@ -307,6 +307,12 @@ a:hover{
     width:8vw;
     height:auto;
 }
+#terzo_enigma{
+    display:none;
+    margin-top: 15px !important;
+    width:8vw;
+    height:auto;
+}
 .bottone_home{
     margin-top: 50px;
     text-align: center;
