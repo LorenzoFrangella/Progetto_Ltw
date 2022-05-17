@@ -17,7 +17,7 @@
 <body id="terzo">
 <div class="bg_3"></div>
     <div class="stanza_3">
-        <img src="./img/stanza_3.jpg" usemap="#typewriter" id="type_writer" width="1276" height="718">
+        <img src="./img/stanza3.png" usemap="#typewriter" id="type_writer" width="1276" height="718">
         <map name="typewriter">
            <area id="type" shape="rect" coords="420,338,568,416" href="#" onclick="" title="macchina_da_scrivere"> 
         </map>
