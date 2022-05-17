@@ -1,3 +1,4 @@
+const suono_tastiera = new Audio("./audio/typewriter.mp3");
 $("#type").click(function(){
     $("#type").css("cursor","default");
     $("#type_writer").addClass("blur");
@@ -11,7 +12,11 @@ $("#type_writer").rwdImageMaps();
 $("#terzo_enigma").on('input', function() {
 =======
 $("#tre").on('input', function() {
+<<<<<<< HEAD
 >>>>>>> b6a92f6 (push)
+=======
+    suono_tastiera.play();
+>>>>>>> 5ddf9e4 (typewriter)
     terzo_enigma();
 });
 function chiudi_mds(){$("#type").css("cursor","pointer");
