@@ -26,6 +26,7 @@
                 <form><input type="text" id="tre" name="indovinello" minlenght="1" size="10" class="campo_scrivibile"></form>
             </div>
             <img src="./img/macchina_da_scrivere.png" class="foto_mds">
+            <p id="esci_mds" class="exit">Esci</p>
         </div>
         
     </div> 
