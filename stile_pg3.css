@@ -13,58 +13,39 @@
 	position: absolute;
 	display: none;
 	z-index: 9999;
-	top: -150px;	
+	top: -45%;	
 	margin-left: auto;
 	margin-right: auto;
 	left:0;
 	right: 0;
-	scale: 40%;
+	scale: 37%;
 }
 @media  (max-width:1000px) {
     .popup_macchina_da_scrivere{
-        scale:30%;
-        top:-200px;
+        scale:35%;
     }
 }
 @media  (max-width:800px) {
     .popup_macchina_da_scrivere{
-        scale:20%;
-        top:-300px;
-        left:-7%;
+        scale:28%;
     }
 }
 @media  (max-width:600px) {
     .popup_macchina_da_scrivere{
-        scale:15%;
-        top:-350px;
-        left:-28%;
+        scale:23%;
     }
 }
-@media  (max-width:500px) {
-    .popup_macchina_da_scrivere{
-        scale:11%;
-        top:-400px;
-        left:-53%;
-    }
-}
-@media (max-width:393px){
-    .popup_macchina_da_scrivere{
-        scale:9%;
-        top:-423px;
-        left:-62%;
-    }
-}
-@media (max-width:360px){
-    .popup_macchina_da_scrivere{
-        scale:8%;
-        top:-433px;
-        left:-74%;
-    }
-}
-@media (max-width:315px){
-    .popup_macchina_da_scrivere{
-        scale:7%;
-        top:-450px;
-        left:-105%;
-    }
-}
+
+.bg_3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-color: aquamarine;
+    border: double;  
+    filter: brightness(100%);
+    /*background-image: url("./img/casa_quattro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+  }
