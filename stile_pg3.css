@@ -9,32 +9,6 @@
 		width: 100%;
 		height: auto;
 }
-.popup_macchina_da_scrivere{
-	position: absolute;
-	display: none;
-	z-index: 9999;
-	top: -45%;	
-	margin-left: auto;
-	margin-right: auto;
-	left:0;
-	right: 0;
-	scale: 37%;
-}
-@media  (max-width:1000px) {
-    .popup_macchina_da_scrivere{
-        scale:35%;
-    }
-}
-@media  (max-width:800px) {
-    .popup_macchina_da_scrivere{
-        scale:28%;
-    }
-}
-@media  (max-width:600px) {
-    .popup_macchina_da_scrivere{
-        scale:23%;
-    }
-}
 
 .bg_3{
     position: absolute;
@@ -43,9 +17,43 @@
     border-color: aquamarine;
     border: double;  
     filter: brightness(100%);
-    /*background-image: url("./img/casa_quattro.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    */
   }
+
+.foto_mds{
+    position:absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 40%;
+    top: 20%;
+    z-index: 102;
+}  
+
+.foglio{
+    height: 35%;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 20%;
+    z-index: 100;
+    background: white;
+    border-radius: 3px;
+
+}
+
+.campo_scrivibile{
+    width: 70%;
+    z-index: 101;
+    margin-top: 10%;
+}
+
+.popup_macchina_da_scrivere{
+    display: none;
+    position: absolute;
+    top:0;  
+    height: 100vh;
+    width:100vw;
+}

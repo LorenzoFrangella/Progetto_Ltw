@@ -21,18 +21,15 @@
         <map name="typewriter">
            <area id="type" shape="rect" coords="420,338,568,416" href="#" onclick="" title="macchina_da_scrivere"> 
         </map>
-        <!--img  class="lucchetto" src="./img/lucchetto.png"-->
-        <img src="./img/macchina_da_scrivere.png" id="macchina_da_scrivere" class="popup_macchina_da_scrivere">
-    </div>
-    <script>
-        $("#type").click(function(){
-            $("#type").css("cursor","default");
-            $("#type_writer").addClass("blur");
-            $("#macchina_da_scrivere").fadeIn(500);
-        });
-        $(document).ready(function(e) {
-        $("#type_writer").rwdImageMaps();
-    });
-    </script>
+        <div id="macchina_da_scrivere" class="popup_macchina_da_scrivere">
+            <div class="foglio">
+                <form><input type="text" name="indovinello" minlenght="1" size="10" class="campo_scrivibile"></form>
+            </div>
+            <img src="./img/macchina_da_scrivere.png" class="foto_mds">
+        </div>
+        
+    </div> 
+
+    <script src="page3.js"></script>
 </body>
 </html>
