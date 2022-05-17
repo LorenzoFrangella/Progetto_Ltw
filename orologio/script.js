@@ -15,6 +15,6 @@ function inserisci_orario(){
         alert("orario inserito corretto");
         $("#orologio").css("cursor","default");
         $("#orologio").unbind('click').removeAttr("onclick")[0].onclick = null;
-        parent.postMessage("primo_enigma","*")
+        parent.postMessage("primo_enigma","*");
 }
 }

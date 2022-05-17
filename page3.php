@@ -23,7 +23,7 @@
         </map>
         <div id="macchina_da_scrivere" class="popup_macchina_da_scrivere">
             <div class="foglio">
-                <form><input type="text" name="indovinello" minlenght="1" size="10" class="campo_scrivibile"></form>
+                <form><input type="text" id="terzo_enigma" name="indovinello" minlenght="1" size="10" class="campo_scrivibile"></form>
             </div>
             <img src="./img/macchina_da_scrivere.png" class="foto_mds">
         </div>
