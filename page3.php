@@ -27,7 +27,7 @@
             </div>
             <img src="./img/macchina_da_scrivere.png" class="foto_mds">
 
-            <p class="exit">Esci</p>
+            <p class="exit" id="esci_mds">Esci</p>
         </div>
 
         

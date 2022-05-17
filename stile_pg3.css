@@ -59,6 +59,7 @@
 }
 
 .exit{
+    display: inline;
     position: absolute;
     z-index: 9999;
     border-radius: 5px;
@@ -74,4 +75,4 @@
     color: #f7f7f7;
     background: red;
     cursor: pointer;
-    }
+}
