@@ -7,11 +7,15 @@ $(document).ready(function(e) {
 $("#type_writer").rwdImageMaps();
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 $("#terzo_enigma").on('input', function() {
+=======
+$("#tre").on('input', function() {
+>>>>>>> b6a92f6 (push)
     terzo_enigma();
 });
 function terzo_enigma(){
-    var mirror = document.getElementById("terzo_enigma").value;
+    var mirror = document.getElementById("tre").value;
     if(mirror=="specchio"){
         alert("parola corretta");
         $("#type").css("cursor","default");

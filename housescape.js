@@ -37,6 +37,9 @@ window.onmessage = function(e) {
         case 'secondo_enigma':
             secondo_enigma_risolto();
             break;
+        case 'terzo_enigma':
+            terzo_enigma_risolto();
+            break;
         ///// Aggiungere altri 'case statements' per gestire le chiamate dai figli al padre
         /////
         default:
@@ -135,4 +138,7 @@ function primo_enigma_risolto(){
 }
 function secondo_enigma_risolto(){
     document.getElementById("secondo_enigma").style.display = "inline";
+}
+function terzo_enigma_risolto(){
+    document.getElementById("terzo_enigma").style.display = "inline";
 }

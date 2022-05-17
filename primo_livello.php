@@ -46,6 +46,7 @@ $_SESSION['begin_game'] = true;
       <div class="enigmi">
         <img src="./img/primo_enigma.jpg" id = "primo_enigma">
         <img src="./img/secondo_enigma.jpg" id = "secondo_enigma">
+        <img src="./img/terzo_enigma.jpg" id = "terzo_enigma">
   </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
