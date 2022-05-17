@@ -6,11 +6,11 @@ $("#type").click(function(){
 $(document).ready(function(e) {
 $("#type_writer").rwdImageMaps();
 });
-$("#terzo_enigma").on('input', function() {
+$("#tre").on('input', function() {
     terzo_enigma();
 });
 function terzo_enigma(){
-    var mirror = document.getElementById("terzo_enigma").value;
+    var mirror = document.getElementById("tre").value;
     if(mirror=="specchio"){
         alert("parola corretta");
         $("#type").css("cursor","default");
