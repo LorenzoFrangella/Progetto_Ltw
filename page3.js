@@ -19,3 +19,8 @@ function terzo_enigma(){
         parent.postMessage("terzo_enigma","*");
     }
 }
+$("#esci_mds").click(function(){
+    $("#type").css("cursor","pointer");
+    $("#type_writer").removeClass("blur");
+    $("#macchina_da_scrivere").fadeOut(500);
+});
