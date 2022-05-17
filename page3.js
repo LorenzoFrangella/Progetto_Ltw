@@ -22,10 +22,10 @@ function terzo_enigma(){
     var mirror = document.getElementById("tre").value;
     if(mirror == "specchio"){
         alert("parola corretta");
-        $("#type").css("cursor","none");
+        chiudi_mds();
+        $("#type").css("cursor","default");
         $("#type").unbind('click').removeAttr("onclick")[0].onclick = null;
         parent.postMessage("terzo_enigma","*");
-        chiudi_mds();
     }
 <<<<<<< HEAD
 }
