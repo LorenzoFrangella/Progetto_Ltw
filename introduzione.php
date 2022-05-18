@@ -29,7 +29,7 @@ function stop_scroll(){
         Sei intrappolato all'interno di una casa abbandonata.
     </br>
     </br>
-    Risolvi gli enigmi all'interno delle stanze, qui troverai l'uscita celata dietro un ultimo indovinello nascosto all'interno della casa.</br>
+    All'interno delle stanze troverai degli enigmi, risolvili per poter uscire.</br>
 </br>
 </br>
 Qualcuno ti ha fatto uno scherzo e ha spento le luci, accendile prima di iniziare a muoverti.
