@@ -28,7 +28,7 @@
             <p id="esci_mds" class="exit">Esci</p>
         </div>
     <div class="lucchetto_popup">
-        <p id="esci_lock" class="exit_lucchetto">Esci</p>
+        <p id="esci_lock" class="exit_lucchetto" >Esci</p>
         <div class="lucchetto">
             <ul>
                 <li class="rotor">
