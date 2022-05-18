@@ -8,8 +8,8 @@ create table utente(
 --TABELLA PER LA MEMORIZZAZIONE DI VALORI IN CLASSIFICA
 
 create table classifica(
-	nome varchar(40),
 	nickname varchar(40),
-	minuti int,
-	secondi int check(secondi >= 0 and secondi < 60)
+	minuti int check(minuti >= 0),
+	secondi int check(secondi >= 0 and secondi < 60),
+	totale_secondi check(totale_secondi >= 0)
 )
