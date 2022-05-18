@@ -23,5 +23,10 @@
     <link rel="icon" href="../img/exit.png">
 </head>
 <body>
+    <h1 class="titolo animated bounceInDown" style="text-align:center; height:300px">Complimenti!</h1> <br>
+    <h2>
+        Congratulazioni, sei riuscito ad uscire in : <?php echo $minuti;?> minuti e <?php echo $secondi;?>
+    </h2>
+    <p>Vai a vedere la <a href="./classifica.php">Classifica</a> Per scoprire se sei stato tra i più veloci</p>
 </body>
 </html>
