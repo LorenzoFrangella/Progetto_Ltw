@@ -9,6 +9,7 @@ $("#type").click(function(){
     $("#type").css("cursor","default");
     $("#type_writer").addClass("blur");
     $("#macchina_da_scrivere").fadeIn(500);
+    document.getElementById("tre").focus();
 });
 
 $("#tre").on('input', function() {
@@ -20,6 +21,7 @@ function chiudi_mds(){
     $("#type").css("cursor","pointer");
     $("#type_writer").removeClass("blur");
     $("#macchina_da_scrivere").fadeOut(500);
+    document.getElementById("tre").value = "";
 }
 
 function terzo_enigma(){
