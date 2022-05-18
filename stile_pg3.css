@@ -93,33 +93,103 @@
 }
 .lucchetto{
     position:absolute;
-    top: 50%;
-    left: 50%;
-    display: none;
-    color:#f7f7f7;
-    background-color: rgb(83, 79, 79);
+    top: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    text-align: center;
+    top:40%
+
+}
+.rotor{
+    float: left;
+    width: 10%;
+
 }
 
-.popup_lucchetto{
+.elemento_padre{
+    list-style-type: none;
+    display: inline;
+    float: left;
+}
+ul{
+    list-style-type: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.inserire_numero{
+    width: 100%;
+    padding-top:20%;
+    padding-bottom:20%;
+    text-align: center;
+    color: white;
+    background-color: #343a40;
+    border:solid;
+    border-color: black;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 3vw;
+}
+
+.bottone_rotore{
+    width: 100%;
+    border: solid;
+    border-color: #d6a000;
+    font-size: 3vw;
+    border-radius: 5px;
+    background: #ffc107;
+}
+
+.bottone_rotore:hover{
+    background: #e8ae00;
+    color: white;
+}
+
+.lucchetto_popup{
     display: none;
     position: absolute;
-    top:0;  
+    top: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    text-align: center;
+    width: 100vw;
     height: 100vh;
-    width:100vw;
+    left: 31%;
+    background-image: url(./img/lucchetto.png);
+    background-size: 69%;
+    background-repeat: no-repeat;
 }
 
-#solution{
-    position: absolute;
-	z-index: 9999;
-	border-radius: 5px;
-	top: 5%;
-	right: 10%;
-}
 
-#uscita{
-    position: absolute;
-z-index: 9999;
-border-radius: 5px;
-top: 15%;
-right: 10%;
+@media screen and (max-width: 768px) {
+    .bottone_rotore{
+        width: 40px;
+        height: 40px;
+    }
+    .inserire_numero{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .bottone_rotore{
+        width: 30px;
+        height: 30px;
+    }
+    .inserire_numero{
+        width: 30px;
+        height: 30px;
+    }
 }

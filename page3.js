@@ -45,8 +45,12 @@ $("#esci_mds").click(function(){
     chiudi_mds();
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c674fdc (.)
 =======
+=======
+/*
+>>>>>>> 8ae3d63 (ho sofferto per fare questa commit)
 
 $("#door").click(function(){
     $("#type").css("cursor","default");
@@ -84,5 +88,105 @@ function uscita(){
     $("#porta").fadeOut(500);
     $(".lucchetto").fadeOut(500);
     $("#type_writer").removeClass("blur");
+<<<<<<< HEAD
 }
 >>>>>>> fbeb443 (suono e lucchetto)
+=======
+*/
+$("#porta").click(function(){
+    $("#porta").css("cursor","default");
+    $("#type_writer").addClass("blur");
+    $(".lucchetto_popup").fadeIn(500);
+});
+
+function addRotor1(){
+    var primo_numero = document.getElementById("primo_numero").value;
+    var n = parseInt(primo_numero);
+    if(n == 9){
+        n = 0;
+    }
+    else{
+        n = n + 1;
+    }
+    var new_number = String(n);
+    document.getElementById("primo_numero").value = new_number;
+    ceck_lucchetto();
+}
+function addRotor2(){
+    var primo_numero = document.getElementById("secondo_numero").value;
+    var n = parseInt(primo_numero);
+    if(n == 9){
+        n = 0;
+    }
+    else{
+        n = n + 1;
+    }
+    var new_number = String(n);
+    document.getElementById("secondo_numero").value = new_number;
+    ceck_lucchetto();
+}
+function addRotor3(){
+    var primo_numero = document.getElementById("terzo_numero").value;
+    var n = parseInt(primo_numero);
+    if(n == 9){
+        n = 0;
+    }
+    else{
+        n = n + 1;
+    }
+    var new_number = String(n);
+    document.getElementById("terzo_numero").value = new_number;
+    ceck_lucchetto();
+}
+function subRotor1(){
+    var primo_numero = document.getElementById("primo_numero").value;
+    var n = parseInt(primo_numero);
+    if(n == 0){
+        n = 9;
+    }
+    else{
+        n = n - 1;
+    }
+    var new_number = String(n);
+    document.getElementById("primo_numero").value = new_number;
+    ceck_lucchetto();
+}
+function subRotor2(){
+    var primo_numero = document.getElementById("secondo_numero").value;
+    var n = parseInt(primo_numero);
+    if(n == 0){
+        n = 9;
+    }
+    else{
+        n = n - 1;
+    }
+    var new_number = String(n);
+    document.getElementById("secondo_numero").value = new_number;
+    ceck_lucchetto();
+}
+function subRotor3(){
+    var primo_numero = document.getElementById("terzo_numero").value;
+    var n = parseInt(primo_numero);
+    if(n == 0){
+        n = 9;
+    }
+    else{
+        n = n - 1;
+    }
+    var new_number = String(n);
+    document.getElementById("terzo_numero").value = new_number;
+    ceck_lucchetto();
+}
+
+function ceck_lucchetto(){
+    if(document.getElementById("primo_numero").value == "4" 
+        && document.getElementById("secondo_numero").value == "6" 
+        && document.getElementById("terzo_numero").value == "8"){
+            alert("Hai trovato la combinazione giusta, sei libero!");
+            $("#porta").css("cursor","default");
+            $("#type_writer").removeClass("blur");
+            $(".lucchetto_popup").fadeOut(500);
+            $("#sfondo").attr("src","./img/stanza3_fine.png");
+    }
+}
+>>>>>>> 8ae3d63 (ho sofferto per fare questa commit)
