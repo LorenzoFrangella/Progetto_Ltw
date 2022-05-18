@@ -5,6 +5,24 @@
     unset($_COOKIE['total_sec']);
     unset($_COOKIE['minuti']);
     unset($_COOKIE['secondi']);
+    $nickname = $_SESSION['nickname'];
+    $dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape 
+    user=postgres password=biar")
+    or die ('Could not connect: '. pg_last_error());
+    if($dbconn){
+        $check = "select nickname from classifica";
+        $data = pg_query_params($dbconn,$check,array());
+        $num_risultati = pg_num_rows($data);
+                if($num_risultati==1){
+                    $q1 = " UPDATE classifica [SET minuti = $1, secondi = $2, totale_secondi = $3 where nickname == $4";
+                    $result = pg_query_params($dbconn,$q1,array($minuti,$secondi,$totale_secondi,$nickname));
+                }
+         else{ 
+            $q2 = "insert into classfica values($1,$2,$3,$4)";
+            $result = pg_query_params($dbconn,$q1,array($nickname,$minuti,$secondi,$totale_secondi));
+         }
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="it">
