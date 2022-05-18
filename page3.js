@@ -46,6 +46,7 @@ $("#esci_mds").click(function(){
 });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c674fdc (.)
 =======
 =======
@@ -93,6 +94,9 @@ function uscita(){
 >>>>>>> fbeb443 (suono e lucchetto)
 =======
 */
+=======
+
+>>>>>>> 74840d5 (buongiornoo)
 $("#porta").click(function(){
     $("#porta").css("cursor","default");
     $("#type_writer").addClass("blur");
@@ -183,6 +187,7 @@ function ceck_lucchetto(){
         && document.getElementById("secondo_numero").value == "6" 
         && document.getElementById("terzo_numero").value == "8"){
             alert("Hai trovato la combinazione giusta, sei libero!");
+            suono_porta.play();
             $("#porta").css("cursor","default");
             $("#type_writer").removeClass("blur");
             $(".lucchetto_popup").fadeOut(500);
