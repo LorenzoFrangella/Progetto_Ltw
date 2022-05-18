@@ -17,10 +17,10 @@
 <body id="terzo">
 <div class="bg_3"></div>
     <div class="stanza_3">
-        <img src="./img/stanza3.png" usemap="#typewriter" id="type_writer" width="1276" height="718">
+        <img src="./img/stanza3.png" id="sfondo" usemap="#typewriter" id="type_writer" width="1276" height="718">
         <map name="typewriter">
-           <area id="type" shape="rect" coords="420,338,568,416" href="#" onclick="" title="macchina_da_scrivere"> 
-           <area id="door" shape="rect" coords="913,177,1161,519" href="#" onclick="" title="lucchetto"> 
+           <area id="type" shape="rect" coords="420,338,568,416" href="#" onclick="" title="macchina_da_scrivere">
+           <area id="porta" shape="rect" coords="0,0,100,100" href="#" onclick="" title="macchina_da_scrivere">  
         </map>
         <div id="macchina_da_scrivere" class="popup_macchina_da_scrivere">
             <div class="foglio">
@@ -29,19 +29,14 @@
             <img src="./img/macchina_da_scrivere.png" class="foto_mds">
             <p id="esci_mds" class="exit">Esci</p>
         </div>
-        <div id="porta" class="popup_lucchetto">
-            <div class="lucchetto">
-                <table>
-                <tr class="prima_riga"><td class="aumenta" onclick="aumenta_primo_numero()"> + </td><td class="aumenta" onclick="aumenta_secondo_numero()"> + </td> <td class="aumenta" onclick="aumenta_terzo_numero()"> + </td></tr>
-                <tr class = "seconda_riga"><td id="primo_numero"> 0 </td><td id="secondo_numero"> 0 </td> <td id="terzo_numero"> 0 </td></tr>
-                <tr class = "terza_riga"><td class="diminuisci" onclick="diminuisci_primo_numero()"> - </td><td class="diminuisci" onclick="diminuisci_secondo_numero()"> - </td> <td class="diminuisci" onclick="diminuisci_terzo_numero()"> - </td></tr>
-                </table>
-            </div>
-            <p id="solution" class="exit" onclick="verificaSoluzione()">Invia la tua soluzione</p>
-            <br>
-            <p id="uscita" class="exit" onclick="uscita()">Esci</p>
-        </div>
-  <!--  <button>+   </button> 
+        <!--<table>
+        <tr class="prima_riga"><td class="aumenta" onclick="aumenta_primo_numero()"> + </td><td class="aumenta" onclick="aumenta_secondo_numero()"> + </td> <td class="aumenta" onclick="aumenta_terzo_numero()"> + </td></tr>
+        <tr class = "seconda_riga"><td id="primo_numero"> 0 </td><td id="secondo_numero"> 0 </td> <td id="terzo_numero"> 0 </td></tr>
+        <tr class = "terza_riga"><td class="diminuisci" onclick="diminuisci_primo_numero()"> - </td><td class="diminuisci" onclick="diminuisci_secondo_numero()"> - </td> <td class="diminuisci" onclick="diminuisci_terzo_numero()"> - </td></tr>
+        </table>-->
+<!--
+</div>
+    <button>+   </button> 
     <button>+   </button> 
     <button>+   </button>
 </br>
@@ -51,9 +46,10 @@
 </br>
     <button>-   </button> 
     <button>-   </button> 
-    <button>-   </button>-->
-</div> 
-    <script type="text/javascript">
+
+    <button>-   </button>
+</div> -->
+    <script type="text/javascript">/*
     
     function aumenta_primo_numero(){
         var primo_numero = document.getElementById("primo_numero").innerText;
@@ -126,8 +122,36 @@
         }
         var new_number = String(n);
         document.getElementById("terzo_numero").innerHTML = new_number;
-    }
+    }*/
 </script>
+
+    <div class="lucchetto_popup">
+        <div class="lucchetto">
+            <ul>
+                <li class="rotor">
+                    <ul>
+                        <li><button class="bottone_rotore" onclick="addRotor1();">+</button></li>
+                        <li><input class="inserire_numero" id="primo_numero" type="number" readonly value="0"></li>
+                        <li><button class="bottone_rotore" onclick="subRotor1()">-</button></li>
+                    </ul>
+                </li>
+                <li class="rotor">
+                    <ul>
+                        <li><button class="bottone_rotore" onclick="addRotor2()";>+</button></li>
+                        <li><input class="inserire_numero"  id="secondo_numero" type="number" readonly value="0";></li>
+                        <li><button class="bottone_rotore" onclick="subRotor2()">-</button></li>
+                    </ul>
+                </li>
+                <li class="rotor">
+                    <ul>
+                        <li><button class="bottone_rotore" onclick="addRotor3()";>+</button></li>
+                        <li><input class="inserire_numero"  id="terzo_numero" type="number" readonly value="0"></li>
+                        <li><button class="bottone_rotore" onclick="subRotor3()">-</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="page3.js"></script>
 </body>
 </html>
