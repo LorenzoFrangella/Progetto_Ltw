@@ -29,10 +29,10 @@ function stop_scroll(){
         Sei intrappolato all'interno di una casa abbandonata.
     </br>
     </br>
-        Qualcuno ti ha fatto uno scherzo e ha spento le luci, accendile prima di iniziare a muoverti.
-    </br>
-    </br>
-        Trova la chiave e accedi all'ultima stanza, qui troverai l'uscita celata dietro un ultimo indovinello nascosto all'interno della casa.</br>
+    Risolvi gli enigmi all'interno delle stanze, qui troverai l'uscita celata dietro un ultimo indovinello nascosto all'interno della casa.</br>
+</br>
+</br>
+Qualcuno ti ha fatto uno scherzo e ha spento le luci, accendile prima di iniziare a muoverti.
     </h2>
     <div class="entra" style="text-align:center"><a href='./page1.php'><button type='button' onclick="avviatimer();"class='btn btn-warning bottone_inizio' id="entra_nella_casa"><b>Entra nella casa!</b>
 </div></div>
