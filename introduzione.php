@@ -29,7 +29,7 @@ function stop_scroll(){
         Sei intrappolato all'interno di una casa abbandonata.
     </br>
     </br>
-        Qualcuno ti ha fatto uno scherzo e ha spento le luci. Non ti puoi muovere se è tutto buio.
+        Qualcuno ti ha fatto uno scherzo e ha spento le luci, accendile prima di iniziare a muoverti.
     </br>
     </br>
         Trova la chiave e accedi all'ultima stanza, qui troverai l'uscita celata dietro un ultimo indovinello nascosto all'interno della casa.</br>
