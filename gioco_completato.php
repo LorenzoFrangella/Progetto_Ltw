@@ -41,9 +41,19 @@
     <link rel="icon" href="../img/exit.png">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="./index.php" class="logo d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="./img/exit.png" style="width:40px;">
+          <h3 style="padding-top: 8px; padding-left:5px">HousEscape</h3>
+        </a>
+      </div>
+    </nav>
     <div class="container" style="text-align:center">
     <h1 class="titolo animated bounceInDown" style="text-align:center; height:300px">Complimenti!</h1> <br>
-    <h2>Congratulazioni, sei riuscito ad uscire in : <?php echo $minuti;?> minuti e <?php echo $secondi;?> secondi</h2>   
+    <br>
+    <h2 class="animated zoomIn">Congratulazioni, sei riuscito ad uscire in : <?php echo $minuti;?> minuti e <?php echo $secondi;?> secondi</h2>  
+    <br>
     <p style="color:white;">Vai a vedere la <a href="./classifica.php">Classifica</a> Per scoprire se sei stato tra i più veloci</p>
     </div>
 </body>
