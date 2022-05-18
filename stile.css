@@ -99,7 +99,6 @@ input{
     margin-top: 10vh;
     height: 80vh;
     border-radius: 10px;
-    background: white;
     min-width: 350px;
 }
 
@@ -110,7 +109,7 @@ input{
 }
 
 #class_title{
-    color:#343a40;
+    color:white;
     padding: 20px;
 }
 
@@ -319,4 +318,21 @@ a:hover{
     height: 110px;
     width: 300px;
     font-size: 30px;
+}
+
+table{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: #343a40 !important;
+    color: white;
+    
+}
+td, th {
+    border: 1px solid blackb;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+  background-color: #ffc107;
+  color: black;
 }

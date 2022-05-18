@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    $dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape 
+    user=postgres password=biar")
+    or die ('Could not connect: '. pg_last_error());
+
+?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -22,10 +29,22 @@
         <h1 id="class_title">Classifica</h1>
         <div class="container">
             <div class="row">
-                <div class="col">Posizione</div>
-                <div class="col">Nickname</div>
-                <div class="col">tempo</div>
-            </div>
+              <table>
+                <tr><th>Posizione</th><th>Nickname</th><th>Tempo</th></tr>
+                <?php
+                if($dbconn){
+                  $q1 = "select nickname, minuti,secondi from classifica order by totale_secondi";
+                  $result = pg_query_params($dbconn, $q1, array());
+                  $i = 1;
+                  while($row = pg_fetch_row($result)){
+                    echo "<tr><td>" .$i. "</td>
+                    <td>" .$row[0]. "</td>
+                    <td>" .$row[1]. ":" .$row[2]. "</td></tr>";
+                    $i = $i + 1;
+                  }
+                }
+                ?>
+                </table>
         </div>
     </div>
 </body>
