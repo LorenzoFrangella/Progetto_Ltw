@@ -51,6 +51,14 @@ window.onmessage = function(e) {
             var fine = new Date();
             fine = fine.getTime();
             var tempo = fine - inizio;
+            alert(tempo);
+            tempo = tempo/1000;
+            var minuti = Math.floor(tempo/60);
+            var secondi = Math.floor(tempo%60);
+            tempo = Math.floor(tempo);
+            alert(tempo);
+            alert(minuti + " minuti e " + secondi + " secondi");
+            document.cookie = "total_sec="+ toString(tempo) +"; minuti="+ toString(minuti)+"; secondi="+ toString(minuti);
             break;
         ///// Aggiungere altri 'case statements' per gestire le chiamate dai figli al padre
         /////
@@ -93,7 +101,7 @@ function illuminastanza(){
         document.body.style.cursor = "default";
         moveTorch(event);
         //la riga successiva serve per permettere alla pagina principale di far muovere tra le varie stanze
-        window.top.postMessage('abilita_movimenti', '*')
+        window.top.postMessage('abilita_movimenti', '*');
         //document.getElementById("torch")[0].style.removeProperty("clipPath");
     }
 };
