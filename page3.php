@@ -20,7 +20,7 @@
         <img src="./img/stanza3.png" id="sfondo" usemap="#typewriter" id="type_writer" width="1276" height="718">
         <map name="typewriter">
            <area id="type" shape="rect" coords="420,338,568,416" href="#" onclick="" title="macchina_da_scrivere">
-           <area id="porta" shape="rect" coords="0,0,100,100" href="#" onclick="" title="macchina_da_scrivere">  
+           <area id="porta" shape="rect" coords="913,177,1161,519" href="#" onclick="" title="macchina_da_scrivere">  
         </map>
         <div id="macchina_da_scrivere" class="popup_macchina_da_scrivere">
             <div class="foglio">

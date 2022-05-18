@@ -31,45 +31,7 @@ function terzo_enigma(){
 $("#esci_mds").click(function(){
     chiudi_mds();
 });
-/*
 
-$("#door").click(function(){
-    $("#type").css("cursor","default");
-    $("#type_writer").addClass("blur");
-    $("#porta").fadeIn(500);
-    $(".lucchetto").fadeIn(500);
-});
-
-function verificaSoluzione(){
-    var primo_numero = document.getElementById("primo_numero").innerText;
-    var secondo_numero = document.getElementById("secondo_numero").innerText;
-    var terzo_numero = document.getElementById("terzo_numero").innerText;
-    if(primo_numero=="4" && secondo_numero=="6" && terzo_numero=="8"){
-        alert("Complimenti! Hai trovato l'uscita");
-        $("#porta").fadeOut(500);
-        $(".lucchetto").fadeOut(500);
-        $("#type_writer").removeClass("blur");
-        $("#door").css("cursor","default");
-        $("#door").unbind('click').removeAttr("onclick")[0].onclick = null;
-        suono_porta.play();
-    }
-    else{
-        alert('Ritenta la soluzione');
-        document.getElementById("primo_numero").innerText="0";
-        document.getElementById("secondo_numero").innerText="0";
-        document.getElementById("terzo_numero").innerText="0";
-    }
-
-}
-
-function uscita(){
-    document.getElementById("primo_numero").innerText="0";
-    document.getElementById("secondo_numero").innerText="0";
-    document.getElementById("terzo_numero").innerText="0";
-    $("#porta").fadeOut(500);
-    $(".lucchetto").fadeOut(500);
-    $("#type_writer").removeClass("blur");
-*/
 $("#porta").click(function(){
     $("#porta").css("cursor","default");
     $("#type_writer").addClass("blur");
@@ -160,6 +122,7 @@ function ceck_lucchetto(){
         && document.getElementById("secondo_numero").value == "6" 
         && document.getElementById("terzo_numero").value == "8"){
             alert("Hai trovato la combinazione giusta, sei libero!");
+            suono_porta.play();
             $("#porta").css("cursor","default");
             $("#type_writer").removeClass("blur");
             $(".lucchetto_popup").fadeOut(500);
