@@ -58,7 +58,11 @@ window.onmessage = function(e) {
             tempo = Math.floor(tempo);
             alert(tempo);
             alert(minuti + " minuti e " + secondi + " secondi");
-            document.cookie = "total_sec="+ toString(tempo) +"; minuti="+ toString(minuti)+"; secondi="+ toString(minuti);
+            document.cookie = "total_sec="+ tempo;
+            document.cookie = "minuti="+ minuti; 
+            document.cookie = "secondi="+ secondi; 
+            alert("total_sec="+ tempo +"; minuti="+ minuti +"; secondi="+ secondi);
+            window.location.href = "./gioco_completato.php";
             break;
         ///// Aggiungere altri 'case statements' per gestire le chiamate dai figli al padre
         /////
