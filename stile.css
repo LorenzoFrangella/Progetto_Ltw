@@ -323,16 +323,14 @@ a:hover{
 table{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
-    background-color: #343a40 !important;
-    color: white;
+    background-color: white !important;
     
 }
 td, th {
-    border: 1px solid blackb;
+    border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
   tr:nth-child(even) {
-  background-color: #ffc107;
-  color: black;
+  background-color: #dddddd;
 }
