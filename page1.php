@@ -10,12 +10,11 @@
     <script src="./housescape.js"></script>
     <script src="./orologio/script.js"></script>
     <link rel="stylesheet" href="./orologio/style.css">
-    <title>Document</title>
+    <title>HouseEscape</title>
 </head>
 <body id="primo">
-   
 <div class="bg" onmousemove="moveTorch(event)"></div>
-<div class="torch" >
+<div class="torch">
     <img src="./img/casa_quattro.png" usemap="#interruttore" id="luce" width="1360" height="765">
     <map name="interruttore">
         <area id="lumus" shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="#" onclick="illuminastanza();" title="interruttore">

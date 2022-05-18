@@ -1,6 +1,7 @@
 $(document).ready(function(e) {
     $("#luce").rwdImageMaps();
 });
+
 $("#lumus").click(function(){
     $("#pergamena").css("cursor","pointer");
     $("#tastiera_colorata").css("cursor","pointer");

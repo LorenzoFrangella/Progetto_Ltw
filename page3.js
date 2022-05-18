@@ -1,22 +1,27 @@
 const suono_tastiera = new Audio("./audio/typewriter.mp3");
-const suono_passed=new Audio("./audio/success.mp3");
 const suono_porta=new Audio("./audio/door.mp3");
+
+$(document).ready(function(e) {
+    $("#type_writer").rwdImageMaps();
+});
+
 $("#type").click(function(){
     $("#type").css("cursor","default");
     $("#type_writer").addClass("blur");
     $("#macchina_da_scrivere").fadeIn(500);
 });
-$(document).ready(function(e) {
-$("#type_writer").rwdImageMaps();
-});
+
 $("#tre").on('input', function() {
     suono_tastiera.play();
     terzo_enigma();
 });
-function chiudi_mds(){$("#type").css("cursor","pointer");
+
+function chiudi_mds(){
+    $("#type").css("cursor","pointer");
     $("#type_writer").removeClass("blur");
     $("#macchina_da_scrivere").fadeOut(500);
-    }
+}
+
 function terzo_enigma(){
     var mirror = document.getElementById("tre").value;
     if(mirror == "specchio"){
@@ -25,12 +30,17 @@ function terzo_enigma(){
         $("#type").css("cursor","default");
         $("#type").unbind('click').removeAttr("onclick")[0].onclick = null;
         parent.postMessage("terzo_enigma","*");
-        suono_passed.play();
     }
 };
 $("#esci_mds").click(function(){
     chiudi_mds();
 });
+
+$("#esci_lock").click(function chiudi_lock(){
+    $("#type_writer").removeClass("blur");
+    $(".lucchetto_popup").fadeOut(500);
+});
+
 
 $("#porta").click(function(){
     $("#porta").css("cursor","default");
@@ -126,6 +136,11 @@ function ceck_lucchetto(){
             $("#porta").css("cursor","default");
             $("#type_writer").removeClass("blur");
             $(".lucchetto_popup").fadeOut(500);
-            $("#sfondo").attr("src","./img/stanza3_fine.png");
+            $("#type_writer").attr("src","./img/stanza3_fine.png");
+            //Funzione da scrivere per essere reindirizzati alla pagina finale
+            $("#porta").click(function(){
+                parent.postMessage("completata","*");
+                return;
+            });
     }
 }
