@@ -1,5 +1,7 @@
 var enabled = false;
+const suono_passed=new Audio("./audio/success.mp3");
 
+var inizio, fine;
 //Funzione per andare avanti tra le stanze
 
 function avanti(){
@@ -30,15 +32,25 @@ window.onmessage = function(e) {
         break;
         case 'avvia_timer':
             avvia_timer();
+            inizio = new Date();
+            inizio = inizio.getTime();
         break;
         case 'primo_enigma':
             primo_enigma_risolto();
+            suono_passed.play();
             break;
         case 'secondo_enigma':
             secondo_enigma_risolto();
+            suono_passed.play();
             break;
         case 'terzo_enigma':
             terzo_enigma_risolto();
+            suono_passed.play();
+            break;
+        case 'completata':
+            var fine = new Date();
+            fine = fine.getTime();
+            var tempo = fine - inizio;
             break;
         ///// Aggiungere altri 'case statements' per gestire le chiamate dai figli al padre
         /////

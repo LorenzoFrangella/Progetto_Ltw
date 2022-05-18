@@ -1,11 +1,16 @@
 const suono_tastiera = new Audio("./audio/typewriter.mp3");
-const suono_passed=new Audio("./audio/success.mp3");
 const suono_porta=new Audio("./audio/door.mp3");
+
+$(document).ready(function(e) {
+    $("#type_writer").rwdImageMaps();
+});
+
 $("#type").click(function(){
     $("#type").css("cursor","default");
     $("#type_writer").addClass("blur");
     $("#macchina_da_scrivere").fadeIn(500);
 });
+<<<<<<< HEAD
 $(document).ready(function(e) {
 $("#type_writer").rwdImageMaps();
 });
@@ -13,6 +18,9 @@ $("#type_writer").rwdImageMaps();
 <<<<<<< HEAD
 $("#terzo_enigma").on('input', function() {
 =======
+=======
+
+>>>>>>> 20b7111 (tiene il tempo)
 $("#tre").on('input', function() {
 <<<<<<< HEAD
 >>>>>>> b6a92f6 (push)
@@ -21,10 +29,13 @@ $("#tre").on('input', function() {
 >>>>>>> 5ddf9e4 (typewriter)
     terzo_enigma();
 });
-function chiudi_mds(){$("#type").css("cursor","pointer");
+
+function chiudi_mds(){
+    $("#type").css("cursor","pointer");
     $("#type_writer").removeClass("blur");
     $("#macchina_da_scrivere").fadeOut(500);
-    }
+}
+
 function terzo_enigma(){
     var mirror = document.getElementById("tre").value;
     if(mirror == "specchio"){
@@ -33,7 +44,6 @@ function terzo_enigma(){
         $("#type").css("cursor","default");
         $("#type").unbind('click').removeAttr("onclick")[0].onclick = null;
         parent.postMessage("terzo_enigma","*");
-        suono_passed.play();
     }
 <<<<<<< HEAD
 }
@@ -53,6 +63,7 @@ $("#esci_mds").click(function(){
 /*
 >>>>>>> 8ae3d63 (ho sofferto per fare questa commit)
 
+<<<<<<< HEAD
 $("#door").click(function(){
     $("#type").css("cursor","default");
     $("#type_writer").addClass("blur");
@@ -97,6 +108,14 @@ function uscita(){
 =======
 
 >>>>>>> 74840d5 (buongiornoo)
+=======
+$("#esci_lock").click(function chiudi_lock(){
+    $("#type_writer").removeClass("blur");
+    $(".lucchetto_popup").fadeOut(500);
+});
+
+
+>>>>>>> 20b7111 (tiene il tempo)
 $("#porta").click(function(){
     $("#porta").css("cursor","default");
     $("#type_writer").addClass("blur");
@@ -191,7 +210,12 @@ function ceck_lucchetto(){
             $("#porta").css("cursor","default");
             $("#type_writer").removeClass("blur");
             $(".lucchetto_popup").fadeOut(500);
-            $("#sfondo").attr("src","./img/stanza3_fine.png");
+            $("#type_writer").attr("src","./img/stanza3_fine.png");
+            //Funzione da scrivere per essere reindirizzati alla pagina finale
+            $("#porta").click(function(){
+                parent.postMessage("completata","*");
+                return;
+            });
     }
 }
 >>>>>>> 8ae3d63 (ho sofferto per fare questa commit)

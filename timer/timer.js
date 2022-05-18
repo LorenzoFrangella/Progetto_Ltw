@@ -10,7 +10,7 @@ function avvia_timer(){
         
         return date;
     }
-        
+    
     let result = addHours(0.5);
         
     const countDown = new Date(result).getTime(),
