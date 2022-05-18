@@ -9,11 +9,12 @@ body{
 
 .row{
     border-color: green;
-    border:double;
+    border-radius: 10px;
 }
 .col{
     border-color: green;
-    border:double;
+    border-radius: 10px;
+
 }
 
 
@@ -324,10 +325,10 @@ table{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     background-color: white !important;
+    border-radius: 15px !important;
     
 }
 td, th {
-    border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
   }
