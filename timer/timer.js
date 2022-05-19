@@ -11,7 +11,7 @@ function avvia_timer(){
         return date;
     }
     
-    let result = addHours(0.5);
+    let result = addHours(0.005);
         
     const countDown = new Date(result).getTime(),
     x = setInterval(function() {    
@@ -23,6 +23,7 @@ function avvia_timer(){
         
         //do something later when date is reached
         if (distance < 0) {
+            window.location.href = "./tempo_scaduto.php";
             //funzione da chiamare allo scadere del tempo
         }
             //seconds
