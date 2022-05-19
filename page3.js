@@ -7,6 +7,7 @@ $(document).ready(function(e) {
 
 $("#type").click(function(){
     $("#type").css("cursor","default");
+    $("#porta").css("cursor","default");
     $("#type_writer").addClass("blur");
     $("#macchina_da_scrivere").fadeIn(500);
     document.getElementById("tre").focus();
@@ -33,6 +34,7 @@ $("#tre").on('input', function() {
 
 function chiudi_mds(){
     $("#type").css("cursor","pointer");
+    $("#porta").css("cursor","pointer");
     $("#type_writer").removeClass("blur");
     $("#macchina_da_scrivere").fadeOut(500);
     document.getElementById("tre").value = "";
@@ -122,6 +124,8 @@ function chiudi_lock(){
 
 
 $("#esci_lock").click(function(){
+    $("#porta").css("cursor","pointer");
+    $("#type").css("cursor","pointer");
     chiudi_lock();
 });
 
@@ -129,6 +133,7 @@ $("#esci_lock").click(function(){
 >>>>>>> 20b7111 (tiene il tempo)
 $("#porta").click(function(){
     $("#porta").css("cursor","default");
+    $("#type").css("cursor","default");
     $("#type_writer").addClass("blur");
     $(".lucchetto_popup").fadeIn(500);
 });
