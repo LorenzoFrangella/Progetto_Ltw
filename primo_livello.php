@@ -6,7 +6,7 @@ if(!isset($_SESSION['nickname']))
 if(isset($_SESSION['tempo_scaduto'])){
   if($_SESSION['tempo_scaduto'] == true){
     unset($_SESSION['tempo_scaduto']);
-  header("Location: ./index.php");
+    header("Location: ./index.php");
   }
 }
 ?>

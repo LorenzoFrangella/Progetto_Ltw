@@ -87,7 +87,7 @@ if (isset($_GET['logout'])){
   <br>1-Se hai già un account effettua il login, altrimenti effettua la registrazione. <br>
   <br>2-Entra nella casa e trova l'uscita, attenzione però non sarà tutto così semplice...Guardati bene attorno! <br>
   <br>3-Divertiti!</h2></div>
-  <div style="text-align:center"><a href='../primo_livello.php'><button type='button' class='btn btn-warning bottone_home'><b>Inizia a giocare!</b></button></div></div>
+  <div style="text-align:center"><a href='../primo_livello.php'><button type='button' id='inizia_a_giocare' class='btn btn-warning bottone_home'><b>Inizia a giocare!</b></button></div></div>
   <br>
   <br>
   <br>
