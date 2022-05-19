@@ -225,11 +225,14 @@ a:hover{
     top: 19px;
 }
 .contatti{
-    margin-top: 200px;
+    position: relative;
+    bottom: -150px;
 }
 #contacts{
-    margin-top: 20px;
+    position: relative;
+    margin-top: 5px;
     font-size: 18px;
+    bottom: -100px;
 }
 @media (min-width:600px){
     #contacts{
