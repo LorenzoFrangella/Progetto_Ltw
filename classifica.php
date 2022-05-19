@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="./img/exit.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./stile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <title>HousEscape</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
       </div>
     </nav>
     <div class="container" id="cont_class">
-        <h1 id="class_title">Classifica</h1>
+        <h1 id="class_title" class="titolo animated bounceInDown">Classifica</h1>
         <div class="container">
             <div class="row">
               <table>
