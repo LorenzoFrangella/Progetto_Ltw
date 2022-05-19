@@ -23,7 +23,7 @@ function avvia_timer(){
         
         //do something later when date is reached
         if (distance < 0) {
-            //funzione da chiamare allo scadere del tempo
+            8//funzione da chiamare allo scadere del tempo
         }
             //seconds
     }, 100)
