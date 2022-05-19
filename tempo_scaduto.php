@@ -1,3 +1,7 @@
+<?php 
+  session_start();
+  $_SESSION['tempo_scaduto'] = true;
+?>
 <!DOCTYPE html>
 <html lang="it">
 <head>

@@ -3,6 +3,12 @@ session_start();
 $_SESSION['begin_game'] = true;
 if(!isset($_SESSION['nickname']))
   header("Location: ./login.php");
+if(isset($_SESSION['tempo_scaduto'])){
+  if($_SESSION['tempo_scaduto'] == true){
+    unset($_SESSION['tempo_scaduto']);
+  header("Location: ./index.php");
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="it">
