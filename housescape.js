@@ -8,6 +8,8 @@ function avanti(){
     if(enabled){
     $('.carousel').carousel('next');
     document.getElementById("stanza1").contentWindow.popup_close();
+    document.getElementById("stanza1").contentWindow.esci();
+    document.getElementById("stanza1").contentWindow.esci2();
     }
 }
 
@@ -17,6 +19,8 @@ function indietro(){
     if(enabled){
         $('.carousel').carousel('prev');
         document.getElementById("stanza1").contentWindow.popup_close();
+        document.getElementById("stanza1").contentWindow.esci();
+        document.getElementById("stanza1").contentWindow.esci2();
     }
 }
 
