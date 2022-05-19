@@ -11,5 +11,5 @@ create table classifica(
 	nickname varchar(40),
 	minuti int check(minuti >= 0),
 	secondi int check(secondi >= 0 and secondi < 60),
-	totale_secondi check(totale_secondi >= 0)
+	totale_secondi int check(totale_secondi >= 0)
 )
