@@ -11,22 +11,29 @@ function avvia_timer(){
         return date;
     }
     
-    let result = addHours(0.005);
+    let result = addHours(0.5);
         
     const countDown = new Date(result).getTime(),
     x = setInterval(function() {    
         
         const now = new Date().getTime(),
         distance = countDown - now;
-        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+        var secondi = Math.floor((distance % (minute)) / second);
+        var minuti = Math.floor((distance % (hour)) / minute);
+        if( secondi <10 && secondi >=0){
+            secondi = "0" + secondi;
+        }
+        if(minuti != -1 || secondi != -1){
+            document.getElementById("minutes").innerText = minuti,
+            document.getElementById("seconds").innerText = secondi;
+        }
         
         //do something later when date is reached
-        if (distance < 0) {
+        if (distance <= 1) {
             window.location.href = "./tempo_scaduto.php";
             //funzione da chiamare allo scadere del tempo
         }
             //seconds
-    }, 100)
+    }, 1000)
 
 }
