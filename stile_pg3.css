@@ -164,12 +164,14 @@ input[type=number] {
 }
 
 .bottone_rotore{
+    position: relative;
     width: 100%;
     border: solid;
     border-color: #d6a000;
     font-size: 3vw;
     border-radius: 5px;
     background: #ffc107;
+    z-index:999999;
 }
 
 .bottone_rotore:hover{
@@ -196,6 +198,7 @@ input[type=number] {
 
 @media screen and (max-width: 768px) {
     .bottone_rotore{
+        
         width: 40px;
         height: 40px;
     }
