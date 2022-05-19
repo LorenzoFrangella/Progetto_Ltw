@@ -3,6 +3,12 @@ session_start();
 $_SESSION['begin_game'] = true;
 if(!isset($_SESSION['nickname']))
   header("Location: ./login.php");
+if(isset($_SESSION['tempo_scaduto'])){
+  if($_SESSION['tempo_scaduto'] == true){
+    unset($_SESSION['tempo_scaduto']);
+    header("Location: ./index.php");
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -53,10 +59,10 @@ if(!isset($_SESSION['nickname']))
             <iframe id="stanza1" class="inpage" src="introduzione.php"></iframe>
           </div>
           <div class="carousel-item ">
-            <iframe class="inpage" src="page2.php"></iframe>
+            <iframe id="stanza2" class="inpage" src="page2.php"></iframe>
           </div>
           <div class="carousel-item ">
-            <iframe class="inpage" src="page3.php"></iframe>
+            <iframe id="stanza3" class="inpage" src="page3.php"></iframe>
           </div>
       </div>
     </div>

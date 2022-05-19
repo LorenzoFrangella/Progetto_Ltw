@@ -31,7 +31,10 @@ body{
     background-color: #343a40;
     color: white;
 }
-
+#inizia_a_giocare{
+    position: relative;
+    z-index:99999;
+}
 #form{
     border-radius: 10px;
     height: 64vh;

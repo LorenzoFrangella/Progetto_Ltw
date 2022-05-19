@@ -38,9 +38,14 @@ $("#esci_mds").click(function(){
     chiudi_mds();
 });
 
-$("#esci_lock").click(function chiudi_lock(){
+function chiudi_lock(){
     $("#type_writer").removeClass("blur");
     $(".lucchetto_popup").fadeOut(500);
+}
+
+
+$("#esci_lock").click(function(){
+    chiudi_lock();
 });
 
 
