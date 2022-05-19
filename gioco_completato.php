@@ -6,6 +6,7 @@
     unset($_COOKIE['total_sec']);
     unset($_COOKIE['minuti']);
     unset($_COOKIE['secondi']);
+    $stampa = false;
     $nickname = $_SESSION['nickname'];
     $dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape 
     user=postgres password=biar")
@@ -14,10 +15,13 @@
         $check = "select nickname from classifica where nickname = $1";
         $data = pg_query_params($dbconn,$check,array($nickname));
         $num_risultati = pg_num_rows($data);
-                if($num_risultati!=1){ 
-            $q2 = "insert into classifica values($1,$2,$3,$4)";
-            $result = pg_query_params($dbconn,$q2,array($nickname,$minuti,$secondi,$totale_secondi));
-         }
+            if($num_risultati!=1){ 
+              $q2 = "insert into classifica values($1,$2,$3,$4)";
+              $result = pg_query_params($dbconn,$q2,array($nickname,$minuti,$secondi,$totale_secondi));
+            }
+            else{
+              $stampa = true;
+            }
     }
 
 ?>
@@ -52,6 +56,11 @@
     <h2 class="animated zoomIn">Congratulazioni, sei riuscito ad uscire in : <?php echo $minuti;?> minuti e <?php echo $secondi;?> secondi</h2>  
     <br>
     <p style="color:white;">Vai a vedere la <a href="./classifica.php">Classifica</a> Per scoprire se sei stato tra i più veloci</p>
+    <br>
+    <br>
+    <?php
+    if($stampa) echo '<p style="color:white;">Attenzione, i tentativi successivi al primo non verranno inseriti in classifica.</p>';
+    ?>
     </div>
 </body>
 </html>

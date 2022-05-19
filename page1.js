@@ -29,66 +29,56 @@ $("#tastiera_colorata").click(function(){
         $("#esci").fadeIn(500);
     }
 });
-$("#esci").click(function(){
-    tocco = false;
-    $(document).ready(function(){
-        $("#luce").css("-webkit-filter", "blur(0px)");
+
+$("#esci").click(esci());
+
+$("#orologio").click(function(){
+    if(interruttore && tocco == false){
+        tocco = true;
+        $("#luce").css("-webkit-filter", "blur(10px)");
+        $("#pergamena").css("cursor","default");
+        $("#orologio").css("cursor","deafult");
+        $("#orologio_fisso").css("cursor","default");
+        $("#tastiera_colorata").css("cursor","default");
+        $(".clock").fadeIn(500);
+        $("#esci_due").fadeIn(500);
+        }
     });
+    
+$("#orologio_fisso").click(function(){
+    if(interruttore && tocco == false){
+        tocco = true;
+        $("#luce").css("-webkit-filter", "blur(10px)");
+        $("#pergamena").css("cursor","default");
+        $("#orologio").css("cursor","deafult");
+        $("#orologio_fisso").css("cursor","default");
+        $("#tastiera_colorata").css("cursor","default");
+        $("#foto_orologio").fadeIn(500);
+        $("#esci_due").fadeIn(500);
+        }
+    });
+    
+    $("#esci_due").click(esci2());
+
+function esci2(){
+    tocco = false;
+    $("#luce").css("-webkit-filter", "blur(0px)");
+    $("#pergamena").css("cursor","pointer");
+    $("#tastiera_colorata").css("cursor","pointer");
+    $("#orologio").css("cursor","pointer");
+    $("#orologio_fisso").css("cursor","pointer");
+    $("#foto_orologio").fadeOut(500);
+    $(".clock").fadeOut(500);
+    $("#esci_due").fadeOut(500);
+}
+
+function esci(){
+    tocco = false;
+    $("#luce").css("-webkit-filter", "blur(0px)");
     $("#tastiera_colorata").css("cursor","pointer");
     $("#pergamena").css("cursor","pointer");
     $("#orologio").css("cursor","pointer");
     $("#orologio_fisso").css("cursor","pointer");
     $("#foto_tastiera").fadeOut(500);
     $("#esci").fadeOut(500);
-});
-
-$("#orologio").click(function(){
-    if(interruttore && tocco == false){
-        tocco = true;
-        $(document).ready(function(){
-            $("#luce").css("-webkit-filter", "blur(10px)");});
-            $("#pergamena").css("cursor","default");
-            $("#orologio").css("cursor","deafult");
-            $("#orologio_fisso").css("cursor","default");
-            $("#tastiera_colorata").css("cursor","default");
-            $(".clock").fadeIn(500);
-            $("#esci_due").fadeIn(500);
-        }
-    });
-    
-    $("#esci_due").click(function(){
-        tocco = false;
-        $(document).ready(function(){
-            $("#luce").css("-webkit-filter", "blur(0px)");});
-            $("#pergamena").css("cursor","pointer");
-            $("#tastiera_colorata").css("cursor","pointer");
-    $("#orologio").css("cursor","pointer");
-    $("#orologio_fisso").css("cursor","pointer");
-    $(".clock").fadeOut(500);
-    $("#esci_due").fadeOut(500);
-});
-$("#orologio_fisso").click(function(){
-    if(interruttore && tocco == false){
-        tocco = true;
-        $(document).ready(function(){
-            $("#luce").css("-webkit-filter", "blur(10px)");});
-            $("#pergamena").css("cursor","default");
-            $("#orologio").css("cursor","deafult");
-            $("#orologio_fisso").css("cursor","default");
-            $("#tastiera_colorata").css("cursor","default");
-            $("#foto_orologio").fadeIn(500);
-            $("#esci_due").fadeIn(500);
-        }
-    });
-    
-    $("#esci_due").click(function(){
-        tocco = false;
-        $(document).ready(function(){
-            $("#luce").css("-webkit-filter", "blur(0px)");});
-            $("#pergamena").css("cursor","pointer");
-            $("#tastiera_colorata").css("cursor","pointer");
-    $("#orologio").css("cursor","pointer");
-    $("#orologio_fisso").css("cursor","pointer");
-    $("#foto_orologio").fadeOut(500);
-    $("#esci_due").fadeOut(500);
-});
+}
