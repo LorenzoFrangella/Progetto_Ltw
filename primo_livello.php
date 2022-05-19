@@ -53,10 +53,10 @@ if(!isset($_SESSION['nickname']))
             <iframe id="stanza1" class="inpage" src="introduzione.php"></iframe>
           </div>
           <div class="carousel-item ">
-            <iframe class="inpage" src="page2.php"></iframe>
+            <iframe id="stanza2" class="inpage" src="page2.php"></iframe>
           </div>
           <div class="carousel-item ">
-            <iframe class="inpage" src="page3.php"></iframe>
+            <iframe id="stanza3" class="inpage" src="page3.php"></iframe>
           </div>
       </div>
     </div>

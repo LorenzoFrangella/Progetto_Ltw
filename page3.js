@@ -66,6 +66,7 @@ $("#esci_mds").click(function(){
 >>>>>>> 8ae3d63 (ho sofferto per fare questa commit)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 $("#door").click(function(){
     $("#type").css("cursor","default");
     $("#type_writer").addClass("blur");
@@ -112,8 +113,16 @@ function uscita(){
 >>>>>>> 74840d5 (buongiornoo)
 =======
 $("#esci_lock").click(function chiudi_lock(){
+=======
+function chiudi_lock(){
+>>>>>>> b23c88b (--)
     $("#type_writer").removeClass("blur");
     $(".lucchetto_popup").fadeOut(500);
+}
+
+
+$("#esci_lock").click(function(){
+    chiudi_lock();
 });
 
 

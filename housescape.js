@@ -10,6 +10,10 @@ function avanti(){
     document.getElementById("stanza1").contentWindow.popup_close();
     document.getElementById("stanza1").contentWindow.esci();
     document.getElementById("stanza1").contentWindow.esci2();
+    document.getElementById("stanza2").contentWindow.esci();
+    document.getElementById("stanza2").contentWindow.exit();
+    document.getElementById("stanza3").contentWindow.chiudi_mds();
+    document.getElementById("stanza3").contentWindow.chiudi_lock();
     }
 }
 
@@ -21,6 +25,10 @@ function indietro(){
         document.getElementById("stanza1").contentWindow.popup_close();
         document.getElementById("stanza1").contentWindow.esci();
         document.getElementById("stanza1").contentWindow.esci2();
+        document.getElementById("stanza2").contentWindow.esci();
+        document.getElementById("stanza2").contentWindow.exit();
+        document.getElementById("stanza3").contentWindow.chiudi_mds();
+        document.getElementById("stanza3").contentWindow.chiudi_lock();
     }
 }
 
