@@ -63,17 +63,13 @@ window.onmessage = function(e) {
             var fine = new Date();
             fine = fine.getTime();
             var tempo = fine - inizio;
-            alert(tempo);
             tempo = tempo/1000;
             var minuti = Math.floor(tempo/60);
             var secondi = Math.floor(tempo%60);
             tempo = Math.floor(tempo);
-            alert(tempo);
-            alert(minuti + " minuti e " + secondi + " secondi");
             document.cookie = "total_sec="+ tempo;
             document.cookie = "minuti="+ minuti; 
             document.cookie = "secondi="+ secondi; 
-            alert("total_sec="+ tempo +"; minuti="+ minuti +"; secondi="+ secondi);
             window.location.href = "./gioco_completato.php";
             break;
         ///// Aggiungere altri 'case statements' per gestire le chiamate dai figli al padre
