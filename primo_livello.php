@@ -1,7 +1,8 @@
 <?php
 session_start();
 $_SESSION['begin_game'] = true;
-//decommentare a fine dio if(!isset($_SESSION['nickname']))header("Location: ./login.php");
+if(!isset($_SESSION['nickname']))
+  header("Location: ./login.php");
 ?>
 <!DOCTYPE html>
 <html lang="it">
