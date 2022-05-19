@@ -30,7 +30,9 @@ $("#tastiera_colorata").click(function(){
     }
 });
 
-$("#esci").click(esci());
+$("#esci").click(function(){
+    esci();
+    });
 
 $("#orologio").click(function(){
     if(interruttore && tocco == false){
@@ -58,7 +60,9 @@ $("#orologio_fisso").click(function(){
         }
     });
     
-    $("#esci_due").click(esci2());
+$("#esci_due").click(function(){
+    esci2();
+});
 
 function esci2(){
     tocco = false;

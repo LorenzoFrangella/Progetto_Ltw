@@ -10,17 +10,11 @@ var menu_piano = false;
         $("#progress").fadeIn(500);
         }
   });
-  $("#exit").click(function(){
-      menu_piano = false;
-      $("#area").css("cursor","pointer");
-    $(".pianoforte").fadeOut(500);
-    $("#close").fadeOut(500);
-    $("#melodia").removeClass("blur");
-    $("#exit").fadeOut(500);
-    $("#progress").fadeOut(500);
-    document.getElementById("progress").value = 0;
-    });
-    $("#close").click(function () { 
+
+
+
+  function exit(){
+    menu_piano = false;
     $("#area").css("cursor","pointer");
     $(".pianoforte").fadeOut(500);
     $("#close").fadeOut(500);
@@ -28,7 +22,15 @@ var menu_piano = false;
     $("#exit").fadeOut(500);
     $("#progress").fadeOut(500);
     document.getElementById("progress").value = 0;
-});
+    array_utente = [];
+  }
+
+
+
+  $("#exit").click(function(){
+    exit();
+    });
+
 
 $("#cartello").click(function(){
     if(menu_piano) return;
@@ -40,17 +42,22 @@ $("#cartello").click(function(){
 });
 
 
-  $("#esci").click(function(){
-      solved_piano=false;
-      $("#melodia").removeClass("blur");
-      $(".popup_img").fadeOut(500);
-      $("#esci").fadeOut(500);
-    });
+function esci(){
+    solved_piano=false;
+    $("#melodia").removeClass("blur");
+    $(".popup_img").fadeOut(500);
+    $("#esci").fadeOut(500);
+}
+
+
+$("#esci").click(function(){
+    esci();
+});
     
-    $("#close").click(function () { 
-      menu_piano= false;
-      console.log(array_utente);
-      if (JSON.stringify(array_utente) === JSON.stringify(mio_array)) {
+$("#close").click(function () { 
+    menu_piano= false;
+    console.log(array_utente);
+    if (JSON.stringify(array_utente) === JSON.stringify(mio_array)) {
         parent.postMessage("secondo_enigma","*");
         array_utente=[];
         alert('Bravo! La sequenza è corretta');
@@ -72,6 +79,8 @@ $("#cartello").click(function(){
     }
 });
   
-    $(document).ready(function(e) {
-        $("#melodia").rwdImageMaps();
-    });
+
+
+$(document).ready(function(e) {
+    $("#melodia").rwdImageMaps();
+});
