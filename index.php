@@ -1,5 +1,6 @@
 <?php 
 session_start();
+unset($_SESSION['begin_game']);
 
 if (isset($_GET['logout'])){
   session_unset();
