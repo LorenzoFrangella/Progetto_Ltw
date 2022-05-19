@@ -25,7 +25,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/exit.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./stile.css">
+    <link rel="stylesheet" href="./stile.css"> 
+    <link rel="stylesheet" href="./profilo.css"> 
     <title>HousEscape</title>
 </head>
 <body>
@@ -38,8 +39,8 @@
       </div>
     </nav>
     <div class = "logo_utente">
-        <img src = "./img/profilo.jpg">
-        <ul>
+        <img src = "./img/profilo.png" id="profilo">
+        <ul class="info">
             <li>$nome</li>
             <li>$cognome</li>
             <li>$email</li>
