@@ -11,26 +11,37 @@ function avvia_timer(){
         return date;
     }
     
-    let result = addHours(0.005);
+    let result = addHours(0.5);
         
     const countDown = new Date(result).getTime(),
     x = setInterval(function() {    
         
         const now = new Date().getTime(),
         distance = countDown - now;
-        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+        var secondi = Math.floor((distance % (minute)) / second);
+        var minuti = Math.floor((distance % (hour)) / minute);
+        if( secondi <10 && secondi >=0){
+            secondi = "0" + secondi;
+        }
+        if(minuti != -1 || secondi != -1){
+            document.getElementById("minutes").innerText = minuti,
+            document.getElementById("seconds").innerText = secondi;
+        }
         
         //do something later when date is reached
+<<<<<<< HEAD
         if (distance < 0) {
 <<<<<<< HEAD
             8//funzione da chiamare allo scadere del tempo
 =======
+=======
+        if (distance <= 1) {
+>>>>>>> cf7ad00 (2)
             window.location.href = "./tempo_scaduto.php";
             //funzione da chiamare allo scadere del tempo
 >>>>>>> 7de06ae (0)
         }
             //seconds
-    }, 100)
+    }, 1000)
 
 }
