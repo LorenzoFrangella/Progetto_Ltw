@@ -194,7 +194,7 @@ h6{
 .navbar{
     position:sticky;
     top:0;
-    z-index:1;
+    z-index: 9999999;
 }
 a{
     color: #ffc107;
@@ -343,4 +343,39 @@ td, th {
   tr:nth-child(even) {
   background-color: #dddddd;
   color: #000000;
+}
+
+.lista_contatti{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+.lista_contatti li{
+    display: inline-block;
+    width: 33%;
+    margin-top:3%;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .lista_contatti li{
+        display: inline;
+        margin-top:0%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 392px){
+    #fondo_pagina{
+        margin-top: 20%;
+    }
+
+}
+
+@media screen and (max-width: 311px){
+    #fondo_pagina{
+        margin-top: 40%;
+    }
+
 }
