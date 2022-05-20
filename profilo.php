@@ -38,13 +38,10 @@
         </a>
       </div>
     </nav>
-    <div class = "logo_utente">
-        <img src = "./img/profilo.png" id="profilo">
-        <ul class="info">
-            <li>$nome</li>
-            <li>$cognome</li>
-            <li>$email</li>
-        </ul>
+    <div class="container">
+        <img src="./img/logo_utente.jpg" class="logo">
+        
+
     </div>
 </body>
 </html>

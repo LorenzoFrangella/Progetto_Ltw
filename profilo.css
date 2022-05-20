@@ -1,13 +1,4 @@
-#profilo{
-    position: absolute; 
-    left: 17%;
-    top: 32%;
-    scale: 150%;
-}
-.info{
-    position: absolute;
-    left: 30%;
-    top: 37%;
-    font-size: 20px;
-    color: white;
+.logo{
+    width: 200px;
+    border-radius: 10px;
 }

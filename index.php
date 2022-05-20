@@ -97,16 +97,38 @@ if (isset($_GET['logout'])){
   <br>
   <br>
   <br></div>
-  <div class="container" style="margin-top:100px;" id="chi_siamo">
-    <h1 class = "contatti" style="text-align:center">Contatti</h1>
+  <div class="container" style="margin-top:100px;" id="chi_siamo"> </div>
     <br/>
     <br/>
-    <div class= "container flex">
-      <h3 id="contacts"><img src="../img/email.png" style="width:40px;">
-      frangella.1899674@studenti.uniroma1.it</h3>
-    <h3 id="contacts"><img src="../img/email.png" style="width:40px;">  mastrandrea.1892793@studenti.uniroma1.it <h3>
-    <h3 id="contacts"><img src="../img/email.png" style="width:40px;">  laudati.1894372@studenti.uniroma1.it</h3></div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<footer class="bg-dark text-center text-white" id="fondo_pagina">
+  <div class="container p-5">
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        <a href="https://github.com/LorenzoFrangella/Progetto_Ltw.git">Link</a> Alla repository GitHub di HousEscape.
+      </p>
+    </section>
+    <section class="mb-4">
+      <h3>I nostri contatti</h3>
+      <ul class="lista_contatti">
+        <li><p><img src="../img/email.png" style="width:20px;">laudati.1894372@studenti.uniroma1.it</p></li>
+        <li><p><img src="../img/email.png" style="width:20px;">mastrandrea.1892793@studenti.uniroma1.it </p></li>
+        <li><p><img src="../img/email.png" style="width:20px;">frangella.1899674@studenti.uniroma1.it </p></li>
+      </ul>
+    </section>
+    <!-- Section: Links -->
   </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">Progetto di Linguaggi e Tecnologie per il Web
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 </body>
 </html>
 
