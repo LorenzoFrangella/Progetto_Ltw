@@ -122,6 +122,7 @@ if (isset($_GET['logout'])){
       </ul>
     </section>
   </div>
+  
 
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">Progetto di Linguaggi e Tecnologie per il Web
   </div>
