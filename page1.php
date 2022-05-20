@@ -10,12 +10,6 @@
     <script src="./housescape.js"></script>
     <script src="./orologio/script.js"></script>
     <link rel="stylesheet" href="./orologio/style.css">
-    <script>function moveTorch(event){
-    var torch = document.getElementsByClassName("torch")[0];
-    //alert($(window).height());
-    var r = $(window).width()*scala;
-    torch.style.clipPath = `circle(${r}px at ${event.offsetX}px ${event.offsetY}px)`;}
-    </script>
     <title>HouseEscape</title>
 </head>
 <body id="primo">
