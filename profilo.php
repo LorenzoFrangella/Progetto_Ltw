@@ -38,9 +38,19 @@
         </a>
       </div>
     </nav>
-    <div class="container">
-        <img src="./img/logo_utente.jpg" class="logo">
-        
+    <div class="container pagina_profilo">
+        <h1>Profilo</h1>
+        <div class="row">
+            <div class="col-3"><img src="./img/logo_utente.png" class="logo_profilo"></div>
+            <div class="col-8">
+                <ul class="dati_utente">
+                    <li><p class="info_account">Username: <?php echo $nickname?></p></li>
+                    <li><p class="info_account">Nome: <?php echo $nome   ?></p></li>
+                    <li><p class="info_account">Cognome: <?php echo $cognome  ?></p></li>
+                    <li><p class="info_account">Email: <?php  echo $email ?></p></li>
+                </ul>
+            </div>
+        </div>
 
     </div>
 </body>
