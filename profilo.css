@@ -1,4 +1,31 @@
-.logo{
-    width: 200px;
+.logo_profilo{
+    width: 100%;
+}
+
+.pagina_profilo{
+    background-color: #212529;
+    margin-top: 10%;
+    padding: 3%;
+    padding-top: 20px;
     border-radius: 10px;
+    text-align: center;
+}
+
+.pagina_profilo h1{
+    padding-top: 0px !important;
+}
+
+.info_account{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.dati_utente{
+    padding-top: 5%;
+    list-style: none;
+}
+
+.dato{
+    color:#ffc107;
+    font-size: 1.5rem;
 }
