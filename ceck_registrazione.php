@@ -4,9 +4,13 @@ if (!(isset($_POST['reg']))) {
     
 }
 else {
-    $dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape 
-                user=postgres password=biar") 
-                or die('Could not connect: ' . pg_last_error()); //questo va levato!!!
+    /*$dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape user=postgres password=biar") or die('Could not connect: ' . pg_last_error());*/
+
+    
+
+    $dbconn = pg_connect("host=ec2-52-18-116-67.eu-west-1.compute.amazonaws.com port=5432 dbname=d4bkh2i9corr5n 
+    user=bfknyktpivqfnf password=77b57797fef1f71d2a56428d3460620c69aaf2fe90fc17b935b507c95576ce82")
+        or die('Could not connect: ' . pg_last_error()); //questo va levato!!!
 }
 ?>
 
