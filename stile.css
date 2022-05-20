@@ -349,6 +349,8 @@ td, th {
     list-style: none;
     display: inline-block;
     width: 100%;
+    position: relative;
+    top: -20%;
 }
 .lista_contatti li{
     display: inline-block;
@@ -378,4 +380,9 @@ td, th {
         margin-top: 40%;
     }
 
+}
+
+#container_fondo{
+    padding-bottom: 0rem !important;
+    min-height: 200px;
 }

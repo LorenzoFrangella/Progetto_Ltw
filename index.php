@@ -106,7 +106,7 @@ if (isset($_GET['logout'])){
   <br>
 
 <footer class="bg-dark text-center text-white" id="fondo_pagina">
-  <div class="container p-5">
+  <div class="container p-5" id="container_fondo">
     <!-- Section: Text -->
     <section class="mb-4">
       <p>
@@ -121,14 +121,11 @@ if (isset($_GET['logout'])){
         <li><p><img src="../img/email.png" style="width:20px;">frangella.1899674@studenti.uniroma1.it </p></li>
       </ul>
     </section>
-    <!-- Section: Links -->
   </div>
 
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">Progetto di Linguaggi e Tecnologie per il Web
   </div>
-  <!-- Copyright -->
 </footer>
-<!-- Footer -->
 </body>
 </html>
 
