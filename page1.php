@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="primolivello.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="./js/jquery.rwdImageMaps.js"></script>
-    <script src="./housescape.js"></script>
-    <script src="./orologio/script.js"></script>
+    <script language="JavaScript" type="text/javascript"  src="./housescape.js"></script>
+    <script language="JavaScript" type="text/javascript"  src="./orologio/script.js"></script>
+    <script language="JavaScript" type="text/javascript"  src="page1.js"></script>
     <link rel="stylesheet" href="./orologio/style.css">
     <title>HouseEscape</title>
 </head>
@@ -38,6 +39,5 @@
         <button  class="tasto" id="orario" onclick="inserisci_orario()">inserisci orario </button> 
     </div>
 </div>
-<script src="page1.js"></script>
 </body>
 </html>
