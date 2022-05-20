@@ -43,7 +43,6 @@
 <img src="./img/melodia.png" class = "popup_img">
 </div>
 <script src="page2.js"></script>
-    <script src="./giochi/piano/script.js"></script>
-
+<script src="./giochi/piano/script.js"></script>
 </body>
 </html>
