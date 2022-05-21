@@ -277,7 +277,7 @@ a:hover{
 #indietro{
     display: none;
 }
-/*.box_intro{
+/*.box_intro{#
     border-radius: 5px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
