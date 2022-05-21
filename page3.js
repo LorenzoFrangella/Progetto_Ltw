@@ -1,6 +1,6 @@
 const suono_tastiera = new Audio("./audio/typewriter.mp3");
 const suono_porta=new Audio("./audio/door.mp3");
-
+var chiuso = true;
 $(document).ready(function(e) {
     $("#type_writer").rwdImageMaps();
 });
@@ -132,10 +132,12 @@ $("#esci_lock").click(function(){
 
 >>>>>>> 20b7111 (tiene il tempo)
 $("#porta").click(function(){
-    $("#porta").css("cursor","default");
-    $("#type").css("cursor","default");
-    $("#type_writer").addClass("blur");
-    $(".lucchetto_popup").fadeIn(500);
+    if(chiuso){
+        $("#porta").css("cursor","default");
+        $("#type").css("cursor","default");
+        $("#type_writer").addClass("blur");
+        $(".lucchetto_popup").fadeIn(500);
+    }
 });
 
 function addRotor1(){
@@ -223,12 +225,13 @@ function ceck_lucchetto(){
         && document.getElementById("terzo_numero").value == "8"){
             alert("Hai trovato la combinazione giusta, sei libero!");
             suono_porta.play();
-            $("#porta").css("cursor","default");
             $("#type_writer").removeClass("blur");
             $(".lucchetto_popup").fadeOut(500);
             $("#type_writer").attr("src","./img/stanza3_fine.png");
+            chiuso = false;
             //Funzione da scrivere per essere reindirizzati alla pagina finale
             $("#porta").click(function(){
+                $("#porta").unbind('click').removeAttr("onclick")[0].onclick = null;
                 parent.postMessage("completata","*");
                 return;
             });
