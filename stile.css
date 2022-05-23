@@ -361,7 +361,6 @@ td, th {
     display: inline-block;
     width: 33%;
     margin-top:3%;
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -370,6 +369,11 @@ td, th {
         margin-top:0%;
         margin-left: 5%;
         margin-right: 5%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .lista_contatti li{
+        font-size: 14px;
     }
 }
 
