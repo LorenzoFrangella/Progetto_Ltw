@@ -235,6 +235,12 @@ background: red;
 	border-color: white;
 	font-size:20px;
 }
+@media (max-width:500px){
+	.tasto{
+		scale:140%;
+		font-size: 12px;
+	}
+}
 @media(min-width:768px){
 	.tasto{
 		margin-top: 20%;
@@ -289,9 +295,3 @@ background: red;
 		  top:37%;left:40%;
 		}
 	  }
-@media (max-width:310px){
-	  .inserisci_orario{
-		margin-top: -28px;
-		scale: 40%;
-	}
-}

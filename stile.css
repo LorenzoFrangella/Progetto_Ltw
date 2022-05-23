@@ -261,6 +261,11 @@ a:hover{
     min-height: 750px;
 }
 
+@media (max-width:600px){
+    .format{
+        min-height: 533px;
+    }
+}
     
 .inpage{
     aspect-ratio: 1.77;
