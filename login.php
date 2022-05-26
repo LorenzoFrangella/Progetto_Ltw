@@ -1,4 +1,5 @@
-<?php 
+<?php
+//inizializzazione variabili di sessione per controlli vari 
 session_start();
 ?>
 <!DOCTYPE html>
@@ -26,6 +27,7 @@ session_start();
     <div class="spaziatura"></div>
     <div class = "container" id="formlogin">
         <h1 id="titolo_accedi">Accedi</h1>
+        <!-- form login -->
         <form name="HousEscape_1" action="./check_login.php" method="POST" id="form_login" onsubmit="return valida_login()">
             <ul class="lista_attr">
                 <li><span><input type="text" id="nick_email" name = "nick_email" placeholder="Nickname o Email"></span></li>
@@ -36,7 +38,8 @@ session_start();
             <button type="submit" id="log" name ="log" class="btn btn-warning"> Accedi</button><br>
             <div style="position:relative;bottom:-20px;color:red">
             <?php 
-            if(isset($_GET['error']) && $_GET['error']=='error_username_or_pass' ) echo"<p1>Nome Utente o Password Errati!</p1>";
+            //messaggi di errore in caso di nickname o password errati oppure di utente inesistente
+            if(isset($_GET['error']) && $_GET['error']=='error_pass' ) echo"<p1>Password Errata!</p1>";
             if(isset($_GET['error']) && $_GET['error']=='usr_not_found' ) echo" <p1>Utente non trovato!</p1>";
             ?>
 
