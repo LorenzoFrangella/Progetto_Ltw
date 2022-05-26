@@ -27,6 +27,7 @@
     <div class="spaziatura"></div>
     <div class = "container" id="form">
         <h1 id="titolo_registrati">Registrati</h1>
+        <!-- Form per la registrazione che viene verificato da uno script javascript e l'accesso viene gestito tramite php-->
         <form name="HousEscape" action="ceck_registrazione.php" method="POST" id="form_registrazione" 
         action="./ceck_registrazione.php" onsubmit="return valida_registrazione()">
            
@@ -47,7 +48,8 @@
             </ul>
             <p1 class="error" id="errore">
                 <?php
-                if(isset($_GET["error"]) && $_GET["error"]=="alr_reg") echo "Nome utente già utilizzato"
+                if(isset($_GET["error"]) && $_GET["error"]=="alr_reg") echo "Email già utilizzata";
+                if(isset($_GET["error_nick"]) && $_GET["error_nick"]=="alr_reg") echo "Nome utente già utilizzato"
                 ?>
             </p1> <br>
             <button type="submit" id="reg" 

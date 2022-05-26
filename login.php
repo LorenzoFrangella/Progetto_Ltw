@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$errore=  0 ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +34,6 @@ $errore=  0 ?>
             </ul>
 
             <button type="submit" id="log" name ="log" class="btn btn-warning"> Accedi</button><br>
-            <p1 class = "error-message"><?php if($errore==1){echo "user not found";}?></p1>
             <div style="position:relative;bottom:-20px;color:red">
             <?php 
             if(isset($_GET['error']) && $_GET['error']=='error_username_or_pass' ) echo"<p1>Nome Utente o Password Errati!</p1>";
