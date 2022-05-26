@@ -1,3 +1,6 @@
+function stringContainsNumber(_string) {
+    return /\d/.test(_string);
+  };
 function valida_registrazione(){
     document.getElementById("errore").innerHTML="";
     var debug = true;
@@ -6,13 +9,21 @@ function valida_registrazione(){
         document.HousEscape.nome.focus();
         document.getElementById("errore").innerHTML="Inserire nome";
         return false;
-     }
+        }
+        else if(stringContainsNumber(document.HousEscape.nome.value)){
+                document.getElementById("errore").innerHTML="Nel nome ci sono dei numeri";
+                return false;
+            }
     if (document.HousEscape.cognome.value=="") {
         //if(debug)alert("Inserire cognome");
         cognome = document.getElementById("cognome");
         cognome.focus();
         document.getElementById("errore").innerHTML = "Inserire cognome";
         return false;
+        }
+        else if(stringContainsNumber(document.HousEscape.cognome.value)){
+            document.getElementById("errore").innerHTML="Nel cognome ci sono dei numeri";
+            return false;
         }
     if (document.HousEscape.email.value=="") {
         //if(debug)alert("Inserire l'email");
