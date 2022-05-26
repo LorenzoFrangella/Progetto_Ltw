@@ -1,7 +1,9 @@
 <?php 
+//Inizializzazione delle variabili di sessione
 session_start();
+//unset di begin game viene eseguito per evitare che l'utente una volta fatto l'accesso venga reindirizzato subito alla partita
 unset($_SESSION['begin_game']);
-
+//gestione del logout tramite variabili di sessione
 if (isset($_GET['logout'])){
   session_unset();
 }
@@ -15,6 +17,8 @@ if (isset($_GET['logout'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../stile.css">
+    <!-- Importazione delle librerie necessarie tra cui bootstrap e jquery-->
+    <!-- -->
     <script src="../js/bootstrap.bundle.js"></script>
     <script src="../js/bootstrap.esm.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -25,6 +29,7 @@ if (isset($_GET['logout'])){
     <link rel="icon" href="../img/exit.png">
 </head>
     <body>
+      <!-- Navabar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a href="/" class="logo d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -53,7 +58,11 @@ if (isset($_GET['logout'])){
         </li>
       </ul>
       <form class="d-flex">
-      <?php if(!isset($_SESSION['nickname'])){
+
+      <?php 
+      //Questa parte di codice permette la visualizzazione dei pulsanti accedi e registrati solo se l'utente non è loggato
+      //altrimenti visualizza il menù a tendina che contiene nome, profilo e tasto logout
+      if(!isset($_SESSION['nickname'])){
           echo "<div class='text-end fondo_nav'>
             <a href='../login.php'><button type='button' class='btn btn-outline-light me-2'>Accedi</button></a>
             <a href='../registrazione.php'><button type='button' class='btn btn-warning'>Registrati</button></a>
@@ -104,10 +113,9 @@ if (isset($_GET['logout'])){
   <br>
   <br>
   <br>
-
+<!-- footer -->
 <footer class="bg-dark text-center text-white" id="fondo_pagina">
   <div class="container p-5" id="container_fondo">
-    <!-- Section: Text -->
     <section class="mb-4">
       <p>
         <a href="https://github.com/LorenzoFrangella/Progetto_Ltw.git">Link</a> Alla repository GitHub di HousEscape.
