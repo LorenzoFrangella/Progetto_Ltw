@@ -23,6 +23,15 @@ function avvia_timer(){
         if( secondi <10 && secondi >=0){
             secondi = "0" + secondi;
         }
+        if(minuti == 29 && secondi == 0){
+            alert("inserire le ore 10 e 10 all'interno dell'orologio bianco");
+        }
+        if(minuti == 10 && secondi == 0){
+            alert("inserire questa melodia sul pianoforte: FA,MI,RE,SOL,SI");
+        }
+        if(minuti == 5 && secondi == 0){
+            alert("inserire la parola specchio all'interno della macchina da scrivere");
+        }
         if(minuti != -1 || secondi != -1){
             document.getElementById("minutes").innerText = minuti,
             document.getElementById("seconds").innerText = secondi;
