@@ -23,7 +23,7 @@ function avvia_timer(){
         if( secondi <10 && secondi >=0){
             secondi = "0" + secondi;
         }
-        if(minuti == 29 && secondi == 0){
+        if(minuti == 20 && secondi == 0){
             alert("inserire le ore 10 e 10 all'interno dell'orologio bianco");
         }
         if(minuti == 10 && secondi == 0){
