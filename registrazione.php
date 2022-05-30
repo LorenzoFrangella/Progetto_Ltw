@@ -9,6 +9,39 @@
     <link rel="stylesheet" href="./stile.css">
     <title>HousEscape</title>
     <script src="valida_registrazione.js" type="application/javascript"></script>    
+    
+    <script>
+        function check_nickname(str) {
+            if (str.length == 0) {
+                document.getElementById("errore").innerHTML = "";
+                return;
+            } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("errore").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "controllo.php?nickname=" + str, true);
+                xmlhttp.send();
+            }
+        }
+        function check_email(str) {
+            if (str.length == 0) {
+                document.getElementById("errore").innerHTML = "";
+                return;
+            } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("errore").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "controllo.php?email=" + str, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,9 +69,9 @@
 
                 <li><span><input type="text" name="reg_surn" id="cognome" placeholder="Cognome"><br></span></li>
 
-                <li><span><input type="text" name="reg_nick" id="nickname" placeholder="Nickname"></span></li>
+                <li><span><input type="text" name="reg_nick" id="nickname" placeholder="Nickname" onkeyup="check_nickname(this.value)" onchange="check_nickname(this.value)"></span></li>
 
-                <li><span><input type="email" name="email" id="email" placeholder="Email"><br></span></li>
+                <li><span><input type="email" name="email" id="email" placeholder="Email" onkeyup="check_email(this.value)" onchange="check_email(this.value)"><br></span></li>
 
                 <li><span><input type="password" name="reg_pass" id="password" placeholder="Password"></span></li>
 
@@ -49,7 +82,7 @@
             <p1 class="error" id="errore">
                 <?php
                 if(isset($_GET["error"]) && $_GET["error"]=="alr_reg") echo "Email già utilizzata";
-                if(isset($_GET["error_nick"]) && $_GET["error_nick"]=="alr_reg") echo "Nome utente già utilizzato"
+                if(isset($_GET["error_nick"]) && $_GET["error_nick"]=="alr_reg") echo "Nome utente già utilizzato";
                 ?>
             </p1> <br>
             <button type="submit" id="reg" 
