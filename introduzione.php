@@ -13,6 +13,7 @@
         var scrolling = 0;
 function page_scroll()
 {
+    //animazione di scrolltop dell'introduzione alla casa
  $("html, body").animate({ scrollTop: $(document).height() }, 18000);
 }
 function stop_scroll(){
@@ -24,6 +25,7 @@ function stop_scroll(){
 </head>
 <body id="sfondo_intro">
     <div class = "container" >
+        <!-- gestione dello scrolling se un utente scrolla per conto suo l'animazione si ferma -->
         <div class="box_intro" onwheel="stop_scroll()" onmouseleave="page_scroll()">
         <h2 class = "intro">
         Sei intrappolato all'interno di una casa abbandonata.
@@ -37,6 +39,7 @@ Qualcuno ti ha fatto uno scherzo e ha spento le luci, accendile prima di iniziar
     <div class="entra" style="text-align:center"><a href='./page1.php'><button type='button' onclick="avviatimer();"class='btn btn-warning bottone_inizio' id="entra_nella_casa"><b>Entra nella casa!</b>
 </div></div>
 <script>
+    //avvio scrolling
         $(document).ready(function() {
                 $("html, body").animate({
                     scrollTop: $(

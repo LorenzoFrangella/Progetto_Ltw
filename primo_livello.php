@@ -1,9 +1,12 @@
 <?php
+//inizializzazione variabili di sessione
 session_start();
 $_SESSION['begin_game'] = true;
 if(!isset($_SESSION['nickname']))
+//se non hai fatto il login ti rimanda alla pagina di login
   header("Location: ./login.php");
 if(isset($_SESSION['tempo_scaduto'])){
+  //se il tempo è scaduto non  puoi tornare indietro e ricominciare a giocare
   if($_SESSION['tempo_scaduto'] == true){
     unset($_SESSION['tempo_scaduto']);
     header("Location: ./index.php");
@@ -30,6 +33,7 @@ if(isset($_SESSION['tempo_scaduto'])){
     <title>HousEscape</title>
 </head>
 <body>
+  <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a href="./index.php" class="logo d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -47,6 +51,7 @@ if(isset($_SESSION['tempo_scaduto'])){
             </div>
           </div>
     </nav>
+    <!-- CAROSELLO -->
     <div class="container format" >
       <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
       <div class="enigmi">
