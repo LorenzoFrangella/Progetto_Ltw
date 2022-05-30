@@ -50,11 +50,13 @@ function valida_registrazione(){
     }
     var p = document.HousEscape.password.value;
     if(p.length < 8){
-        if(debug)alert("la password deve contenere almeno 8 caratteri");
+        if(debug)
+        document.getElementById("errore").innerHTML = "la password deve contenere almeno 8 caratteri";
         return false;
     }
     if(document.HousEscape.password.value!=document.HousEscape.conferma_password.value){
-        if(debug)alert("le password non corrispondono");
+        if(debug)
+            document.getElementById("errore").innerHTML = "le password non corrispondono";
         return false;
     }
         /*var a,b,c,d,e,f;
