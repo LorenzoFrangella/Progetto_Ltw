@@ -25,16 +25,16 @@ function valida_registrazione(){
             document.getElementById("errore").innerHTML="Nel cognome ci sono dei numeri";
             return false;
         }
+        if (document.HousEscape.nickname.value=="") {
+            //if(debug)alert("Inserire nickname");
+            document.HousEscape.nickname.focus();
+            document.getElementById("errore").innerHTML = "Inserire nickname";
+            return false;
+            }
     if (document.HousEscape.email.value=="") {
         //if(debug)alert("Inserire l'email");
         document.HousEscape.email.focus();
         document.getElementById("errore").innerHTML = "Inserire l'email";
-        return false;
-        }
-    if (document.HousEscape.nickname.value=="") {
-        //if(debug)alert("Inserire nickname");
-        document.HousEscape.nickname.focus();
-        document.getElementById("errore").innerHTML = "Inserire nickname";
         return false;
         }
     var n = document.HousEscape.nickname.value;
