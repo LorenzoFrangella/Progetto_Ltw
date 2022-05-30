@@ -14,11 +14,13 @@
 </head>
 <body id="secondo">
     <div class="piano" >
+         <!-- Mappa di immagine per la seconda stanza con uso di funzioni js -->
         <img src="./img/img2.png" usemap="#piano" id="melodia" width="1500" height="966">
         <map name="piano">
             <area id = "area" shape="rect" alt="parte 1 immagine" coords="309,526,530,562" href="#" onclick="" title="piano">
             <area id = "cartello" shape="rect" coords="554,622,683,673" href="#">
         </map>
+        <!-- pianoforte -->
         <div class="test">
         <div class="pianoforte" style="position:absolute;z-index:9999;display: none;">
         <button class="white-key C4-key" onclick="array_utente.push('Do');incrementa()">Do</button>
@@ -36,6 +38,7 @@
 </br>
         </div>
     </div>
+    <!-- elementi interarrivi -->
 <p id="close">Invia la tua soluzione!</p>
 <p class="exit" id="exit">Esci</p>
 <input type="text" id="progress" value="0"/>

@@ -15,6 +15,7 @@
 <body id="primo">
 <div class="bg" onmousemove="moveTorch(event)"></div>
 <div class="torch">
+    <!-- Mappa di immagine per la prima stanza con uso di funzioni js -->
     <img src="./img/casa_quattro.png" usemap="#interruttore" id="luce" width="1360" height="765">
     <map name="interruttore">
         <area id="lumus" shape="rect" alt="parte 1 immagine" coords="93,238,127,282" href="#" onclick="illuminastanza();" title="interruttore">
@@ -24,6 +25,7 @@
         <area shape="rect" coords="178,300,207,353" href="#" id="orologio">
     </map>
 </div>
+<!-- elementi interattivi dell'imagine che al click di determinate aree compaiono e scompaiono con effetti di blur -->
 <img src="./img/orologio_fisso.png" id="foto_orologio" class="popup_orologio">
 <img src="./img/tastiera_colorata.png" id="foto_tastiera" class="popup_tastiera">
 <p class="exit" id="esci"> Esci</p>

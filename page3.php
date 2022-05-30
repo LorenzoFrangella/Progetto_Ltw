@@ -15,13 +15,16 @@
 </head>
 <body id="terzo">
     <div class="stanza_3">
+         <!-- Mappa di immagine per la terza stanza con uso di funzioni js -->
         <img src="./img/stanza3.png" usemap="#typewriter" id="type_writer" width="1276" height="718">
         <map name="typewriter">
            <area id="type" shape="rect" coords="420,338,568,416" href="#" title="macchina_da_scrivere">
            <area id="porta" shape="rect" coords="913,177,1161,519" href="#" title="porta" style="cursor: pointer">  
         </map>
+         <!-- elementi interattivi -->
         <div id="macchina_da_scrivere" class="popup_macchina_da_scrivere">
             <div class="foglio">
+            <!-- form della macchina da scrivere per risolvere il terzo enigma -->
                 <form autocomplete="off"><input type="text" id="tre" name="indovinello" minlenght="1" size="10" class="campo_scrivibile"></form>
             </div>
             <img src="./img/macchina_da_scrivere.png" class="foto_mds">
@@ -29,6 +32,7 @@
         </div>
     <div class="lucchetto_popup">
         <p id="esci_lock" class="exit_lucchetto" >Esci</p>
+         <!-- lucchetto -->
         <div class="lucchetto">
             <ul>
                 <li class="rotor">
