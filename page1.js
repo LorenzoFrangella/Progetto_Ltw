@@ -1,3 +1,11 @@
+
+function moveTorch(event){
+    var torch = document.getElementsByClassName("torch")[0];
+    //alert($(window).height());
+    var r = $(window).width()*scala;
+    torch.style.clipPath = `circle(${r}px at ${event.offsetX}px ${event.offsetY}px)`;
+}
+
 $(document).ready(function(e) {
     $("#luce").rwdImageMaps();
 });
