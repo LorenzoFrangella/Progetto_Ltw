@@ -20,7 +20,7 @@ body{
 
 .container{
     border-color: #343a40;
-    min-height: 300px;
+    min-height: 365px;
 }
 
 .spaziatura{
@@ -111,6 +111,11 @@ input{
     bottom: -15px;
     color: red;
 }
+#errore_login{
+    position: relative;
+    bottom: 92px;
+    color: red;
+}
 
 #class_title{
     color:white;
@@ -166,7 +171,7 @@ h6{
 }
 
 #log{
-    margin-top: 20px;
+    margin-top: 34px;
 }
 
 .nomeutente{
@@ -374,6 +379,11 @@ td, th {
 @media screen and (max-width: 1200px) {
     .lista_contatti li{
         font-size: 14px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .lista_contatti li{
+        font-size: 12px;
     }
 }
 
