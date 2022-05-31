@@ -40,44 +40,44 @@ if(isset($_SESSION['tempo_scaduto'])){
           <img src="./img/exit.png" style="width:40px;">
           <h3 style="padding-top: 8px; padding-left:5px">HousEscape</h3>
         </a>
-    </div>
-        <div class="body_timer">
+      </div>
+      <div class="body_timer">
             <div id="countdown">
-              <ul class="classe_ul">
-                <li class="elemento"><span id="minutes">30</span></li>
-                <li class="elemento duepunti"><span>:</span></li>
-                <li class="elemento"><span id="seconds">00</span></li>
-              </ul>
+            <ul class="classe_ul">
+              <li class="elemento"><span id="minutes">30</span></li>
+              <li class="elemento duepunti"><span>:</span></li>
+              <li class="elemento"><span id="seconds">00</span></li>
+            </ul>
             </div>
-          </div>
+      </div>
     </nav>
     <!-- CAROSELLO -->
     <div class="container format" >
-      <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
-      <div class="enigmi">
-        <img src="./img/primo_enigma.jpg" id = "primo_enigma">
-        <img src="./img/secondo_enigma.jpg" id = "secondo_enigma">
-        <img src="./img/terzo_enigma.jpg" id = "terzo_enigma">
-  </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <iframe id="stanza1" class="inpage" src="introduzione.php"></iframe>
+        <div id="carouselExampleSlidesOnly" id="caro" class="carousel slide" data-bs-interval="false" data-ride="carousel">
+          <div class="enigmi">
+            <img src="./img/primo_enigma.jpg" id = "primo_enigma">
+            <img src="./img/secondo_enigma.jpg" id = "secondo_enigma">
+            <img src="./img/terzo_enigma.jpg" id = "terzo_enigma">
           </div>
-          <div class="carousel-item ">
-            <iframe id="stanza2" class="inpage" src="page2.php"></iframe>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe id="stanza1" class="inpage" src="introduzione.php"></iframe>
+            </div>
+            <div class="carousel-item ">
+              <iframe id="stanza2" class="inpage" src="page2.php"></iframe>
+            </div>
+            <div class="carousel-item ">
+              <iframe id="stanza3" class="inpage" src="page3.php"></iframe>
+            </div>
           </div>
-          <div class="carousel-item ">
-            <iframe id="stanza3" class="inpage" src="page3.php"></iframe>
-          </div>
+        </div>
+      <div class="container">
+        <button class="btn btn-warning"  id="indietro" onclick="indietro()">← Indietro </button>
+        <button class="btn btn-warning" id="avanti" onclick="avanti()"> Avanti → </button>
+        <br/>
+        <br/>
+        <br/>
       </div>
-    </div>
-    <div class="container">
-      <button class="btn btn-warning"  id="indietro" onclick="indietro()">← Indietro </button>
-      <button class="btn btn-warning" id="avanti" onclick="avanti()"> Avanti → </button>
-      <br/>
-      <br/>
-      <br/>
-      
     </div>
 </body>
 </html>

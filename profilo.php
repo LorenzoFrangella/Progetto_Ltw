@@ -40,7 +40,7 @@
           <h3 style="padding-top: 8px; padding-left:5px">HousEscape</h3>
         </a>
       </div>
-    </nav>
+</nav>
     <div class="container pagina_profilo">
         <h1>Profilo</h1>
         <div class="row">

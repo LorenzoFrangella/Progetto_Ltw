@@ -25,8 +25,4 @@ if(isset($_GET['email'])){
         echo "Email già utilizzata";
     }
 }
-
-
-
-
 ?>

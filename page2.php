@@ -22,29 +22,29 @@
         </map>
         <!-- pianoforte -->
         <div class="test">
-        <div class="pianoforte" style="position:absolute;z-index:9999;display: none;">
-        <button class="white-key C4-key" onclick="array_utente.push('Do');incrementa()">Do</button>
-        <button class="black-key Db4-key"></button>
-        <button class="white-key D4-key" onclick="array_utente.push('Re');incrementa()">Re</button>
-        <button class="black-key Eb4-key"></button>
-        <button class="white-key E4-key" onclick="array_utente.push('Mi');incrementa()">Mi</button>
-        <button class="white-key F4-key" onclick="array_utente.push('Fa');incrementa()">Fa</button>
-        <button class="black-key Gb4-key"></button>
-        <button class="white-key G4-key" onclick="array_utente.push('Sol');incrementa()">Sol</button>
-        <button class="black-key Ab4-key"></button>
-        <button class="white-key A4-key" onclick="array_utente.push('La');incrementa()">La</button>
-        <button class="black-key Bb4-key"></button>
-        <button class="white-key B4-key" onclick="array_utente.push('Si');incrementa()">Si</button>
+            <div class="pianoforte" style="position:absolute;z-index:9999;display: none;">
+            <button class="white-key C4-key" onclick="array_utente.push('Do');incrementa()">Do</button>
+            <button class="black-key Db4-key"></button>
+            <button class="white-key D4-key" onclick="array_utente.push('Re');incrementa()">Re</button>
+            <button class="black-key Eb4-key"></button>
+            <button class="white-key E4-key" onclick="array_utente.push('Mi');incrementa()">Mi</button>
+            <button class="white-key F4-key" onclick="array_utente.push('Fa');incrementa()">Fa</button>
+            <button class="black-key Gb4-key"></button>
+            <button class="white-key G4-key" onclick="array_utente.push('Sol');incrementa()">Sol</button>
+            <button class="black-key Ab4-key"></button>
+            <button class="white-key A4-key" onclick="array_utente.push('La');incrementa()">La</button>
+            <button class="black-key Bb4-key"></button>
+            <button class="white-key B4-key" onclick="array_utente.push('Si');incrementa()">Si</button>
 </br>
+            </div>
         </div>
-    </div>
     <!-- elementi interarrivi -->
     <p id="close">Invia la tua soluzione!</p>
     <p class="exit" id="exit">Esci</p>
     <input type="text" id="progress" value="0"/>
     <p class="exit" id="esci"> Esci</p>
     <img src="./img/melodia.png" class = "popup_img">
-</div>
+    </div>
 <script src="page2.js"></script>
 <script src="./giochi/piano/script.js"></script>
 </body>

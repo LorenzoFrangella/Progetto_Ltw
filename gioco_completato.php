@@ -52,16 +52,16 @@
       </div>
     </nav>
     <div class="container" style="text-align:center">
-    <h1 class="titolo animated bounceInDown" style="text-align:center; height:300px">Complimenti!</h1> <br>
-    <br>
-    <h2 class="animated zoomIn">Congratulazioni, sei riuscito ad uscire in : <?php echo $minuti;?> minuti e <?php echo $secondi;?> secondi</h2>  
-    <br>
-    <p style="color:white;">Vai a vedere la <a href="./classifica.php">Classifica</a> Per scoprire se sei stato tra i più veloci</p>
-    <br>
-    <br>
-    <?php
-    if($stampa) echo '<p style="color:white;">Attenzione, i tentativi successivi al primo non verranno inseriti in classifica.</p>';
-    ?>
+      <h1 class="titolo animated bounceInDown" style="text-align:center; height:300px">Complimenti!</h1> <br>
+      <br>
+      <h2 class="animated zoomIn">Congratulazioni, sei riuscito ad uscire in : <?php echo $minuti;?> minuti e <?php echo $secondi;?> secondi</h2>  
+      <br>
+      <p style="color:white;">Vai a vedere la <a href="./classifica.php">Classifica</a> Per scoprire se sei stato tra i più veloci</p>
+      <br>
+      <br>
+      <?php
+        if($stampa) echo '<p style="color:white;">Attenzione, i tentativi successivi al primo non verranno inseriti in classifica.</p>';
+      ?>
     </div>
 </body>
 </html>

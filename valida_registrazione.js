@@ -4,44 +4,44 @@ function stringContainsNumber(_string) {
 function valida_registrazione(){
     document.getElementById("errore").innerHTML="";
     var debug = true;
-        if (document.HousEscape.nome.value=="") {
-        //if(debug)alert("Inserire nome");
-        document.HousEscape.nome.focus();
-        document.getElementById("errore").innerHTML="Inserire nome";
-        return false;
+    if (document.HousEscape.nome.value=="") {
+    //if(debug)alert("Inserire nome");
+    document.HousEscape.nome.focus();
+    document.getElementById("errore").innerHTML="Inserire nome";
+    return false;
+    }
+    else if(stringContainsNumber(document.HousEscape.nome.value)){
+            document.getElementById("errore").innerHTML="Nel nome ci sono dei numeri";
+            return false;
         }
-        else if(stringContainsNumber(document.HousEscape.nome.value)){
-                document.getElementById("errore").innerHTML="Nel nome ci sono dei numeri";
-                return false;
-            }
     if (document.HousEscape.cognome.value=="") {
-        //if(debug)alert("Inserire cognome");
-        cognome = document.getElementById("cognome");
-        cognome.focus();
-        document.getElementById("errore").innerHTML = "Inserire cognome";
+    //if(debug)alert("Inserire cognome");
+    cognome = document.getElementById("cognome");
+    cognome.focus();
+    document.getElementById("errore").innerHTML = "Inserire cognome";
+    return false;
+    }
+    else if(stringContainsNumber(document.HousEscape.cognome.value)){
+        document.getElementById("errore").innerHTML="Nel cognome ci sono dei numeri";
+        return false;
+    }
+    if (document.HousEscape.nickname.value=="") {
+        //if(debug)alert("Inserire nickname");
+        document.HousEscape.nickname.focus();
+        document.getElementById("errore").innerHTML = "Inserire nickname";
         return false;
         }
-        else if(stringContainsNumber(document.HousEscape.cognome.value)){
-            document.getElementById("errore").innerHTML="Nel cognome ci sono dei numeri";
-            return false;
-        }
-        if (document.HousEscape.nickname.value=="") {
-            //if(debug)alert("Inserire nickname");
-            document.HousEscape.nickname.focus();
-            document.getElementById("errore").innerHTML = "Inserire nickname";
-            return false;
-            }
     if (document.HousEscape.email.value=="") {
         //if(debug)alert("Inserire l'email");
         document.HousEscape.email.focus();
         document.getElementById("errore").innerHTML = "Inserire l'email";
         return false;
-        }
+    }
     var n = document.HousEscape.nickname.value;
     if(n.length < 2 || n.length > 20){
             if(debug)alert("il nickname deve contenere da 2 a 20 caratteri");
             return false;
-        }
+    }
     if (document.HousEscape.password.value=="") {
         //if(debug)alert("Inserire password");
         document.HousEscape.password.focus();
@@ -71,4 +71,4 @@ function valida_registrazione(){
         }*/
         //alert("Dati inseriti correttamente");
         return true;
-        }
+}
