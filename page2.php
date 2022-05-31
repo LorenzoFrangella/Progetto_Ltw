@@ -39,11 +39,11 @@
         </div>
     </div>
     <!-- elementi interarrivi -->
-<p id="close">Invia la tua soluzione!</p>
-<p class="exit" id="exit">Esci</p>
-<input type="text" id="progress" value="0"/>
-<p class="exit" id="esci"> Esci</p>
-<img src="./img/melodia.png" class = "popup_img">
+    <p id="close">Invia la tua soluzione!</p>
+    <p class="exit" id="exit">Esci</p>
+    <input type="text" id="progress" value="0"/>
+    <p class="exit" id="esci"> Esci</p>
+    <img src="./img/melodia.png" class = "popup_img">
 </div>
 <script src="page2.js"></script>
 <script src="./giochi/piano/script.js"></script>
