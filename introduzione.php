@@ -11,15 +11,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script type="text/javascript">
         var scrolling = 0;
-function page_scroll()
-{
-    //animazione di scrolltop dell'introduzione alla casa
- $("html, body").animate({ scrollTop: $(document).height() }, 18000);
-}
-function stop_scroll(){
- $("html, body").stop();
-}
-</script>
+        function page_scroll(){
+            //animazione di scrolltop dell'introduzione alla casa
+            $("html, body").animate({ scrollTop: $(document).height() }, 18000);
+        }
+        function stop_scroll(){
+            $("html, body").stop();
+        }
+    </script>
     <link rel="icon" href="./img/exit.png">
     <title>Introduzione</title>
 </head>
@@ -29,15 +28,16 @@ function stop_scroll(){
         <div class="box_intro" onwheel="stop_scroll()" onmouseleave="page_scroll()">
         <h2 class = "intro">
         Sei intrappolato all'interno di una casa abbandonata.
-    </br>
-    </br>
-    All'interno delle stanze troverai degli enigmi, risolvili per poter uscire.</br>
-</br>
-</br>
-Qualcuno ti ha fatto uno scherzo e ha spento le luci, accendile prima di iniziare a muoverti.
-    </h2>
-    <div class="entra" style="text-align:center"><a href='./page1.php'><button type='button' onclick="avviatimer();"class='btn btn-warning bottone_inizio' id="entra_nella_casa"><b>Entra nella casa!</b>
-</div></div>
+        </br>
+        </br>
+        All'interno delle stanze troverai degli enigmi, risolvili per poter uscire.</br>
+        </br>
+        </br>
+        Qualcuno ti ha fatto uno scherzo e ha spento le luci, accendile prima di iniziare a muoverti.
+        </h2>
+        <div class="entra" style="text-align:center"><a href='./page1.php'><button type='button' onclick="avviatimer();"class='btn btn-warning bottone_inizio' id="entra_nella_casa"><b>Entra nella casa!</b></div>
+        </div>
+    </div>
 <script>
     //avvio scrolling
         $(document).ready(function() {
@@ -45,10 +45,10 @@ Qualcuno ti ha fatto uno scherzo e ha spento le luci, accendile prima di iniziar
                     scrollTop: $(
                       'html, body').get(0).scrollHeight
                 }, 18000);
-            });
+        });
         function avviatimer(){
             window.parent.postMessage('avvia_timer', '*');
         }
-    </script>
+</script>
 </body>
 </html>

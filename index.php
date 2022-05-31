@@ -28,16 +28,16 @@ if (isset($_GET['logout'])){
     <title>HouseEscape</title>
     <link rel="icon" href="../img/exit.png">
 </head>
-    <body>
-      <!-- Navabar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
+  <!-- Navabar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a href="/" class="logo d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
       <img src="../img/exit.png" style="width:40px;">
       <h3 style="padding-top: 8px; padding-left:5px">HousEscape</h3>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -67,8 +67,8 @@ if (isset($_GET['logout'])){
             <a href='../login.php'><button type='button' class='btn btn-outline-light me-2'>Accedi</button></a>
             <a href='../registrazione.php'><button type='button' class='btn btn-warning'>Registrati</button></a>
           </div>";
-        }
-        else if(isset($_SESSION['nickname'])){ 
+      }
+      else if(isset($_SESSION['nickname'])){ 
           echo '<div class="dropdown fondo_nav">
             <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <p1 class="nomeutente">'.$_SESSION['nickname'].'</p1>
@@ -78,37 +78,39 @@ if (isset($_GET['logout'])){
               <a class="dropdown-item" href="../profilo.php">Profilo</a>
               <a class="dropdown-item"  href="../index.php?logout=true">Esci</a>
             </div>';
-        }
-
+      }
       ?>
       </form>
     </div>
   </div>
-</nav>
+  </nav>
   <div class="container" style="text-align:center;height:600px;"><h1 class="titolo animated bounceInDown">Sei pronto a metterti in gioco?</h1> <br>
-  <div class="container"><h2>Divertiti e mettiti alla prova con HousEscape! <br>
-  Immergiti in un'avventura stile escape room e attraverso enigmi, giochi di ingegno, rompicapi e indovinelli dovrai trovare il percorso per uscire dalla casa.
-  <br>
-  <br>
-  <br>
-  <br>
-  <div style="text-align:center"><i>COME SI GIOCA?</i>
-  <br>
-  <br>1-Se hai già un account effettua il login, altrimenti effettua la registrazione. <br>
-  <br>2-Entra nella casa e trova l'uscita, attenzione però non sarà tutto così semplice...Guardati bene attorno! <br>
-  <br>3-Divertiti!</h2></div>
-  <div style="text-align:center"><a href='../primo_livello.php'><button type='button' id='inizia_a_giocare' class='btn btn-warning bottone_home'><b>Inizia a giocare!</b></button></div></div>
-  <br>
-  <br>
-  <br>
-  </a>
-  <br>
-  <br>
-  <br>
-  <br></div>
+    <div class="container"><h2>Divertiti e mettiti alla prova con HousEscape! <br>
+      Immergiti in un'avventura stile escape room e attraverso enigmi, giochi di ingegno, rompicapi e indovinelli dovrai trovare il percorso per uscire dalla casa.
+      <br>
+      <br>
+      <br>
+      <br>
+      <div style="text-align:center"><i>COME SI GIOCA?</i>
+        <br>
+        <br>1-Se hai già un account effettua il login, altrimenti effettua la registrazione. <br>
+        <br>2-Entra nella casa e trova l'uscita, attenzione però non sarà tutto così semplice...Guardati bene attorno! <br>
+        <br>3-Divertiti!</h2>
+      </div>
+      <div style="text-align:center"><a href='../primo_livello.php'><button type='button' id='inizia_a_giocare' class='btn btn-warning bottone_home'><b>Inizia a giocare!</b></button></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
   <div class="container" style="margin-top:100px;" id="chi_siamo"> </div>
-    <br/>
-    <br/>
+  <br/>
+  <br/>
   <br>
   <br>
   <br>

@@ -45,18 +45,18 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
+    <div class="container-fluid">
     <a href="./index.php" class="logo d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
       <img src="./img/exit.png" style="width:40px;">
       <h3 style="padding-top: 8px; padding-left:5px">HousEscape</h3>
     </a>
     </button>
-</div>
+    </div>
 </nav>
     <div class = "overlay">
         <div class = "modal">
             <button id="close-modal-btn"> Close </button>
-    </div>
+        </div>
     <div class="spaziatura"></div>
     <div class = "container" id="form">
         <h1 id="titolo_registrati">Registrati</h1>
@@ -89,6 +89,7 @@
             name="reg" class="btn btn-warning regbtn"> Registrati</button>
         </form>
         <div style="position:relative;bottom:-20px"><p1>Hai già un account?  <span><a href="./login.php">Accedi</a></span></p1></div>
+    </div>
     </div>
 </body>
 </html>

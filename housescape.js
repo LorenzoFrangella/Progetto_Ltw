@@ -77,7 +77,7 @@ window.onmessage = function(e) {
         default:
             alert("Messaggio ricevuto: " + e.data);
         break;      
-} 
+    } 
 };
 
 ///funzione per mandare messaggi alla pagina principale
@@ -136,8 +136,8 @@ function popup(){
 
 
 function popup_close(){
-$(".sfondo, .corpo").remove();
-$(document).ready(function(){
+    $(".sfondo, .corpo").remove();
+    $(document).ready(function(){
         $("#luce").css("-webkit-filter", "blur(0px)");
     });
 }

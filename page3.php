@@ -30,10 +30,10 @@
             <img src="./img/macchina_da_scrivere.png" class="foto_mds">
             <p id="esci_mds" class="exit">Esci</p>
         </div>
-    <div class="lucchetto_popup">
-        <p id="esci_lock" class="exit_lucchetto" >Esci</p>
-         <!-- lucchetto -->
-        <div class="lucchetto">
+        <div class="lucchetto_popup">
+            <p id="esci_lock" class="exit_lucchetto" >Esci</p>
+            <!-- lucchetto -->
+            <div class="lucchetto">
             <ul>
                 <li class="rotor">
                     <ul>
@@ -57,6 +57,7 @@
                     </ul>
                 </li>
             </ul>
+            </div>
         </div>
     </div>
     <script src="./page3.js"></script>
