@@ -13,3 +13,9 @@ create table classifica(
 	secondi int check(secondi >= 0 and secondi < 60),
 	totale_secondi int check(totale_secondi >= 0)
 )
+
+--INSERIMENTO TUPLE NELLA TABELLA
+insert into utente values('mario','rossi','mario_bros','mario@bros.it','coccodrillo')('luigi','bianchi','luigi_sium','luigi@bianchi.it','montagna')
+
+
+insert into classifica values ('mario_bros',9,32,572),('luigi_sium',5,30,330)
