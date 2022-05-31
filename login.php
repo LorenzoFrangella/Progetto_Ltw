@@ -37,12 +37,13 @@ session_start();
 
             <button type="submit" id="log" name ="log" class="btn btn-warning"> Accedi</button><br>
             <div style="position:relative;bottom:-20px;color:red">
+            <p1 class="error" id="errore_login">
             <?php 
             //messaggi di errore in caso di nickname o password errati oppure di utente inesistente
             if(isset($_GET['error']) && $_GET['error']=='error_pass' ) echo"<p1>Password Errata!</p1>";
             if(isset($_GET['error']) && $_GET['error']=='usr_not_found' ) echo" <p1>Utente non trovato!</p1>";
             ?>
-
+            </p1>
             </div>
             <div style="position:relative;bottom:-30px"><p1> Non hai un account? <span><a href="./registrazione.php">Registrati</a></span></p1></div>
         </form>
