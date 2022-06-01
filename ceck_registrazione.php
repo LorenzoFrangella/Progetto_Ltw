@@ -49,7 +49,7 @@ else {
                             Start using the website <br/></h1>";
                         echo "<a href=../Welcome.php?name=$nome> Premi qui </a>
                             per inziare ad utilizzare il sito web";*/
-                            header("Location: /");
+                            header("Location: /login.php");
                     }
                 }
             }
