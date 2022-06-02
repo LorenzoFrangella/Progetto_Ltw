@@ -12,23 +12,9 @@ $("#type").click(function(){
     $("#macchina_da_scrivere").fadeIn(500);
     document.getElementById("tre").focus();
 });
-<<<<<<< HEAD
-$(document).ready(function(e) {
-$("#type_writer").rwdImageMaps();
-});
-<<<<<<< HEAD
-<<<<<<< HEAD
-$("#terzo_enigma").on('input', function() {
-=======
-=======
 
->>>>>>> 20b7111 (tiene il tempo)
 $("#tre").on('input', function() {
-<<<<<<< HEAD
->>>>>>> b6a92f6 (push)
-=======
     suono_tastiera.play();
->>>>>>> 5ddf9e4 (typewriter)
     terzo_enigma();
 });
 
@@ -49,75 +35,12 @@ function terzo_enigma(){
         $("#type").unbind('click').removeAttr("onclick")[0].onclick = null;
         parent.postMessage("terzo_enigma","*");
     }
-<<<<<<< HEAD
-}
-=======
-=======
 };
->>>>>>> a392674 (okoko)
 $("#esci_mds").click(function(){
     chiudi_mds();
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> c674fdc (.)
-=======
-=======
-/*
->>>>>>> 8ae3d63 (ho sofferto per fare questa commit)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-$("#door").click(function(){
-    $("#type").css("cursor","default");
-    $("#type_writer").addClass("blur");
-    $("#porta").fadeIn(500);
-    $(".lucchetto").fadeIn(500);
-});
-
-function verificaSoluzione(){
-    var primo_numero = document.getElementById("primo_numero").innerText;
-    var secondo_numero = document.getElementById("secondo_numero").innerText;
-    var terzo_numero = document.getElementById("terzo_numero").innerText;
-    if(primo_numero=="4" && secondo_numero=="6" && terzo_numero=="8"){
-        alert("Complimenti! Hai trovato l'uscita");
-        $("#porta").fadeOut(500);
-        $(".lucchetto").fadeOut(500);
-        $("#type_writer").removeClass("blur");
-        $("#door").css("cursor","default");
-        $("#door").unbind('click').removeAttr("onclick")[0].onclick = null;
-        suono_porta.play();
-    }
-    else{
-        alert('Ritenta la soluzione');
-        document.getElementById("primo_numero").innerText="0";
-        document.getElementById("secondo_numero").innerText="0";
-        document.getElementById("terzo_numero").innerText="0";
-    }
-
-}
-
-function uscita(){
-    document.getElementById("primo_numero").innerText="0";
-    document.getElementById("secondo_numero").innerText="0";
-    document.getElementById("terzo_numero").innerText="0";
-    $("#porta").fadeOut(500);
-    $(".lucchetto").fadeOut(500);
-    $("#type_writer").removeClass("blur");
-<<<<<<< HEAD
-}
->>>>>>> fbeb443 (suono e lucchetto)
-=======
-*/
-=======
-
->>>>>>> 74840d5 (buongiornoo)
-=======
-$("#esci_lock").click(function chiudi_lock(){
-=======
 function chiudi_lock(){
->>>>>>> b23c88b (--)
     $("#type_writer").removeClass("blur");
     $(".lucchetto_popup").fadeOut(500);
 }
@@ -130,7 +53,6 @@ $("#esci_lock").click(function(){
 });
 
 
->>>>>>> 20b7111 (tiene il tempo)
 $("#porta").click(function(){
     if(chiuso){
         $("#porta").css("cursor","default");
@@ -237,4 +159,3 @@ function ceck_lucchetto(){
             });
     }
 }
->>>>>>> 8ae3d63 (ho sofferto per fare questa commit)

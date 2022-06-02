@@ -38,19 +38,10 @@ function avvia_timer(){
         }
         
         //do something later when date is reached
-<<<<<<< HEAD
-        if (distance < 0) {
-<<<<<<< HEAD
-            8//funzione da chiamare allo scadere del tempo
-=======
-=======
         if (distance <= 1) {
->>>>>>> cf7ad00 (2)
             window.location.href = "./tempo_scaduto.php";
-            //funzione da chiamare allo scadere del tempo
->>>>>>> 7de06ae (0)
         }
             //seconds
-    }, 1000)
+    }, 1000);
 
 }
