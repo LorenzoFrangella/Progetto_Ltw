@@ -5,12 +5,8 @@ if(!isset($_POST['log'])){
     header("Location: /");
 }
 else{
-    $dbconn = pg_connect("host=ec2-99-80-170-190.eu-west-1.compute.amazonaws.com
-    port=5432 
-    dbname=da7su439m4ci8v
-    user=hlqbluotyefoma
-    password=ca73cdab6879cd6f699413b7b4c0b71c93ba2b18b046497f816bd304a2f6c24b
-    ") or die('Could not connect: ' . pg_last_error());
+    $dbconn = pg_connect("host=localhost port=5432 dbname=HousEscape user=postgres password=biar")
+        or die('Could not connect: ' . pg_last_error());
 
     
 
