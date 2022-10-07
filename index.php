@@ -126,9 +126,9 @@ if (isset($_GET['logout'])){
     <section class="mb-4">
       <h3>I nostri contatti</h3>
       <ul class="lista_contatti">
-        <li><p><img src="../img/email.png" style="width:20px;">laudati.1894372@studenti.uniroma1.it</p></li>
-        <li><p><img src="../img/email.png" style="width:20px;">mastrandrea.1892793@studenti.uniroma1.it </p></li>
-        <li><p><img src="../img/email.png" style="width:20px;">frangella.1899674@studenti.uniroma1.it </p></li>
+        <li><p><img src="../img/email.png" style="width:20px;"><a href="mailto:laudati.1894372@studenti.uniroma1.it">laudati.1894372@studenti.uniroma1.it</a></p></li>
+        <li><p><img src="../img/email.png" style="width:20px;"><a href="mailto:mastrandrea.1892793@studenti.uniroma1.it">mastrandrea.1892793@studenti.uniroma1.it </a></p></li>
+        <li><p><img src="../img/email.png" style="width:20px;"><a href="mailto:frangella.1899674@studenti.uniroma1.it ">frangella.1899674@studenti.uniroma1.it </a></p></li>
       </ul>
     </section>
   </div>
